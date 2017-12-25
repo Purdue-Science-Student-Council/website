@@ -45,7 +45,7 @@
         </li>
     </ul>
 </nav>
-<nav class="m-nav">
+<nav id="js-m-nav" class="m-nav">
     <div class="m-nav-top">
         <div class="m-nav-top-item">
             <span class="m-nav-top-item-valign"></span>
@@ -53,10 +53,10 @@
         </div>
         <div class="m-nav-top-item">
             <span class="m-nav-top-item-valign"></span>
-            <span class="m-nav-top-item-hamburger">H</span>
+            <button id="js-m-nav-click" class="m-nav-top-item-hamburger">H</button>
         </div>
     </div>
-    <div class="m-nav-bar">
+    <ul class="m-nav-bar">
         <li class="m-nav-bar-item m-nav-bar-item-active">
             <a class="m-nav-bar-item-a" href="/">
                 Home
@@ -87,6 +87,6 @@
                 Contact
             </a>
         </li>
-    </div>
+    </ul>
 </nav>
 <!-- ---------- -->

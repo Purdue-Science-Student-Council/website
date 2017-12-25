@@ -9,6 +9,7 @@
     right: 0;
 
     font-size: 1.2rem;
+    font-weight: 700;
     background: $bg-color;
     height: $nav-height;
     padding: 0 40px;
@@ -24,7 +25,6 @@
     }
 
     &-bar {
-        list-style-type: none;
         list-style: none;
         align-self: stretch;
 
@@ -58,6 +58,7 @@
 
                 &:hover, &:focus {
                     color: $gold-color;
+                    transition: all 0.3s ease-out;
                 }
 
                 &:active {
@@ -71,6 +72,10 @@
 
 .m-nav {
     display: none; //display only below 900px
+    
+    background: $bg-color;
+    font-weight: 700;
+    font-size: 1.2rem;
 
     position: fixed;
     top: 0;
@@ -79,7 +84,6 @@
 
     &-top {
         height: $nav-height;
-        background: $bg-color;
         padding: 0 40px;
 
         display: flex;
@@ -101,7 +105,72 @@
 
             &-hamburger {
                 vertical-align: middle;
+                border: none;
+                background: transparent;
+                cursor: pointer;
             }
+        }
+    }
+
+    &-bar {
+        height: calc(100vh - #{$nav-height});
+        display: none;
+        list-style: none;
+        width: 100%;
+
+        &-item {
+            /* margins */
+            margin: 15px 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            /*------------*/
+            text-align: center;
+            font-size: 1.7rem;
+
+            &-active {
+                a {
+                    border-bottom: 2px solid $light-color;
+                }
+            }
+
+            &-a {
+                color: $light-color;
+                text-decoration: none;
+
+                &:hover, &:focus {
+                    color: $dark-color;
+                    transition: all 0.3s ease-out;
+                }
+
+                &:active {
+                    color: $dark-color;
+                    border-bottom: 2px solid $dark-color;
+                }
+            }
+        }
+    }
+
+    &-active {
+        height: 100vh;
+        background: $gold-color;
+
+        .m-nav-top {
+            color: $light-color;
+
+            &-item-hamburger {
+                color: $light-color;
+            }
+        }
+
+        .m-nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }
