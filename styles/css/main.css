@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:400,700");
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -406,33 +407,65 @@ template {
   --dark-color: #222222;
   --light-color: #eeeeee;
   --gold-color: #fbc02d;
-  --nav-height: 40px; }
+  --nav-height: 50px; }
 
 /*---------------------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yantramanav', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 ul {
   margin: 0;
   padding: 0; }
 
-a {
-  text-decoration: none; }
-
 .nav {
-  width: 100vw;
   height: var(--nav-height);
   display: flex;
   justify-content: space-between;
-  align-items: stretch; }
+  align-items: stretch;
+  padding: 0 40px;
+  font-size: 1.2rem; }
   .nav-logo {
     align-self: stretch; }
   .nav-bar {
     list-style-type: none;
-    align-self: stretch; }
+    list-style: none;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; }
     .nav-bar-item {
-      display: inline-block; }
-      .nav-bar-item-active {
+      align-self: stretch;
+      /* margins */
+      margin: 0 10px;
+      /*------------*/ }
+      .nav-bar-item:first-child {
+        margin-left: 0; }
+      .nav-bar-item:last-child {
+        margin-right: 0; }
+      .nav-bar-item-active a {
         text-decoration: underline; }
       .nav-bar-item-a {
         color: var(--dark-color);
-        text-decoration: none; }
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block; }
+
+span {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block; }
+
+.vertical-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.vertical-center-item {
+  align-self: center; }
 
 /*# sourceMappingURL=main.css.map */

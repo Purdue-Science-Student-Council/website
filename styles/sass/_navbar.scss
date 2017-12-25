@@ -1,9 +1,11 @@
 .nav {
-    width: 100vw;
     height: $nav-height;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    padding: 0 40px;
+
+    font-size: 1.2rem;
 
     &-logo {
         align-self: stretch;
@@ -11,20 +13,52 @@
 
     &-bar {
         list-style-type: none;
+        list-style: none;
         align-self: stretch;
-        
+
+        display: flex;
+        justify-content: center;
+        align-items: stretch;        
 
         &-item {
-            display: inline-block;
+            align-self: stretch;
+
+            /* margins */
+            margin: 0 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            /*------------*/
             
             &-active {
-                text-decoration: underline;
+                a {
+                    text-decoration: underline;
+                }
             }
-
             &-a {
                 color: $dark-color;
                 text-decoration: none;
+                vertical-align: middle;
+                display: inline-block;
             }
         }
     }
+}
+span {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.vertical-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-center-item {
+    align-self: center;
 }
