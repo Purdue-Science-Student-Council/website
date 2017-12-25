@@ -53,7 +53,7 @@
         </div>
         <div class="m-nav-top-item">
             <span class="m-nav-top-item-valign"></span>
-            <button id="js-m-nav-click" class="m-nav-top-item-hamburger">H</button>
+            <button id="js-m-nav-click" class="m-nav-top-item-hamburger"></button>
         </div>
     </div>
     <ul class="m-nav-bar">

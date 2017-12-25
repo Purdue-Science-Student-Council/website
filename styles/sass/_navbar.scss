@@ -104,10 +104,24 @@
             }
 
             &-hamburger {
+                font-size: 2rem;
+                font-weight: 500;
+                
+                &:before {
+                    content:'\2261'; 
+                }
                 vertical-align: middle;
                 border: none;
                 background: transparent;
                 cursor: pointer;
+
+                &:hover, &:active {
+                    color: $gold-color;
+                    transition: all 0.3s ease-out;
+                }
+                &:active {
+                    color: $gold-color;
+                }
             }
         }
     }
@@ -163,6 +177,14 @@
 
             &-item-hamburger {
                 color: $light-color;
+
+                &:hover, &:focus {
+                    color: $dark-color;
+                    transition: all 0.3s ease-out;
+                }
+                &:active {
+                    color: $dark-color;
+                }
             }
         }
 
