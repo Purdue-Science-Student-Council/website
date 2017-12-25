@@ -407,6 +407,7 @@ template {
   --dark-color: #222222;
   --light-color: #eeeeee;
   --gold-color: #e0aa20;
+  --bg-color: #fffcf6;
   --nav-height: 50px; }
 
 /*---------------------------------------------*/
@@ -416,21 +417,31 @@ html, body {
   font-family: 'Yantramanav', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color); }
 
 ul {
   margin: 0;
   padding: 0; }
 
 .nav {
-  height: var(--nav-height);
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 40px;
-  font-size: 1.2rem; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  background: var(--bg-color);
+  height: var(--nav-height);
+  padding: 0 40px; }
   .nav-logo {
     align-self: stretch; }
+  .nav-valign {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; }
   .nav-bar {
     list-style-type: none;
     list-style: none;
@@ -460,17 +471,34 @@ ul {
           color: var(--gold-color);
           border-bottom: 2px solid var(--gold-color); }
 
-span {
-  height: 100%;
-  vertical-align: middle;
-  display: inline-block; }
+.m-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .m-nav-top {
+    height: var(--nav-height);
+    background: var(--bg-color);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; }
+    .m-nav-top-item {
+      align-self: stretch; }
+      .m-nav-top-item-valign {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block; }
+      .m-nav-top-item-logo {
+        vertical-align: middle; }
+      .m-nav-top-item-hamburger {
+        vertical-align: middle; }
 
-.vertical-center-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.vertical-center-item {
-  align-self: center; }
+@media screen and (max-width: 950px) {
+  .nav {
+    display: none; }
+  .m-nav {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

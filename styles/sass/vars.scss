@@ -3,6 +3,7 @@
     --dark-color: hsla(0, 0%, 13.3%, 1);
     --light-color: hsla(0, 0%, 93.3%, 1);
     --gold-color: hsla(43.1, 75.6%, 50.2%, 1);
+    --bg-color: hsla(43.2, 100%, 98.2%, 1);
 
     //sizes
     --nav-height: 50px;
@@ -15,6 +16,11 @@
 $dark-color: var(--dark-color); 
 $light-color: var(--light-color);
 $gold-color: var(--gold-color);
+$bg-color: var(--bg-color);
 
 // sizes 
 $nav-height: #{var(--nav-height)};
+$tablet-width: 950px;
+
+// media queries 
+$max-tablet : "screen and (max-width:" + $tablet-width + ")";

@@ -1,14 +1,26 @@
 .nav {
-    height: $nav-height;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 0 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
     font-size: 1.2rem;
+    background: $bg-color;
+    height: $nav-height;
+    padding: 0 40px;
 
     &-logo {
         align-self: stretch;
+    }
+
+    &-valign {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
     }
 
     &-bar {
@@ -56,18 +68,51 @@
         }
     }
 }
-span {
-    height: 100%;
-    vertical-align: middle;
-    display: inline-block;
+
+.m-nav {
+    display: none; //display only below 900px
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &-top {
+        height: $nav-height;
+        background: $bg-color;
+        padding: 0 40px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        &-item {
+            align-self: stretch;
+            
+            &-valign {
+                height: 100%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            &-logo {
+                vertical-align: middle;
+            }
+
+            &-hamburger {
+                vertical-align: middle;
+            }
+        }
+    }
 }
 
-.vertical-center-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media #{$max-tablet} {
+    .nav {
+        display: none;
+    }
+
+    .m-nav {
+        display: block;
+    }
 }
 
-.vertical-center-item {
-    align-self: center;
-}
