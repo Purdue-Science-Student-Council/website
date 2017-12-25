@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "Official Website of PSSC",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/main.css -w --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purdue-Science-Student-Council/website.git"
+  },
+  "author": "Vritant Bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purdue-Science-Student-Council/website/issues"
+  },
+  "homepage": "https://github.com/Purdue-Science-Student-Council/website#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
