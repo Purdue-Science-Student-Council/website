@@ -406,7 +406,7 @@ template {
 :root {
   --dark-color: #222222;
   --light-color: #eeeeee;
-  --gold-color: #fbc02d;
+  --gold-color: #e0aa20;
   --nav-height: 50px; }
 
 /*---------------------------------------------*/
@@ -448,12 +448,17 @@ ul {
       .nav-bar-item:last-child {
         margin-right: 0; }
       .nav-bar-item-active a {
-        text-decoration: underline; }
+        border-bottom: 2px solid var(--dark-color); }
       .nav-bar-item-a {
         color: var(--dark-color);
         text-decoration: none;
         vertical-align: middle;
         display: inline-block; }
+        .nav-bar-item-a:hover, .nav-bar-item-a:focus {
+          color: var(--gold-color); }
+        .nav-bar-item-a:active {
+          color: var(--gold-color);
+          border-bottom: 2px solid var(--gold-color); }
 
 span {
   height: 100%;

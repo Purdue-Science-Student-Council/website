@@ -35,7 +35,7 @@
             
             &-active {
                 a {
-                    text-decoration: underline;
+                    border-bottom: 2px solid $dark-color;
                 }
             }
             &-a {
@@ -43,6 +43,15 @@
                 text-decoration: none;
                 vertical-align: middle;
                 display: inline-block;
+
+                &:hover, &:focus {
+                    color: $gold-color;
+                }
+
+                &:active {
+                    color: $gold-color;
+                    border-bottom: 2px solid $gold-color;
+                }
             }
         }
     }
