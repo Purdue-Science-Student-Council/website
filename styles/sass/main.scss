@@ -1,0 +1,11 @@
+//Normalize
+@import "node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+//global CSS
+@import "./vars.scss";
+@import "./app.scss";
+@import "./_navbar.scss";
+
+//Page CSS
+@import "./_landing.scss";

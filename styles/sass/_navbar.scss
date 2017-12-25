@@ -1,0 +1,30 @@
+.nav {
+    width: 100vw;
+    height: $nav-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    &-logo {
+        align-self: stretch;
+    }
+
+    &-bar {
+        list-style-type: none;
+        align-self: stretch;
+        
+
+        &-item {
+            display: inline-block;
+            
+            &-active {
+                text-decoration: underline;
+            }
+
+            &-a {
+                color: $dark-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

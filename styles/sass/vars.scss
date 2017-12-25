@@ -1,0 +1,20 @@
+:root {
+    //colors
+    --dark-color: hsla(0, 0%, 13.3%, 1);
+    --light-color: hsla(0, 0%, 93.3%, 1);
+    --gold-color: hsla(42.8, 96.2%, 58%, 1);
+
+    //sizes
+    --nav-height: 40px;
+}
+/*---------------------------------------------*/
+
+//Sass variables for native css variables
+
+//colors
+$dark-color: var(--dark-color); 
+$light-color: var(--light-color);
+$gold-color: var(--gold-color);
+
+// sizes 
+$nav-height: #{var(--nav-height)};
