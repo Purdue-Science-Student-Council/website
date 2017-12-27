@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    min-width: $min-width;
 
     font-family: 'Yantramanav', sans-serif;
     text-rendering: optimizeLegibility;
@@ -14,4 +16,46 @@ html, body {
 ul {
     margin: 0;
     padding: 0;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    margin-top: $nav-height;
+}
+
+.page {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    &-title {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $gold-color;
+        margin: 0;
+    }
+
+    &-divider {
+        width: 40%;
+        color: $gold-color;
+        margin: 0 0 50px 0;
+        height: 2px;
+        background: $gold-color;
+        border: none;
+    }
+
+    &-text {
+        font-size: 1.3rem;
+        line-height: 1.95rem;
+        text-align: justify;
+        color: $gray-color;
+    }
+}
+
+@media #{$max-tablet} {
+    .page {
+        width: 90%;
+        margin: 0 auto;
+    }       
 }

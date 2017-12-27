@@ -1,0 +1,66 @@
+.page-council {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    &-title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: $gray-color;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-text {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: justify;
+        color: $gray-color;
+    }
+
+    &-members {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &-member {
+            text-align: center;
+
+            &-img {
+                width: 200px;
+                height: 200px;
+                background: $gray-color;
+                margin: 0 auto 10px auto;
+            }
+            &-name {
+                font-weight: 500;
+                color: $gray-color; 
+                margin: 0;
+                padding: 0;   
+            }
+
+            &-position {
+                color: $gold-color;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media #{$max-tablet} {
+    .page-council {
+        width: 100%;
+        &-members {
+            &-member {
+                &-img {
+                    width: 150px;
+                    height: 150px;
+                }
+                &-name {
+                    
+                }
+            }
+        }
+    }
+}

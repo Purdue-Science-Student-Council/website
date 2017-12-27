@@ -1,0 +1,24 @@
+.masthead {
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+        color: $gold-color;
+        font-size: 4rem;
+        margin: 0 0 15px 0;
+    }
+
+    &-subtitle {
+        color: $gray-color;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+}

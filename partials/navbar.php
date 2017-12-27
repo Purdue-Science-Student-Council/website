@@ -15,31 +15,31 @@
         </li>
         <li class="nav-bar-item">
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/about">
+            <a class="nav-bar-item-a" href="/about.php">
                 About
             </a>
         </li>
         <li class="nav-bar-item">
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/calendar">
-                Calendar
+            <a class="nav-bar-item-a" href="/events.php">
+                Events
             </a>
         </li>
         <li class="nav-bar-item">
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/apply">
+            <a class="nav-bar-item-a" href="/apply.php">
                 Apply
             </a>
         </li>
         <li class="nav-bar-item">
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/outstanding-teacher-award">
+            <a class="nav-bar-item-a" href="/outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
         <li class="nav-bar-item">
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/contact">
+            <a class="nav-bar-item-a" href="/contact.php">
                 Contact
             </a>
         </li>
@@ -63,27 +63,27 @@
             </a>
         </li>
         <li class="m-nav-bar-item">
-            <a class="m-nav-bar-item-a" href="/about">
+            <a class="m-nav-bar-item-a" href="/about.php">
                 About
             </a>
         </li>
         <li class="m-nav-bar-item">
-            <a class="m-nav-bar-item-a" href="/calendar">
-                Calendar
+            <a class="m-nav-bar-item-a" href="/events.php">
+                Events
             </a>
         </li>
         <li class="m-nav-bar-item">
-            <a class="m-nav-bar-item-a" href="/apply">
+            <a class="m-nav-bar-item-a" href="/apply.php">
                 Apply
             </a>
         </li>
         <li class="m-nav-bar-item">
-            <a class="m-nav-bar-item-a" href="/outstanding-teacher-award">
+            <a class="m-nav-bar-item-a" href="/outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
         <li class="m-nav-bar-item">
-            <a class="m-nav-bar-item-a" href="/contact">
+            <a class="m-nav-bar-item-a" href="/contact.php">
                 Contact
             </a>
         </li>

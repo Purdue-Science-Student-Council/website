@@ -3,13 +3,14 @@
     justify-content: space-between;
     align-items: stretch;
 
+    min-width: $min-width;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
     font-size: 1.2rem;
-    font-weight: 700;
+    // font-weight: 700;
     background: $bg-color;
     height: $nav-height;
     padding: 0 40px;
@@ -74,7 +75,7 @@
     display: none; //display only below 900px
     
     background: $bg-color;
-    font-weight: 700;
+    // font-weight: 700;
     font-size: 1.2rem;
 
     position: fixed;
@@ -105,8 +106,6 @@
 
             &-hamburger {
                 font-size: 2rem;
-                font-weight: 500;
-                
                 &:before {
                     content:'\2261'; 
                 }
