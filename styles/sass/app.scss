@@ -25,7 +25,7 @@ ul {
 }
 
 .page {
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
     padding-top: 50px;
 
@@ -37,9 +37,9 @@ ul {
     }
 
     &-divider {
-        width: 40%;
+        width: 50%;
         color: $gold-color;
-        margin: 0 0 50px 0;
+        margin: 10px 0 50px 0;
         height: 2px;
         background: $gold-color;
         border: none;

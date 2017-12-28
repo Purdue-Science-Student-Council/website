@@ -1,0 +1,45 @@
+<?php include("partials/header.php") ?>
+    <main class="main-container">
+        <div class="page">
+            <h1 class="page-title">The Outstanding Teacher Award</h1>
+            <hr class="page-divider">
+
+            <p class="page-text">
+                The annual College of Science Outstanding Teacher Award is awarded to a professor 
+                or lecturer who has shown excellence in teaching through a passion for their field, 
+                for the advancement of knowledge, and for the academic growth of their students. 
+                Each year students vote for whom they believe is most deserving of the award. 
+            </p>
+            
+            <!-- <div class="col s12 flow-text">
+                <h5>Voting for the 2017 award has opened and will close on March 9th 2017</h5>
+                <h5 class="flow-text">
+                <span class="red-text">Dennis Minchella</span>, Professor of Biological Sciences, and <span class="red-text">Jeff Beckley</span>, Continuing Lecturer in Mathematics, are <span class="red-text">not eligible</span> for the award this year. Both have won the outstanding teacher award multiple times.
+                </h5>
+                <br>
+            </div> -->
+            <!-- <div class="col s12">
+                <div class="typeform-widget" data-url="https://pssc.typeform.com/to/PMKzK3" data-text="Outstanding Teacher Award" style="width:100%;height:500px;"></div>
+                <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=PMKzK3&amp;utm_source=typeform.com-1806039-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+            </div> -->
+        </div>
+        <div class="page">
+            <h1 class="page-title">Previous Recipients</h1>
+            <hr class="page-divider">
+
+            <table class="page-table">
+                <thead class="page-table-thead">
+                    <tr class="page-table-tr">
+                        <th class="page-table-th">Year</th>
+                        <th class="page-table-th">Professor / Lecturer</th>
+                    </tr>
+                </thead>
+                <tbody id="js-ota-table" class="page-table-tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/ota.js"></script>
+<?php include("partials/footer.php") ?>

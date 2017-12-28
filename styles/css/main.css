@@ -433,7 +433,7 @@ ul {
   margin-top: var(--nav-height); }
 
 .page {
-  width: 800px;
+  width: 850px;
   margin: 0 auto;
   padding-top: 50px; }
   .page-title {
@@ -442,9 +442,9 @@ ul {
     color: var(--gold-color);
     margin: 0; }
   .page-divider {
-    width: 40%;
+    width: 50%;
     color: var(--gold-color);
-    margin: 0 0 50px 0;
+    margin: 10px 0 50px 0;
     height: 2px;
     background: var(--gold-color);
     border: none; }
@@ -637,7 +637,6 @@ ul {
         background: var(--gray-color);
         margin: 0 auto 10px auto; }
       .page-council-members-member-name {
-        font-weight: 500;
         color: var(--gray-color);
         margin: 0;
         padding: 0; }
@@ -651,6 +650,21 @@ ul {
     width: 100%; }
     .page-council-members-member-img {
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+    .page-council-members-member-name {
+      font-weight: 500; } }
+
+.page-table {
+  text-align: left;
+  border-collapse: collapse;
+  color: var(--gray-color);
+  font-size: 1.2rem; }
+  .page-table-thead {
+    border-bottom: 1px solid;
+    border-color: var(--gold-color); }
+  .page-table-th {
+    padding: 10px; }
+  .page-table-td {
+    padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */

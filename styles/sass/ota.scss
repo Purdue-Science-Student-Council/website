@@ -1,0 +1,22 @@
+.page-table {
+    text-align: left;
+    border-collapse: collapse;
+    color: $gray-color;
+    font-size: 1.2rem;
+    &-thead {
+        border-bottom: 1px solid;
+        border-color: $gold-color;        
+    }
+    &-tbody {
+
+    }
+    &-tr {
+
+    }
+    &-th {
+        padding: 10px;
+    }
+    &-td {
+        padding: 10px;
+    }
+}
