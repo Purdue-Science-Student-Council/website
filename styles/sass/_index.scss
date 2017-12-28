@@ -22,3 +22,9 @@
     }
 
 }
+
+@media #{$max-tablet} {
+    .masthead {
+        height: auto;
+    }
+}

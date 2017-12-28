@@ -24,7 +24,6 @@
             </p>
 
         </div>
-        <div style="height: 100vh"></div>
         <script src="js/council.js"></script>
     </main>
 <?php include("partials/footer.php") ?>

@@ -27,7 +27,7 @@ ul {
 .page {
     width: 850px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 75px;
 
     &-title {
         font-size: 3rem;
@@ -50,6 +50,20 @@ ul {
         line-height: 1.95rem;
         text-align: justify;
         color: $gray-color;
+
+        &-a {
+            text-decoration: none;
+            color: hsla(207.8, 46.4%, 49.3%, 1);
+        
+            &:hover, &:focus {
+                color: hsla(207.7, 87.7%, 32.6%, 1);
+                transition: all 0.3s ease-out;
+            }
+        
+            &:active {
+                color: $gold-color;
+            }
+        }   
     }
 }
 
@@ -57,5 +71,9 @@ ul {
     .page {
         width: 90%;
         margin: 0 auto;
+
+        &-divider {
+            width: 90%;
+        }
     }       
 }
