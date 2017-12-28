@@ -1,0 +1,13 @@
+.page-text-a {
+    text-decoration: none;
+    color: hsla(207.8, 46.4%, 49.3%, 1);
+
+    &:hover, &:focus {
+        color: hsla(207.7, 87.7%, 32.6%, 1);
+        transition: all 0.3s ease-out;
+    }
+
+    &:active {
+        color: $gold-color;
+    }
+}   

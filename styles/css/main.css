@@ -667,4 +667,13 @@ ul {
   .page-table-td {
     padding: 10px; }
 
+.page-text-a {
+  text-decoration: none;
+  color: #4382b8; }
+  .page-text-a:hover, .page-text-a:focus {
+    color: #0a599c;
+    transition: all 0.3s ease-out; }
+  .page-text-a:active {
+    color: var(--gold-color); }
+
 /*# sourceMappingURL=main.css.map */
