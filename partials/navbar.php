@@ -7,37 +7,84 @@
     </div>
 
     <ul class="nav-bar">
-        <li class="nav-bar-item nav-bar-item-active">
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'index.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/">
                 Home
             </a>
         </li>
-        <li class="nav-bar-item">
+
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'about.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/about.php">
                 About
             </a>
         </li>
-        <li class="nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'events.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/events.php">
                 Events
             </a>
         </li>
-        <li class="nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'apply.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/apply.php">
                 Apply
             </a>
         </li>
-        <li class="nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'outstanding-teacher-award.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
-        <li class="nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'contact.php') {
+                    echo 'class="nav-bar-item nav-bar-item-active"' ;
+                } else {
+                    echo 'class="nav-bar-item"'; 
+                }
+            ?>>
             <span class="nav-valign"></span>
             <a class="nav-bar-item-a" href="/contact.php">
                 Contact
@@ -57,32 +104,79 @@
         </div>
     </div>
     <ul class="m-nav-bar">
-        <li class="m-nav-bar-item m-nav-bar-item-active">
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'index.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/">
                 Home
             </a>
         </li>
-        <li class="m-nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'about.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/about.php">
                 About
             </a>
         </li>
-        <li class="m-nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'events.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/events.php">
                 Events
             </a>
         </li>
-        <li class="m-nav-bar-item">
+       
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'apply.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/apply.php">
                 Apply
             </a>
         </li>
-        <li class="m-nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'outstanding-teacher-award.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
-        <li class="m-nav-bar-item">
+        
+        <li 
+            <?php 
+                if (basename($_SERVER['PHP_SELF']) == 'contact.php') {
+                    echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
+                } else {
+                    echo 'class="m-nav-bar-item"'; 
+                }
+            ?>>
             <a class="m-nav-bar-item-a" href="/contact.php">
                 Contact
             </a>
