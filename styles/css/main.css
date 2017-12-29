@@ -406,13 +406,16 @@ template {
 :root {
   --dark-color: #222222;
   --light-color: #eeeeee;
-  --gold-color: #e0aa20;
+  --gold-color: #dca007;
   --gray-color: #555555;
   --bg-color: #fdfaf4;
   --slightly-darker-bg-color: #fcf5e3;
   --nav-height: 50px; }
 
 /*---------------------------------------------*/
+html {
+  font-size: 16px; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -464,6 +467,8 @@ ul {
         color: var(--gold-color); }
 
 @media screen and (max-width: 950px) {
+  html {
+    font-size: 13px; }
   .page {
     width: 90%;
     margin: 0 auto; }
@@ -623,7 +628,10 @@ ul {
 
 @media screen and (max-width: 950px) {
   .masthead {
-    height: auto; } }
+    height: 70vh;
+    padding: 5px; }
+    .masthead-title {
+      font-size: 3.5rem; } }
 
 .page-council {
   width: 90%;
@@ -649,8 +657,9 @@ ul {
       .page-council-members-member-img {
         width: 200px;
         height: 200px;
-        background: var(--gray-color);
-        margin: 0 auto 10px auto; }
+        background: var(--slightly-darker-bg-color);
+        margin: 0 auto 10px auto;
+        border: 1px solid var(--gray-color); }
       .page-council-members-member-name {
         color: var(--gray-color);
         margin: 0;

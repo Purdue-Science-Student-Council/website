@@ -29,8 +29,9 @@
             &-img {
                 width: 200px;
                 height: 200px;
-                background: $gray-color;
+                background: $slightly-darker-bg-color;
                 margin: 0 auto 10px auto;
+                border: 1px solid $gray-color;
             }
             &-name {
                 color: $gray-color; 

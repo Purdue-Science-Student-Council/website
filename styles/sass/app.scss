@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -68,6 +71,9 @@ ul {
 }
 
 @media #{$max-tablet} {
+    html {
+        font-size: 13px;
+    }
     .page {
         width: 90%;
         margin: 0 auto;

@@ -25,6 +25,10 @@
 
 @media #{$max-tablet} {
     .masthead {
-        height: auto;
+        height: 70vh;
+        padding: 5px;
+        &-title {
+            font-size: 3.5rem;
+        }
     }
 }
