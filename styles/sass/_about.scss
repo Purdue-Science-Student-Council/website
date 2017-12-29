@@ -31,7 +31,8 @@
                 height: 200px;
                 background: $slightly-darker-bg-color;
                 margin: 0 auto 10px auto;
-                border: 1px solid $gray-color;
+                border: 2px solid $gray-color;
+                border-radius: 100px;
             }
             &-name {
                 color: $gray-color; 

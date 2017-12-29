@@ -3,7 +3,7 @@
     <!-- the spans are for vertical alignment -->
     <div class="nav-logo">
         <span class="nav-valign"></span>
-        PSSC
+        <a href="/" class="nav-logo-text">PSSC</a>
     </div>
 
     <ul class="nav-bar">
@@ -35,7 +35,7 @@
             </a>
         </li>
         
-        <li 
+        <!-- <li 
             <?php 
                 if (basename($_SERVER['PHP_SELF']) == 'events.php') {
                     echo 'class="nav-bar-item nav-bar-item-active"' ;
@@ -47,7 +47,7 @@
             <a class="nav-bar-item-a" href="/events.php">
                 Events
             </a>
-        </li>
+        </li> -->
         
         <li 
             <?php 
@@ -96,7 +96,7 @@
     <div class="m-nav-top">
         <div class="m-nav-top-item">
             <span class="m-nav-top-item-valign"></span>
-            <span class="m-nav-top-item-logo">PSSC</span>
+            <a class="m-nav-top-item-logo">PSSC</a>
         </div>
         <div class="m-nav-top-item">
             <span class="m-nav-top-item-valign"></span>
@@ -130,7 +130,7 @@
             </a>
         </li>
         
-        <li 
+        <!-- <li 
             <?php 
                 if (basename($_SERVER['PHP_SELF']) == 'events.php') {
                     echo 'class="m-nav-bar-item m-nav-bar-item-active"' ;
@@ -141,7 +141,7 @@
             <a class="m-nav-bar-item-a" href="/events.php">
                 Events
             </a>
-        </li>
+        </li> -->
        
         <li 
             <?php 

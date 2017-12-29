@@ -5,6 +5,9 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0; left: 0; right: 0;
     min-width: $min-width;
 
     font-family: 'Yantramanav', sans-serif;
@@ -23,8 +26,9 @@ ul {
 
 .main-container {
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: $nav-height;
+    padding-bottom: calc(#{$nav-height} + 30px);
 }
 
 .page {
@@ -67,6 +71,32 @@ ul {
                 color: $gold-color;
             }
         }   
+    }
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // height: $nav-height;
+    text-align: center;
+    background: $slightly-darker-bg-color;
+    color: $gray-color;
+
+    &-span {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    &-text {
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 1rem;
+        padding: 15px 0;
     }
 }
 
