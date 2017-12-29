@@ -587,7 +587,7 @@ ul {
       .m-nav-top-item-logo {
         align-self: stretch;
         cursor: pointer;
-        color: var(--gray-color);
+        color: var(--dark-color);
         vertical-align: middle;
         display: inline-block;
         margin: 0;
@@ -641,15 +641,16 @@ ul {
           border-bottom: 2px solid var(--dark-color); }
   .m-nav-active {
     height: 100vh;
-    background: var(--gold-color); }
+    background: var(--gold-color);
+    transition: all 0.3s ease-in; }
     .m-nav-active .m-nav-top {
       color: var(--light-color); }
-      .m-nav-active .m-nav-top-item-hamburger {
+      .m-nav-active .m-nav-top-item-hamburger, .m-nav-active .m-nav-top-item-logo {
         color: var(--light-color); }
-        .m-nav-active .m-nav-top-item-hamburger:hover, .m-nav-active .m-nav-top-item-hamburger:focus {
+        .m-nav-active .m-nav-top-item-hamburger:hover, .m-nav-active .m-nav-top-item-hamburger:focus, .m-nav-active .m-nav-top-item-logo:hover, .m-nav-active .m-nav-top-item-logo:focus {
           color: var(--dark-color);
           transition: all 0.3s ease-out; }
-        .m-nav-active .m-nav-top-item-hamburger:active {
+        .m-nav-active .m-nav-top-item-hamburger:active, .m-nav-active .m-nav-top-item-logo:active {
           color: var(--dark-color); }
     .m-nav-active .m-nav-bar {
       display: flex;

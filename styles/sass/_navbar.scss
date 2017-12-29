@@ -124,7 +124,7 @@
             &-logo {
                 align-self: stretch;
                 cursor: pointer;
-                color: $gray-color;
+                color: $dark-color;
                 vertical-align: middle;
                 display: inline-block;
                 margin: 0;
@@ -212,16 +212,18 @@
 
         .m-nav-top {
             color: $light-color;
-
-            &-item-hamburger {
-                color: $light-color;
-
-                &:hover, &:focus {
-                    color: $dark-color;
-                    transition: all 0.3s ease-out;
-                }
-                &:active {
-                    color: $dark-color;
+            
+            &-item {
+                &-hamburger, &-logo {
+                    color: $light-color;
+    
+                    &:hover, &:focus {
+                        color: $dark-color;
+                        transition: all 0.3s ease-out;
+                    }
+                    &:active {
+                        color: $dark-color;
+                    }
                 }
             }
         }
@@ -232,6 +234,7 @@
             align-items: center;
             flex-direction: column;
         }
+        transition: all 0.3s ease-in;
     }
 }
 
