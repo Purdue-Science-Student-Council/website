@@ -12,7 +12,7 @@
             
             <div class="page-contact">
                 <!-- action script located in webmaster folder in google drive -->
-                <form id="gform" class="page-contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwuvyEbykPGCRRhwEhtuGiTZ7MbZIB1N7oR2bpLzic3qopkVnE/exec">
+                <form id="gform" class="page-contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbziIpx7Hj6QaPB9JeDu8dGxSAcZoEhMV52FTwZuc57SImEeBKLe/exec">
                     <div class="page-contact-form-element">
                         <label for="first_name" class="page-contact-form-element-label"> Your Full Name </label>
                         <input id="full_name" type="text" name="fullName" class="page-contact-form-element-input">
@@ -29,11 +29,12 @@
                     </div>
 
                     <div class="page-contact-form-element">
-                        <button type="submit" name="action" class="page-contact-form-element-button">Send</button>
+                        <button type="submit" class="page-contact-form-element-button">Send</button>
                     </div>
                 </form>
             </div>
         </div>
         <script src="js/landing.js"></script>
+        <!-- <script src="js/contact.js"></script> -->
     </main>
 <?php include("partials/footer.php") ?>
