@@ -16,7 +16,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/">
+            <a class="nav-bar-item-a" href="./index.php">
                 Home
             </a>
         </li>
@@ -30,7 +30,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/about.php">
+            <a class="nav-bar-item-a" href="./about.php">
                 About
             </a>
         </li>
@@ -44,7 +44,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/events.php">
+            <a class="nav-bar-item-a" href="./events.php">
                 Events
             </a>
         </li> -->
@@ -58,7 +58,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/apply.php">
+            <a class="nav-bar-item-a" href="./apply.php">
                 Apply
             </a>
         </li>
@@ -72,7 +72,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/outstanding-teacher-award.php">
+            <a class="nav-bar-item-a" href="./outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
@@ -86,7 +86,7 @@
                 }
             ?>>
             <span class="nav-valign"></span>
-            <a class="nav-bar-item-a" href="/contact.php">
+            <a class="nav-bar-item-a" href="./contact.php">
                 Contact
             </a>
         </li>
@@ -112,7 +112,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/">
+            <a class="m-nav-bar-item-a" href="./index.php">
                 Home
             </a>
         </li>
@@ -125,7 +125,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/about.php">
+            <a class="m-nav-bar-item-a" href="./about.php">
                 About
             </a>
         </li>
@@ -138,7 +138,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/events.php">
+            <a class="m-nav-bar-item-a" href="./events.php">
                 Events
             </a>
         </li> -->
@@ -151,7 +151,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/apply.php">
+            <a class="m-nav-bar-item-a" href="./apply.php">
                 Apply
             </a>
         </li>
@@ -164,7 +164,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/outstanding-teacher-award.php">
+            <a class="m-nav-bar-item-a" href="./outstanding-teacher-award.php">
                 Outstanding Teacher Award
             </a>
         </li>
@@ -177,7 +177,7 @@
                     echo 'class="m-nav-bar-item"'; 
                 }
             ?>>
-            <a class="m-nav-bar-item-a" href="/contact.php">
+            <a class="m-nav-bar-item-a" href="./contact.php">
                 Contact
             </a>
         </li>
