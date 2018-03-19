@@ -10,14 +10,12 @@
                 for the advancement of knowledge, and for the academic growth of their students. 
                 Each year students vote for whom they believe is most deserving of the award. 
             </p>
-            
-            <!-- <div class="col s12 flow-text">
-                <h5>Voting for the 2017 award has opened and will close on March 9th 2017</h5>
-                <h5 class="flow-text">
-                <span class="red-text">Dennis Minchella</span>, Professor of Biological Sciences, and <span class="red-text">Jeff Beckley</span>, Continuing Lecturer in Mathematics, are <span class="red-text">not eligible</span> for the award this year. Both have won the outstanding teacher award multiple times.
-                </h5>
-                <br>
-            </div> -->
+
+            <h2 class="page-text"> Voting for the 2017 award has opened! </h2>
+            <p class="page-text">
+                <b>Dennis Minchella</b>, Professor of Biological Sciences, <b>Jeff Beckley</b>, Continuing Lecturer in Mathematics, and <b>Gustavo Rodriguez-Rivera</b>, Professor of Computer Sciences, are not eligible for the award this year as they have won the Outstanding Teacher Award multiple times.
+            </p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflsz2laOYkx0_1MWZET9SevaomhlNdu8NKRaOB3_arh4mFfQ/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             <!-- <div class="col s12">
                 <div class="typeform-widget" data-url="https://pssc.typeform.com/to/PMKzK3" data-text="Outstanding Teacher Award" style="width:100%;height:500px;"></div>
                 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
