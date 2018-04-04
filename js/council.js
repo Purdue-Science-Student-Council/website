@@ -91,9 +91,6 @@ const cam = {
             n: "Rishvanjay Maheshwari"
         },
         {
-            n: "Max Drojin"
-        },
-        {
             n: "Anirudh Gupta"
         },
         {
