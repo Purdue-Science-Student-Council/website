@@ -140,7 +140,7 @@ const com = {
 
 const nco = {
     x: 'nco',
-    n: "Network Career and Outreach",
+    n: "Networking and Career Outreach",
     t: "Our goal is to connect students in the College of Science with both faculty and alumni in order for them to gain knowledge about research and to help them make connections. We strive to facilitate discussions relating to potential fields of interests for students in order to help students achieve their career goals. We provide interactive events so that we can create a camaraderie among students in the College of Science in an academic manner.",
 
     members: [

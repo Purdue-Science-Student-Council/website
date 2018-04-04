@@ -665,7 +665,7 @@ ul {
     display: block; } }
 
 .masthead {
-  height: 50vh;
+  margin-top: 100px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -681,13 +681,18 @@ ul {
     font-weight: 500;
     font-size: 1.3rem;
     margin: 0; }
+  .masthead-logo {
+    margin: 30px 0;
+    width: 300px; }
 
 @media screen and (max-width: 950px) {
   .masthead {
     height: 70vh;
     padding: 5px; }
     .masthead-title {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem; }
+    .masthead-logo {
+      width: 150px; } }
 
 .page-council {
   width: 90%;
