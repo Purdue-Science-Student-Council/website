@@ -687,8 +687,7 @@ ul {
 
 @media screen and (max-width: 950px) {
   .masthead {
-    height: 70vh;
-    padding: 5px; }
+    height: 70vh; }
     .masthead-title {
       font-size: 3.5rem; }
     .masthead-logo {
