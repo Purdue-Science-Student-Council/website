@@ -432,6 +432,9 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg-color); }
 
+a {
+  text-decoration: none; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -797,8 +800,7 @@ ul {
         background: transparent;
         color: var(--gold-color);
         font-weight: bold;
-        width: 100px;
-        height: 40px; }
+        padding: 5px 10px; }
         .page-contact-form-element-button:hover, .page-contact-form-element-button:focus {
           background: var(--gold-color);
           color: var(--bg-color);
