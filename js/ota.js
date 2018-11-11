@@ -39,6 +39,7 @@ const winners = [
     "Gustavo Rodriguez-Rivera",
     "C. David Bridges",
     "Gustavo Rodriguez-Rivera",
+    "George Bunch Adams III",
     "George Bunch Adams III"
 ];
 const beginning_year = 1977;

@@ -97,10 +97,13 @@ const cam = {
             n: "Kolten Peterson"
         },
         {
-            n: "Holly Weilbaker"
+            n: "Kevin Lamaster"
         },
         {
-            n: "Kevin Lamaster"
+            n: "Niharika Pujar"
+        },
+        {
+            n: "Manvir Bains"
         }
     ]
 }
@@ -116,23 +119,28 @@ const com = {
             p: c
         },
         {
-            n: "Maia Clare",
+            n: "Holly Weilbaker",
             p: c
-        },
-        {
-            n: "Chloe Carter"
-        },
-        {
-            n: "Priya Shah"
         },
         {
             n: "Mitchell Demerly"
         },
         {
-            n: "Eva Highberg"
+            n: "Ilakkiya Venkatachalam"
+        },
+        {
+            n: "Mallory Roach"
+        },
+        {
+            n: "Nicholas Hilgert"
+        },
+        {
+            n: "Raychel Keller"
+        },
+        {
+            n: "Sidnie Bienz"
         }
     ]
-    //corey combs to be added when we get picture
 }
 
 const nco = {
@@ -150,12 +158,6 @@ const nco = {
             p: c
         },
         {
-            n: "Maha Ali"
-        },
-        {
-            n: "Colin Marsh"
-        },
-        {
             n: "Mason Wesolek"
         },
         {
@@ -163,6 +165,12 @@ const nco = {
         },
         {
             n: "Akshat Anand Jha"
+        },
+        {
+            n: "Unnati Pulla"
+        },
+        {
+            n: "Kaitlyn Stangl"
         }
     ]
 }
@@ -185,13 +193,16 @@ const pub = {
             n: "Anna Barker"
         },
         {
-            n: "MacKenzie Chapman"
-        }, 
-        {
             n: "Andrew Davis"
         },
         {
             n: "Megan Varcie"
+        },
+        {
+            n: "Shwetha Umashankar"
+        },
+        {
+            n: "Elizabeth Gallagher"
         }
     ]
 }
