@@ -119,8 +119,7 @@ const com = {
             p: c
         },
         {
-            n: "Holly Weilbaker",
-            p: c
+            n: "Holly Weilbaker"
         },
         {
             n: "Mitchell Demerly"
@@ -133,9 +132,6 @@ const com = {
         },
         {
             n: "Nicholas Hilgert"
-        },
-        {
-            n: "Raychel Keller"
         },
         {
             n: "Sidnie Bienz"
@@ -171,6 +167,9 @@ const nco = {
         },
         {
             n: "Kaitlyn Stangl"
+        },
+        {
+            n: "Madison Rosen"
         }
     ]
 }
