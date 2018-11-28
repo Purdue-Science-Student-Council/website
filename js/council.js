@@ -45,28 +45,28 @@ const xcomm = {
 
     members: [
         {
-            n: "Chrishan Fernando",
+            n: "Rachel Leonora Collicott",
             p: "President"
-        }, 
+        },
         {
             n: "Andrew David Santos",
             p: "Treasurer"
         },
         {
-            n: "Rachel Leonora Collicott",
+            n: "Clarice Lopez",
             p: "Vice President"
         },
         {
-            n: "Clarice Lopez",
+            n: "Mitchell Demerly",
             p: "Secretary"
         },
         {
             n: "Jeonghu Park",
-            p: "Internal Activities Head"
+            p: "Webmaster"
         },
         {
-            n: "Vritant Bhardwaj",
-            p: "Webmaster"
+            n: "Gabby Rene Lorenz",
+            p: "Internal Activities Chair"
         }
     ]
 };
@@ -84,7 +84,7 @@ const cam = {
             p: c
         }, 
         {
-            n: "Gabby Rene Lorenz",
+            n: "Kevin Lamaster",
             p: c
         },
         {
@@ -95,9 +95,6 @@ const cam = {
         },
         {
             n: "Kolten Peterson"
-        },
-        {
-            n: "Kevin Lamaster"
         },
         {
             n: "Niharika Pujar"
@@ -115,17 +112,15 @@ const com = {
 
     members: [
         {
-            n: "Tyler Netherly",
+            n: "Holly Weilbaker",
             p: c
         },
         {
-            n: "Holly Weilbaker"
+            n: "Ilakkiya Venkatachalam",
+            p: c
         },
         {
-            n: "Mitchell Demerly"
-        },
-        {
-            n: "Ilakkiya Venkatachalam"
+            n: "Tyler Netherly",
         },
         {
             n: "Mallory Roach"
@@ -146,27 +141,27 @@ const nco = {
 
     members: [
         {
-            n: "Yujie Chen",
+            n: "Angela Zhao",
             p: c
+        },
+        {
+            n: "Kaitlyn Stangl",
+            p: c
+        },
+        {
+            n: "Yujie Chen",
         },
         {
             n: "Abigail Gichaba",
-            p: c
         },
         {
             n: "Mason Wesolek"
-        },
-        {
-            n: "Angela Zhao"
         },
         {
             n: "Akshat Anand Jha"
         },
         {
             n: "Unnati Pulla"
-        },
-        {
-            n: "Kaitlyn Stangl"
         },
         {
             n: "Madison Rosen"
@@ -181,24 +176,24 @@ const pub = {
 
     members: [
         {
-            n: "Nicolas Imhoff",
+            n: "Shwetha Umashanker",
             p: c
         },
         {
-            n: "Clare Gallagher",
+            n: "Andrew Davis",
             p: c
+        },
+        {
+            n: "Nicolas Imhoff",
+        },
+        {
+            n: "Clare Gallagher",
         },
         {
             n: "Anna Barker"
         },
         {
-            n: "Andrew Davis"
-        },
-        {
             n: "Megan Varcie"
-        },
-        {
-            n: "Shwetha Umashankar"
         },
         {
             n: "Elizabeth Gallagher"
