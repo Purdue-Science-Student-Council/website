@@ -3,22 +3,22 @@ function addComm() {
     coms.map(com => {
         const com_name = com.x;
         const members = com.members.reduce((acc, member) => {
-            const list = 
+            const list =
                 '<div class="page-council-members-member">' +
                     '<img src="' + getImagePath(com.x, member.n) + '" class="page-council-members-member-img">' +
                     '<h4 class="page-council-members-member-name">' + member.n + '</h4>' +
-                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '<h5>' + 
+                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '<h5>' +
                 '</div>';
             acc += list;
             return acc;
         }, "");
 
-        page.insertAdjacentHTML("beforeend", 
+        page.insertAdjacentHTML("beforeend",
             '<div class="page-council">' +
                 '<h3 class="page-council-title">' + com.n + '</h3>' +
                 '<p class="page-council-text">' + com.t + '</p>' +
-                '<div class="page-council-members">' + 
-                    members + 
+                '<div class="page-council-members">' +
+                    members +
                 '</div>' +
             '</div>'
         )
@@ -35,7 +35,7 @@ function navDrawer() {
 };
 
 function addClickListener(id, func) {
-    document.getElementById(id).addEventListener("click", func); 
+    document.getElementById(id).addEventListener("click", func);
 };
 
 const xcomm = {
@@ -61,7 +61,7 @@ const xcomm = {
             p: "Secretary"
         },
         {
-            n: "Jeonghu Park",
+            n: "Jeonghu Bark",
             p: "Webmaster"
         },
         {
@@ -82,7 +82,7 @@ const cam = {
         {
             n: "Brody Connor",
             p: c
-        }, 
+        },
         {
             n: "Kevin Lamaster",
             p: c
