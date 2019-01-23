@@ -61,7 +61,7 @@ const xcomm = {
             p: "Secretary"
         },
         {
-            n: "Jeonghu Bark",
+            n: "Jeonghu Park",
             p: "Webmaster"
         },
         {
