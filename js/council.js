@@ -130,6 +130,9 @@ const com = {
         },
         {
             n: "Sidnie Bienz"
+        },
+        {
+            n: "Vritant Bhardwaj",
         }
     ]
 }
@@ -158,14 +161,14 @@ const nco = {
             n: "Mason Wesolek"
         },
         {
-            n: "Akshat Anand Jha"
-        },
-        {
             n: "Unnati Pulla"
         },
         {
             n: "Madison Rosen"
-        }
+        },
+        {
+            n: "Chrishan Fernando"
+        },
     ]
 }
 
