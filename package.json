@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Purdue-Science-Student-Council/website#readme",
   "dependencies": {
     "node-sass": "^4.7.2",
-    "normalize-scss": "^7.0.0"
+    "normalize-scss": "^7.0.0",
+    "run": "^1.4.0",
+    "sass": "^1.15.2"
   }
 }
