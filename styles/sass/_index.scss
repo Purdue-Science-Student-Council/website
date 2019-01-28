@@ -28,6 +28,36 @@
 
 }
 
+.bot-contact{
+    text-align: center;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-icons{
+        align-self: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &-icons img{
+        align-self: center;
+        margin: 15px 15px 50px 15px;
+        width: 100px;
+        height: 100px;
+    }
+
+    &-text{
+        color: $gray-color;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+
 @media #{$max-tablet} {
     .masthead {
         height: 70vh;
@@ -36,6 +66,15 @@
         }
         &-logo {
             width: 150px;
+        }
+    }
+    .bot-contact{
+        height: 30vh;
+        &-text{
+            font-size: 3.5rem;
+        }
+        &-icon{
+            width: 100px;
         }
     }
 }

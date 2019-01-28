@@ -687,13 +687,41 @@ ul {
     margin: 30px 0;
     width: 300px; }
 
+.bot-contact {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bot-contact-icons {
+    align-self: center;
+    flex-direction: row;
+    align-items: center; }
+  .bot-contact-icons img {
+    align-self: center;
+    margin: 15px 15px 50px 15px;
+    width: 100px;
+    height: 100px; }
+  .bot-contact-text {
+    color: var(--gray-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0; }
+
 @media screen and (max-width: 950px) {
   .masthead {
     height: 70vh; }
     .masthead-title {
       font-size: 3.5rem; }
     .masthead-logo {
-      width: 150px; } }
+      width: 150px; }
+  .bot-contact {
+    height: 30vh; }
+    .bot-contact-text {
+      font-size: 3.5rem; }
+    .bot-contact-icon {
+      width: 100px; } }
 
 .page-council {
   width: 90%;
