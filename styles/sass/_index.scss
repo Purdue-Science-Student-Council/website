@@ -30,7 +30,7 @@
 
 .bot-contact{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10vh;
 
     display: flex;
     flex-direction: column;
@@ -45,9 +45,11 @@
 
     &-icons img{
         align-self: center;
-        margin: 15px 15px 50px 15px;
-        width: 100px;
-        height: 100px;
+        margin: 2vh 2vw 2vh 2vw;
+        max-width: 100px;
+        max-height: 100px;
+        width: 15vw;
+        height: 15vw;
     }
 
     &-text{
@@ -66,15 +68,6 @@
         }
         &-logo {
             width: 150px;
-        }
-    }
-    .bot-contact{
-        height: 30vh;
-        &-text{
-            font-size: 3.5rem;
-        }
-        &-icon{
-            width: 100px;
         }
     }
 }

@@ -689,7 +689,7 @@ ul {
 
 .bot-contact {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -700,9 +700,11 @@ ul {
     align-items: center; }
   .bot-contact-icons img {
     align-self: center;
-    margin: 15px 15px 50px 15px;
-    width: 100px;
-    height: 100px; }
+    margin: 2vh 2vw 2vh 2vw;
+    max-width: 100px;
+    max-height: 100px;
+    width: 15vw;
+    height: 15vw; }
   .bot-contact-text {
     color: var(--gray-color);
     font-weight: 500;
@@ -715,13 +717,7 @@ ul {
     .masthead-title {
       font-size: 3.5rem; }
     .masthead-logo {
-      width: 150px; }
-  .bot-contact {
-    height: 30vh; }
-    .bot-contact-text {
-      font-size: 3.5rem; }
-    .bot-contact-icon {
-      width: 100px; } }
+      width: 150px; } }
 
 .page-council {
   width: 90%;
