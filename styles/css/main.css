@@ -719,6 +719,17 @@ ul {
     .masthead-logo {
       width: 150px; } }
 
+/*
+.background{
+    background-image: url(/images/other/council.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    //background-color: aqua;
+}
+*/
 .page-council {
   width: 90%;
   margin: 0 auto;
@@ -765,6 +776,16 @@ ul {
     .page-council-members-member-name {
       font-weight: 500; } }
 
+:root {
+  --dark-color: #222222;
+  --light-color: #eeeeee;
+  --gold-color: #dca007;
+  --gray-color: #555555;
+  --bg-color: #fdfaf4;
+  --slightly-darker-bg-color: #fcf5e3;
+  --nav-height: 50px; }
+
+/*---------------------------------------------*/
 .page-table {
   text-align: left;
   border-collapse: collapse;
@@ -777,6 +798,23 @@ ul {
     padding: 10px; }
   .page-table-td {
     padding: 10px; }
+
+.hack-button {
+  cursor: pointer;
+  display: block;
+  border: 2px solid var(--gold-color);
+  background: transparent;
+  color: var(--gold-color);
+  font-weight: bold;
+  padding: 10px 20px; }
+  .hack-button:hover, .hack-button:focus {
+    background: var(--gold-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease-in; }
+  .hack-button:active {
+    -webkit-box-shadow: inset 0px 0px 2px 2px #555555;
+    -moz-box-shadow: inset 0px 0px 2px 2px #555555;
+    box-shadow: inset 0px 0px 2px 2px #555555; }
 
 .page-contact {
   padding-top: 10px;

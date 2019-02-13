@@ -1,3 +1,4 @@
+@import "./vars.scss";
 .page-table {
     text-align: left;
     border-collapse: collapse;
@@ -18,5 +19,27 @@
     }
     &-td {
         padding: 10px;
+    }
+}
+
+.hack-button {
+    cursor: pointer;
+    display: block;
+    border: 2px solid $gold-color;
+    background: transparent;
+    color: $gold-color;
+    font-weight: bold;
+    padding: 10px 20px;
+
+    &:hover, &:focus {
+        background: $gold-color;
+        color: $bg-color;
+        transition: all 0.3s ease-in;
+    }
+
+    &:active {
+        -webkit-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+        -moz-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+        box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
     }
 }
