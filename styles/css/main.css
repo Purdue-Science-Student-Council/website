@@ -699,7 +699,9 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-left: 3vw;
+  padding-right: 3vw; }
   .component-text {
     color: var(--gray-color);
     font-weight: 500;
@@ -714,7 +716,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3vh; }
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw; }
 
 .hack-button {
   cursor: pointer;
