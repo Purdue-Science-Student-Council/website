@@ -56,6 +56,15 @@ ul {
         border: none;
     }
 
+    &-divider-dark {
+        width: 50%;
+        color: $dark-color;
+        margin: 10px 0 15px 0;
+        height: 2px;
+        background: $dark-color;
+        border: none;
+    }
+
     &-text {
         font-size: 1.3rem;
         line-height: 1.95rem;

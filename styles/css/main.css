@@ -461,6 +461,13 @@ ul {
     height: 2px;
     background: var(--gold-color);
     border: none; }
+  .page-divider-dark {
+    width: 50%;
+    color: var(--dark-color);
+    margin: 10px 0 15px 0;
+    height: 2px;
+    background: var(--dark-color);
+    border: none; }
   .page-text {
     font-size: 1.3rem;
     line-height: 1.95rem;
@@ -514,7 +521,7 @@ ul {
   left: 0;
   right: 0;
   font-size: 1.2rem;
-  background: var(--bg-color);
+  background: var(--slightly-darker-bg-color);
   height: var(--nav-height);
   padding: 5px 40px 0 40px; }
   .nav-logo {
@@ -569,7 +576,7 @@ ul {
 
 .m-nav {
   display: none;
-  background: var(--bg-color);
+  background: var(--slightly-darker-bg-color);
   font-size: 1.2rem;
   position: fixed;
   top: 0;
@@ -692,6 +699,38 @@ ul {
     font-size: 2.5rem;
     margin: 0 0 0 0;
     margin-top: 3vh; }
+
+.scavengerBox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 3vw 3vh 3vw;
+  margin: 3vh 3vw 3vh 3vw;
+  border-style: solid;
+  border-width: medium;
+  border-color: var(--dark-color);
+  background-color: var(--light-color); }
+
+.scavengerButton {
+  cursor: pointer;
+  display: block;
+  border: 3px solid var(--gold-color);
+  background: transparent;
+  color: var(--gold-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 3vh;
+  width: 25vw; }
+  .scavengerButton:hover, .scavengerButton:focus {
+    background: var(--gold-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease-in; }
+  .scavengerButton:active {
+    -webkit-box-shadow: inset 0px 0px 2px 2px #555555;
+    -moz-box-shadow: inset 0px 0px 2px 2px #555555;
+    box-shadow: inset 0px 0px 2px 2px #555555; }
 
 .component {
   text-align: center;
