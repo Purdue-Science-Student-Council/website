@@ -15,48 +15,37 @@ function addClickListener(id, func) {
 var locNo = undefined;
 var initLocNo = undefined;
 
-const locName = ["Location 0", "Location 1", "Location 2", "Location 3", "Location 4", "Location 5", "Location 6"];
-const locDescription = [
-    "This is location 0, home of Biology. Add more description",
-    "This is location 1, home of Chemistry. Add more description",
-    "This is location 2, home of Computer Science. Add more description",
-    "This is location 3, home of EAPS. Add more description",
-    "This is location 4, home of Mathematics. Add more description",
-    "This is location 5, home of Physics. Add more description",
-    "This is location 6, home of Statistics. Add more description",
-];
-
 const locData = {
-    name : ["Location 0", "Location 1", "Location 2", "Location 3", "Location 4", "Location 5", "Location 6"],
+    name : ["Lilly Hall of Life Science", "Lawson Computer Science Building", "Felix Haas Hall", "Mathematical Sciences Building", "Wetherill Hall of Chemistry", "Purdue Physics Building", "Hampton Hall"],
     description : [
-        "This is location 0, home of Biology. Add more description",
-        "This is location 1, home of Chemistry. Add more description",
-        "This is location 2, home of Computer Science. Add more description",
-        "This is location 3, home of EAPS. Add more description",
-        "This is location 4, home of Mathematics. Add more description",
-        "This is location 5, home of Physics. Add more description",
-        "This is location 6, home of Statistics. Add more description",
+        "This is Lilly Hall of Life Science, home of Biology.",
+        "This is Lawson Computer Science Building, home of Computer Science.",
+        "This is Felix Haas Hall, home of Statistics.",
+        "This is Mathematical Sciences Building, home of Mathematics.",
+        "This is Wetherill Hall of Chemistry, home of Chemistry.",
+        "This is Purdue Physics Building, home of Physics.",
+        "This is Hampton Hall, home of EAPS, Earth, Atmospheric, and Planetary Science.",
     ],
     question : [
-        "What is the question for location 0?",
-        "What is the question for location 1?",
-        "What is the question for location 2?",
-        "What is the question for location 3?",
-        "What is the question for location 4?",
-        "What is the question for location 5?",
-        "What is the question for location 6?",
+        "Carbohydrate: An organic compound to which hydrogen and oxygen are attached; the hydrogen and oxygen are in a 3:1 ratio; examples include sugars, starches, and cellulose",
+        "In a party with 5 people, it is possible that 2 people have 3 friends and 3 people have 2 friends, as shown in the graph to the right?",
+        "Determine whether the following is a statistical question. How many internet searches do Purdue University undergrads perform each day?",
+        "A function F is defined by F(x)=|x+4|. For what values of x is the graph of f not differentiable?",
+        "Which of the following gases has the weakest attractive forces between particles?",
+        "A race car going around a flat, unbanked circular track gradually increases speed as it completes one full trip around the track. Which of the following can explain why the car gains speed?",
+        "If a glacier experiences greater ablation than accumulation, which of the following scenarios will occur?",
     ],
-    correct : [1,0,2,1,2,0,0]
+    correct : [1,0,0,0,2,2,3]
 };
 
 const ansChoices = [
-    ["Wrong 1", "Correct", "Wrong 2"],
-    ["Correct", "Wrong 1", "Wrong 2"],
-    ["Wrong 1", "Wrong 2", "Correct"],
-    ["Wrong 1", "Correct", "Wrong 2"],
-    ["Wrong 1", "Wrong 2", "Correct"],
-    ["Correct", "Wrong 1", "Wrong 2"],
-    ["Correct", "Wrong 1", "Wrong 2"]
+    ["True", "False"],
+    ["True", "False"],
+    ["True", "False"],
+    ["X = -4", "X = 4", "X = 0", "The function is differential over its entire domain."],
+    ["CO2", "NO", "He", "HCl"],
+    ["A component of the frictional force exerted by the ground on the tires is directed toward the center of the circle.", "A component of the frictional force exerted by the ground on the tires is in the direction of motion.", "The car’s velocity and acceleration are perpendicular"],
+    ["The glacier will retreat", "The glacier will experience calving", "The glacier will advance", "The glacier will experience sublimation"]
 ];
 
 function myAlert() {
@@ -78,21 +67,40 @@ function injectEnding(){
     var page = document.getElementById("js-body");
     page.insertAdjacentHTML("beforeend",
             '<div class="scavengerBox">' +
-                '<h3 class="page-council-title">' + "Congratualtions!" +
+                '<h3 class="page-council-title">' + "Congratulations!" +
                 '</h3>' +
-                '<p>' + "You've completed the New Student Orientation Scavenger Hunt! Please enter your name and PUID to prove your completion. Don't forget to pick up your gift of completion at HERE!!!" +
+                '<p>' + "You  have officially completed the NSO Scavenger hunt. Enter the first and last names as well as PUID’s of your teammates to be entered into the raffle that starts at 3:30 PM! Head back on over to where the scavenger hunt started to meet with advisors and professors from your department. Also, check out the Q&A session schedule to meet with students from your department and ask any questions you might have!" +
                 '</p>' +
                 '<form>' +
-                '<input type="text" name="fullname" value="Name Here"></input>' +
-                '<input type="text" name="PUID" value="PUID Here"></input>' +
-                '<input type="submit" value="Submit" class="scavengerButton"></input>' +
+                '<div>' +
+                '<input type="text" name="fullname_1" value="Name 1"></input>' +
+                '<input type="text" name="PUID_1" value="PUID 1"></input>' +
+                '</div>' + '<div>' +
+                '<input type="text" name="fullname_2" value="Name 2"></input>' +
+                '<input type="text" name="PUID_2" value="PUID 2"></input>' +
+                '</div>' + '<div>' +
+                '<input type="text" name="fullname_3" value="Name 3"></input>' +
+                '<input type="text" name="PUID_3" value="PUID 3"></input>' +
+                '</div>' + '<div>' +
+                '<input type="text" name="fullname_4" value="Name 4"></input>' +
+                '<input type="text" name="PUID_4" value="PUID 4"></input>' +
+                '</div>' + '<div style="align-self: center;">' +
+                '<input type="submit" value="Submit" class="scavengerButton" ></input>' +
+                '</div>' +
                 '</form>' +
+                '<p>' + "Interested in joining the Purdue Science Student Council? Our Callout is August 27th 6:30 – 7:30 PM in WTHR 200. We look forward to meeting you!" +
             '</div>'
         );
 }
 
 function injectNextClue(){
     var page = document.getElementById("js-body");
+    var ansBtns = "";
+    for(var i=0; i<ansChoices[locNo].length; i++){
+        var c = 'onClick="answer' + i + '()"';
+        ansBtns += '<button class="scavengerButton"'+ c +'>' + ansChoices[locNo][i] +
+                '</button>';
+    }
     page.insertAdjacentHTML("beforeend",
             '<div class="scavengerBox">' +
                 '<h3 class="page-council-title">' + locData.name[locNo] +
@@ -103,18 +111,14 @@ function injectNextClue(){
                 '<hr class="page-divider-dark"></hr>' +
                 '<h4 class="page-council-title">' + locData.question[locNo] +
                 '</h4>' +
-                '<button class="scavengerButton" onClick="answer0()">' + ansChoices[locNo][0] +
-                '</button>' +
-                '<button class="scavengerButton" onClick="answer1()">' + ansChoices[locNo][1] +
-                '</button>' +
-                '<button class="scavengerButton" onClick="answer2()">' + ansChoices[locNo][2] +
-                '</button>' +
+                ansBtns +
             '</div>'
         );
 }
 
 function answer0(){
     if(locData.correct[locNo] === 0){
+        alert("Correct! Scroll down for the next clue");
         myAlert();
     } else {
         alert("Wrong, try again");
@@ -123,6 +127,7 @@ function answer0(){
 
 function answer1(){
     if(locData.correct[locNo] === 1){
+        alert("Correct! Scroll down for the next clue");
         myAlert();
     } else {
         alert("Wrong, try again");
@@ -131,6 +136,16 @@ function answer1(){
 
 function answer2(){
     if(locData.correct[locNo] === 2){
+        alert("Correct! Scroll down for the next clue");
+        myAlert();
+    } else {
+        alert("Wrong, try again");
+    }
+}
+
+function answer3(){
+    if(locData.correct[locNo] === 3){
+        alert("Correct! Scroll down for the next clue");
         myAlert();
     } else {
         alert("Wrong, try again");
