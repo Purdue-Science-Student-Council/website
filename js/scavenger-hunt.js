@@ -1,6 +1,35 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyDtMdiUnKSCriY0VrTK6RmHdDIvUiz-FrQ",
+    authDomain: "nso-scavenger-hunt-2019.firebaseapp.com",
+    databaseURL: "https://nso-scavenger-hunt-2019.firebaseio.com",
+    projectId: "nso-scavenger-hunt-2019",
+    storageBucket: "nso-scavenger-hunt-2019.appspot.com",
+    appID: "1:519209424405:web:0a78bdef03d082c1",
+};
+
+function postReq(name,PUID,num,ref){
+    if(postReqValidation(PUID,name,num)){
+        var database = firebase.database().ref(ref);
+        database.push({
+            puid: PUID,
+            name: name
+        });
+    }
+}
+
+function postReqValidation(PUID, name, num){
+    if(PUID === undefined || name === undefined) return false;
+    if(PUID === "" || name === "") return false;
+    if(PUID === "PUID "+num) return false;
+    if(name === "Name "+num) return false;
+    return true;
+}
+
 window.onload = function() {
+    firebase.initializeApp(firebaseConfig);
     addClickListener("js-m-nav-click", navDrawer);
     myAlert();
+    postReq("init","0",1,"init");
 };
 
 function navDrawer() {
@@ -71,19 +100,19 @@ function injectEnding(){
                 '</h3>' +
                 '<p>' + "You  have officially completed the NSO Scavenger hunt. Enter the first and last names as well as PUID’s of your teammates to be entered into the raffle that starts at 3:30 PM! Head back on over to where the scavenger hunt started to meet with advisors and professors from your department. Also, check out the Q&A session schedule to meet with students from your department and ask any questions you might have!" +
                 '</p>' +
-                '<form>' +
+                '<form id="completionForm">' +
                 '<div>' +
-                '<input type="text" name="fullname_1" value="Name 1"></input>' +
-                '<input type="text" name="PUID_1" value="PUID 1"></input>' +
+                '<input type="text" id="fullname_1" name="fullname_1" value="Name 1"></input>' +
+                '<input type="text" id="PUID_1" name="PUID_1" value="PUID 1"></input>' +
                 '</div>' + '<div>' +
-                '<input type="text" name="fullname_2" value="Name 2"></input>' +
-                '<input type="text" name="PUID_2" value="PUID 2"></input>' +
+                '<input type="text" id="fullname_2" name="fullname_2" value="Name 2"></input>' +
+                '<input type="text" id="PUID_2" name="PUID_2" value="PUID 2"></input>' +
                 '</div>' + '<div>' +
-                '<input type="text" name="fullname_3" value="Name 3"></input>' +
-                '<input type="text" name="PUID_3" value="PUID 3"></input>' +
+                '<input type="text" id="fullname_3" name="fullname_3" value="Name 3"></input>' +
+                '<input type="text" id="PUID_3" name="PUID_3" value="PUID 3"></input>' +
                 '</div>' + '<div>' +
-                '<input type="text" name="fullname_4" value="Name 4"></input>' +
-                '<input type="text" name="PUID_4" value="PUID 4"></input>' +
+                '<input type="text" id="fullname_4" name="fullname_4" value="Name 4"></input>' +
+                '<input type="text" id="PUID_4" name="PUID_4" value="PUID 4"></input>' +
                 '</div>' + '<div style="align-self: center;">' +
                 '<input type="submit" value="Submit" class="scavengerButton" ></input>' +
                 '</div>' +
@@ -91,6 +120,16 @@ function injectEnding(){
                 '<p>' + "Interested in joining the Purdue Science Student Council? Our Callout is August 27th 6:30 – 7:30 PM in WTHR 200. We look forward to meeting you!" +
             '</div>'
         );
+        $("#completionForm").submit(submitCallback);
+}
+
+function submitCallback(){
+    for(var i = 1; i<= 4; i++){
+        var f = $("#fullname_"+i).val();
+        var p = $("#PUID_"+i).val();
+        postReq(f,p,i,"submissions");
+    }
+    alert("Thank you for your submission!");
 }
 
 function injectNextClue(){
