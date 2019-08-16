@@ -9,10 +9,13 @@ var firebaseConfig = {
 
 function postReq(name,PUID,num,ref){
     if(postReqValidation(PUID,name,num)){
+        var time = new Date(Date.now());
+        var timestamp = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
         var database = firebase.database().ref(ref);
         database.push({
             puid: PUID,
-            name: name
+            name: name,
+            timestamp: timestamp
         });
     }
 }
@@ -98,7 +101,7 @@ function injectEnding(){
             '<div class="scavengerBox">' +
                 '<h3 class="page-council-title">' + "Congratulations!" +
                 '</h3>' +
-                '<p>' + "You  have officially completed the NSO Scavenger hunt. Enter the first and last names as well as PUID’s of your teammates to be entered into the raffle that starts at 3:30 PM! Head back on over to where the scavenger hunt started to meet with advisors and professors from your department. Also, check out the Q&A session schedule to meet with students from your department and ask any questions you might have!" +
+                '<p>' + "You  have officially completed the NSO Scavenger hunt. Correctly enter the first and last names as well as PUID’s of your team to be entered into the raffle that starts at 3:30 PM! Head back on over to where the scavenger hunt started to meet with advisors and professors from your department. Also, check out the Q&A session schedule to meet with students from your department and ask any questions you might have!" +
                 '</p>' +
                 '<form id="completionForm">' +
                 '<div>' +
