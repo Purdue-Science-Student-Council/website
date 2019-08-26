@@ -82,6 +82,7 @@
     <!--MAIN BODY-->
     <main class="main-container">
         <div class="background">
+
             <div class="masthead">
             
                 <img class="masthead-logo" src="./images/logo.PNG">
@@ -89,6 +90,42 @@
                 <h4 class="masthead-subtitle">Serving the College of Science at Purdue University</h4>
             </div>
         </div>
+
+        <div class="slideshow-container">
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div class="mySlides fade">
+                  <img class="SlideImg" src="./images/home/1.jpeg">
+                  <div class="Slidetext">Serving the College of Science at Purdue University</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="SlideImg" src="./images/home/2.jpg">
+                  <div class="Slidetext">New Student Orientation of 2019</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="SlideImg" src="./images/home/3.jpg">
+                  <div class="Slidetext">College of Science Ice Cream Social 2019</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="SlideImg" src="./images/home/4.jpeg">
+                    <div class="Slidetext">Purdue SpringFest 2019</div>
+                </div>
+                
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+              </div>
 
         <div class="component-light">
             <h4 class="masthead-header">PSSC Callout</h4>
@@ -143,7 +180,7 @@
         </div>
 
     </main>
-    <script src="js/landing.js"></script>
+    <script src="js/home.js"></script>
     <footer class="footer">
         <span class="footer-span"></span>
         <h6 class="footer-text">Purdue Science Student Council | <a class="page-text-a" href="http://www.purdue.edu">Purdue University</a></h6>
