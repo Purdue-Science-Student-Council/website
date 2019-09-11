@@ -49,12 +49,12 @@ const xcomm = {
             p: "President"
         },
         {
-            n: "Andrew David Santos",
-            p: "Treasurer"
+            n: "Clarice Lopez",
+            p: "Vice President/ Public Relations Officer"
         },
         {
-            n: "Clarice Lopez",
-            p: "Vice President"
+            n: "Andrew David Santos",
+            p: "Treasurer"
         },
         {
             n: "Mitchell Demerly",
@@ -86,12 +86,6 @@ const cam = {
         {
             n: "Kevin Lamaster",
             p: c
-        },
-        {
-            n: "Rishvanjay Maheshwari"
-        },
-        {
-            n: "Anirudh Gupta"
         },
         {
             n: "Kolten Peterson"
@@ -131,9 +125,6 @@ const com = {
         {
             n: "Sidnie Bienz"
         },
-        {
-            n: "Vritant Bhardwaj",
-        }
     ]
 }
 
@@ -152,9 +143,6 @@ const nco = {
             p: c
         },
         {
-            n: "Yujie Chen",
-        },
-        {
             n: "Abigail Gichaba",
         },
         {
@@ -166,41 +154,6 @@ const nco = {
         {
             n: "Madison Rosen"
         },
-        {
-            n: "Chrishan Fernando"
-        },
-    ]
-}
-
-const pub = {
-    x: 'pub',
-    n: "Publicity and Fundraising",
-    t: "Fundraising and Publicity are in are in charge of publicizing all PSSC events and putting on fun fundraising events to raise money for PSSC. We make sure PSSC's name gets out in the Purdue community and plenty of people know about all the great events we host. We also do about two events per semester to raise money for PSSC and spread awareness about our club!",
-
-    members: [
-        {
-            n: "Shwetha Umashanker",
-            p: c
-        },
-        {
-            n: "Andrew Davis",
-            p: c
-        },
-        {
-            n: "Nicolas Imhoff",
-        },
-        {
-            n: "Clare Gallagher",
-        },
-        {
-            n: "Anna Barker"
-        },
-        {
-            n: "Megan Varcie"
-        },
-        {
-            n: "Elizabeth Gallagher"
-        }
     ]
 }
 
@@ -208,8 +161,7 @@ const coms = [
     xcomm,
     cam,
     com,
-    nco,
-    pub
+    nco
 ];
 
 window.onload = function() {
