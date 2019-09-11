@@ -5,7 +5,7 @@ function addComm() {
         const members = com.members.reduce((acc, member) => {
             const list =
                 '<div class="page-council-members-member">' +
-                    '<img src="' + getImagePath(com.x, member.n) + '" class="page-council-members-member-img">' +
+                    '<img src="' + getImagePath(com.x, member.n, member.pic) + '" class="page-council-members-member-img">' +
                     '<h4 class="page-council-members-member-name">' + member.n + '</h4>' +
                     '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '<h5>' +
                 '</div>';
@@ -25,8 +25,9 @@ function addComm() {
     });
 };
 
-function getImagePath(com_name, member_name) {
-    return 'images/' + com_name + '/' + member_name.toLowerCase().replace(/\s+/g, '-') + '.jpg';
+function getImagePath(com_name, member_name, member_pic) {
+    if(member_pic === x) return 'images/other/nopic.png';
+    else return 'images/' + com_name + '/' + member_name.toLowerCase().replace(/\s+/g, '-') + '.jpg';
 }
 
 function navDrawer() {
@@ -72,6 +73,7 @@ const xcomm = {
 };
 
 const c = "Committee Head";
+const x = "No Picture";
 
 const cam = {
     x: 'cam',
@@ -88,11 +90,36 @@ const cam = {
             p: c
         },
         {
-            n: "Niharika Pujar"
+            n: "Manvir Bains"
         },
         {
-            n: "Manvir Bains"
-        }
+            n: "Dithi Saxena",
+            pic: x
+        },
+        {
+            n: "Natasha Das",
+            pic: x
+        },
+        {
+            n: "Mae Shy",
+            pic: x
+        },
+        {
+            n: "Elena Stanczykiewicz",
+            pic: x
+        },
+        {
+            n: "Bridget Kiley",
+            pic: x
+        },
+        {
+            n: "Victor Pacheco",
+            pic: x
+        },
+        {
+            n: "Sahana Kayan",
+            pic: x
+        },
     ]
 }
 
@@ -122,6 +149,26 @@ const com = {
         {
             n: "Sidnie Bienz"
         },
+        {
+            n: "Avarokin Saini",
+            pic: x
+        },
+        {
+            n: "James Kane",
+            pic: x
+        },
+        {
+            n: "Francis O'Leary",
+            pic: x
+        },
+        {
+            n: "Andrew Espeland",
+            pic: x
+        },
+        {
+            n: "Kaylee Stowe",
+            pic: x
+        },
     ]
 }
 
@@ -150,6 +197,30 @@ const nco = {
         },
         {
             n: "Madison Rosen"
+        },
+        {
+            n: "Rachel Tat",
+            pic: x
+        },
+        {
+            n: "Humaira Nashmin",
+            pic: x
+        },
+        {
+            n: "Shreyas Kharbanda",
+            pic: x
+        },
+        {
+            n: "Tom Appenzeller",
+            pic: x
+        },
+        {
+            n: "Conner Kuntz",
+            pic: x
+        },
+        {
+            n: "Leen Abdelkhaleg",
+            pic: x
         },
     ]
 }
