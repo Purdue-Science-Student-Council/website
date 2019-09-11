@@ -198,7 +198,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
   margin-top: 3vh;
@@ -206,8 +206,7 @@
 
 .SlideImg {
     max-width: 100%;
-    width: 640px;
-    height: 480px;
+    max-height: 100%;
     border-style: solid;
 }
 
@@ -231,7 +230,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   vertical-align: top;
-  line-height: 480px;
+  line-height: 320px;
 }
 
 /* Position the "next button" to the right */

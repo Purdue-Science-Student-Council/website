@@ -50,7 +50,7 @@ const xcomm = {
         },
         {
             n: "Clarice Lopez",
-            p: "Vice President/ Public Relations Officer"
+            p: "Vice President & Public Relations Officer"
         },
         {
             n: "Andrew David Santos",
@@ -86,9 +86,6 @@ const cam = {
         {
             n: "Kevin Lamaster",
             p: c
-        },
-        {
-            n: "Kolten Peterson"
         },
         {
             n: "Niharika Pujar"
