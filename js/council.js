@@ -215,7 +215,7 @@ const nco = {
             pic: x
         },
         {
-            n: "Conner Kuntz",
+            n: "Connor Kuntz",
             pic: x
         },
         {
