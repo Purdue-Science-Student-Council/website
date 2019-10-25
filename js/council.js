@@ -93,32 +93,26 @@ const cam = {
             n: "Manvir Bains"
         },
         {
-            n: "Dithi Saxena",
-            pic: x
+            n: "Dithi Saxena"
         },
         {
-            n: "Natasha Das",
-            pic: x
+            n: "Natasha Das"
         },
         {
-            n: "Mae Shy",
-            pic: x
+            n: "Mae Shy"
         },
         {
-            n: "Elena Stanczykiewicz",
-            pic: x
+            n: "Elena Stanczykiewicz"
         },
         {
-            n: "Bridget Kiley",
-            pic: x
+            n: "Bridget Kiley"
         },
         {
             n: "Victor Pacheco",
             pic: x
         },
         {
-            n: "Sahana Kayan",
-            pic: x
+            n: "Sahana Kayan"
         },
     ]
 }
@@ -150,24 +144,19 @@ const com = {
             n: "Sidnie Bienz"
         },
         {
-            n: "Avarokin Saini",
-            pic: x
+            n: "Avarokin Saini"
         },
         {
-            n: "James Kane",
-            pic: x
+            n: "James Kane"
         },
         {
-            n: "Francis O'Leary",
-            pic: x
+            n: "Francis O'Leary"
         },
         {
-            n: "Andrew Espeland",
-            pic: x
+            n: "Andrew Espeland"
         },
         {
-            n: "Kaylee Stowe",
-            pic: x
+            n: "Kaylee Stowe"
         },
     ]
 }
@@ -199,12 +188,10 @@ const nco = {
             n: "Madison Rosen"
         },
         {
-            n: "Rachel Tat",
-            pic: x
+            n: "Rachel Tat"
         },
         {
-            n: "Humaira Nashmin",
-            pic: x
+            n: "Humaira Nashmin"
         },
         {
             n: "Shreyas Kharbanda",
@@ -215,12 +202,10 @@ const nco = {
             pic: x
         },
         {
-            n: "Connor Kuntz",
-            pic: x
+            n: "Connor Kuntz"
         },
         {
-            n: "Leen Abdelkhaleg",
-            pic: x
+            n: "Leen Abdelkhaleg"
         },
     ]
 }
