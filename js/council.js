@@ -112,7 +112,7 @@ const cam = {
             pic: x
         },
         {
-            n: "Sahana Kayan"
+            n: "Sahana Rayan"
         },
     ]
 }
