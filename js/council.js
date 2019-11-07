@@ -46,29 +46,34 @@ const xcomm = {
 
     members: [
         {
-            n: "Rachel Leonora Collicott",
+            n: "Mitchell Demerly",
             p: "President"
         },
         {
-            n: "Clarice Lopez",
-            p: "Vice President & Public Relations Officer"
+            n: "Mallory Roach",
+            p: "Vice President"
         },
         {
-            n: "Andrew David Santos",
+            n: "Avarokin Saini",
             p: "Treasurer"
         },
         {
-            n: "Mitchell Demerly",
+            n: "Bridget Kiley",
             p: "Secretary"
+        },
+        {
+            n: "Kaylee Stowe",
+            p: "Internal Activities Director"
+        },
+        {
+            n: "Natasha Das",
+            p: "Public Relations Director"
         },
         {
             n: "Jeonghu Park",
             p: "Webmaster"
-        },
-        {
-            n: "Gabby Rene Lorenz",
-            p: "Internal Activities Chair"
         }
+        
     ]
 };
 
@@ -82,30 +87,24 @@ const cam = {
 
     members: [
         {
-            n: "Brody Connor",
-            p: c
-        },
-        {
             n: "Kevin Lamaster",
             p: c
         },
         {
+            n: "Dithi Saxena",
+            p: c
+        },
+        {
+            n: "Brody Connor"
+        },
+        {
             n: "Manvir Bains"
-        },
-        {
-            n: "Dithi Saxena"
-        },
-        {
-            n: "Natasha Das"
         },
         {
             n: "Mae Shy"
         },
         {
             n: "Elena Stanczykiewicz"
-        },
-        {
-            n: "Bridget Kiley"
         },
         {
             n: "Victor Pacheco",
@@ -135,16 +134,10 @@ const com = {
             n: "Tyler Netherly",
         },
         {
-            n: "Mallory Roach"
-        },
-        {
             n: "Nicholas Hilgert"
         },
         {
             n: "Sidnie Bienz"
-        },
-        {
-            n: "Avarokin Saini"
         },
         {
             n: "James Kane"
@@ -154,10 +147,7 @@ const com = {
         },
         {
             n: "Andrew Espeland"
-        },
-        {
-            n: "Kaylee Stowe"
-        },
+        }
     ]
 }
 
@@ -168,15 +158,22 @@ const nco = {
 
     members: [
         {
-            n: "Angela Zhao",
+            n: "Tom Appenzeller",
+            pic: x,
             p: c
         },
         {
-            n: "Kaitlyn Stangl",
+            n: "Connor Kuntz",
             p: c
         },
         {
-            n: "Abigail Gichaba",
+            n: "Angela Zhao"
+        },
+        {
+            n: "Kaitlyn Stangl"
+        },
+        {
+            n: "Abigail Gichaba"
         },
         {
             n: "Mason Wesolek"
@@ -196,13 +193,6 @@ const nco = {
         {
             n: "Shreyas Kharbanda",
             pic: x
-        },
-        {
-            n: "Tom Appenzeller",
-            pic: x
-        },
-        {
-            n: "Connor Kuntz"
         },
         {
             n: "Leen Abdelkhaleg"
