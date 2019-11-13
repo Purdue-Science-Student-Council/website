@@ -167,6 +167,10 @@ const nco = {
             p: c
         },
         {
+            n: "Madison Rosen",
+            p: c
+        },
+        {
             n: "Angela Zhao"
         },
         {
@@ -182,17 +186,10 @@ const nco = {
             n: "Unnati Pulla"
         },
         {
-            n: "Madison Rosen"
-        },
-        {
             n: "Rachel Tat"
         },
         {
-            n: "Humaira Nashmin"
-        },
-        {
-            n: "Shreyas Kharbanda",
-            pic: x
+            n: "Shreyas Kharbanda"
         },
         {
             n: "Leen Abdelkhaleg"
