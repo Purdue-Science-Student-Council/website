@@ -101,7 +101,7 @@ const cam = {
             n: "Manvir Bains"
         },
         {
-            n: "Mae Shy"
+            n: "Mae Shu"
         },
         {
             n: "Elena Stanczykiewicz"
