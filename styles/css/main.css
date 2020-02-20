@@ -410,6 +410,7 @@ template {
   --gray-color: hsla(0, 0%, 33.3%, 1);
   --bg-color: hsla(43.2, 67.4%, 97.4%, 1);
   --slightly-darker-bg-color:hsla(43.2, 79.5%, 93.9%, 1);
+  --white-color: hsla(0, 0%, 99%, 1);
   --nav-height: 50px; }
 
 /*---------------------------------------------*/
@@ -758,6 +759,14 @@ ul {
     padding-bottom: 3vh;
     padding-left: 3vw;
     padding-right: 3vw; }
+  .component-image {
+    width: 250px;
+    height: 250px;
+    background: var(--white-color);
+    margin: 0 auto 10px auto;
+    border: 3px solid var(--gold-color);
+    border-radius: 125px;
+    margin-bottom: 5vh; }
 
 .hack-button {
   cursor: pointer;
@@ -932,8 +941,6 @@ ul {
         margin: 0 auto 10px auto;
         border: 2px solid var(--gray-color);
         border-radius: 100px; }
-        .page-council-members-member-img:hover {
-          border: 2px solid var(--gold-color); }
       .page-council-members-member-name {
         color: var(--gray-color);
         margin: 0;
@@ -959,6 +966,7 @@ ul {
   --gray-color: hsla(0, 0%, 33.3%, 1);
   --bg-color: hsla(43.2, 67.4%, 97.4%, 1);
   --slightly-darker-bg-color:hsla(43.2, 79.5%, 93.9%, 1);
+  --white-color: hsla(0, 0%, 99%, 1);
   --nav-height: 50px; }
 
 /*---------------------------------------------*/

@@ -7,6 +7,7 @@
 
     --bg-color: hsla(43.2, 67.4%, 97.4%, 1);
     --slightly-darker-bg-color:hsla(43.2, 79.5%, 93.9%, 1);
+    --white-color: hsla(0, 0%, 99%, 1);
     //sizes
     --nav-height: 50px;
 }
@@ -21,6 +22,7 @@ $gold-color: var(--gold-color);
 $gray-color: var(--gray-color);
 $bg-color: var(--bg-color);
 $slightly-darker-bg-color: var(--slightly-darker-bg-color);
+$white-color: var(--white-color);
 
 // sizes 
 $nav-height: #{var(--nav-height)};
