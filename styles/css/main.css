@@ -932,6 +932,8 @@ ul {
         margin: 0 auto 10px auto;
         border: 2px solid var(--gray-color);
         border-radius: 100px; }
+        .page-council-members-member-img:hover {
+          border: 2px solid var(--gold-color); }
       .page-council-members-member-name {
         color: var(--gray-color);
         margin: 0;
