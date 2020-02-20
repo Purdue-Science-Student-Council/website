@@ -39,6 +39,17 @@ function addClickListener(id, func) {
     document.getElementById(id).addEventListener("click", func);
 };
 
+function idToMembers(id){
+    if(id>=0 && id<xcomm.members.length) return xcomm.members[id];
+    id -= xcomm.members.length;
+    if(id >= 0 && id<cam.members.length) return cam.members[id];
+    id -= cam.members.length;
+    if(id >=0 && id<com.members.length) return com.members[id];
+    id -= com.members.length;
+    if(id >=0 && id<nco.members.length) return nco.members[id];
+    else return null
+}
+
 const xcomm = {
     x: 'xcom',
     n: 'The Executive Committee',
@@ -114,11 +125,14 @@ const cam = {
             n: "Sahana Rayan"
         },
         {
-            n: "Rachel Leonora Collicott"
+            n: "Niharika Pujar"
         },
         {
             n: "Andrew David Santos"
         },
+        {
+            n: "Gabby Rene Lorenz"
+        }
     ]
 }
 
@@ -137,9 +151,6 @@ const com = {
             p: c
         },
         {
-            n: "Tyler Netherly",
-        },
-        {
             n: "Nicholas Hilgert"
         },
         {
@@ -153,6 +164,10 @@ const com = {
         },
         {
             n: "Andrew Espeland"
+        },
+        {
+            n: "Morgan Sewell",
+            pic: x
         }
     ]
 }
@@ -186,16 +201,10 @@ const nco = {
             n: "Abigail Gichaba"
         },
         {
-            n: "Mason Wesolek"
-        },
-        {
             n: "Unnati Pulla"
         },
         {
             n: "Rachel Tat"
-        },
-        {
-            n: "Shreyas Kharbanda"
         },
         {
             n: "Leen Abdelkhaleg"
@@ -209,6 +218,11 @@ const coms = [
     com,
     nco
 ];
+
+function test(id){
+    var mem = idToMembers(id);
+    alert(mem.n);
+}
 
 window.onload = function() {
     addClickListener("js-m-nav-click", navDrawer);
