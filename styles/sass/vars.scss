@@ -1,13 +1,14 @@
 :root {
     //colors
-    --dark-color: hsla(0, 0%, 13.3%, 1);
-    --light-color: hsla(0, 0%, 93.3%, 1);
-    --gold-color: hsla(43.2, 94.1%, 44.4%, 1);
-    --gray-color: hsla(0, 0%, 33.3%, 1);
+    --dark-color: hsla(0, 0%, 3.3%, 1);
+    --light-color: hsla(0, 0%, 90%, 1);
+    --gold-color: rgb(177, 129, 11);
+    --gray-color: hsla(0, 0%, 10.3%, 1);
 
-    --bg-color: hsla(43.2, 67.4%, 97.4%, 1);
-    --slightly-darker-bg-color:hsla(43.2, 79.5%, 93.9%, 1);
+    --bg-color: hsla(43.2, 67.4%, 99%, 1);
+    --slightly-darker-bg-color:hsla(50, 99.5%, 92.9%, 1);
     --white-color: hsla(0, 0%, 99%, 1);
+    --black-color: hsla(0,0,0,1);
     //sizes
     --nav-height: 50px;
 }
@@ -23,6 +24,7 @@ $gray-color: var(--gray-color);
 $bg-color: var(--bg-color);
 $slightly-darker-bg-color: var(--slightly-darker-bg-color);
 $white-color: var(--white-color);
+$black-color: var(--black-color);
 
 // sizes 
 $nav-height: #{var(--nav-height)};
