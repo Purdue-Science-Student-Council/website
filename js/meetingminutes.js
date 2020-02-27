@@ -1,13 +1,17 @@
 const dates = [
+    "01-22-20",
     "01-29-20",
     "02-05-20",
     "02-19-20",
+    "02-26-20",
 ];
 
 const links = [
+    "https://docs.google.com/document/d/e/2PACX-1vRrlQX8RrJaPZ-3-gGZRj6B9mi75yJ-HNAJLQ5e-2r5fdkJX4vy8jySBI6v-Mq_aeo9izWyO4VAYRXF/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQo1R1zjvDbzguF-1QBEJmgUF0v3zFzyduIqG4WpiYWeIzYzOhmobxYtQJVKmf6reFXbldrft3_2Blt/pub",
     "https://docs.google.com/document/d/e/2PACX-1vSI-JlN9NwSoZY4tpD9091pySN1VRPDTVEHvLQciq5k8FNi-eOqgyrVEJvJvGedoWzOEl3FVSEOrAFZ/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQnoWTucPraXHezNGacctAebBqIZCjFuzjbwlSzsl74-WjzORE7nMPtoH4Pu74dcA6mlinBXPtxPr35/pub",
+    "https://docs.google.com/document/d/e/2PACX-1vRcoq-R3TvWJXmWhMSq7tFa0okxztQqUZFbaNvQT8M-MJhB4t1yhn_PPOxIfGrxYEy319IujBXkgTsA/pub"
 ]
 
 function addMeetingMinutesLink(semester) {
