@@ -166,8 +166,7 @@ const com = {
             n: "Andrew Espeland"
         },
         {
-            n: "Morgan Sewell",
-            pic: x
+            n: "Morgan Sewell"
         }
     ]
 }
@@ -180,7 +179,6 @@ const nco = {
     members: [
         {
             n: "Tom Appenzeller",
-            pic: x,
             p: c
         },
         {
