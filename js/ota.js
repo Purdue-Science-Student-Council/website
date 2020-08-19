@@ -42,6 +42,7 @@ const winners = [
     "George Bunch Adams III",
     "George Bunch Adams III",
     "Carina Rebello",
+    "Mark Lipton",
 ];
 const beginning_year = 1977;
 
