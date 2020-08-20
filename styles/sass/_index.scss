@@ -120,6 +120,20 @@
         border: 3px solid $gold-color;
         border-radius: 125px;
         margin-bottom: 5vh;
+
+        &-center{
+            width: 250px;
+            height: 250px;
+            background: $white-color;
+            margin: 0 auto 10px auto;
+            border: 3px solid $gold-color;
+            border-radius: 125px;
+            margin-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &-poster{
@@ -138,6 +152,28 @@
     font-weight: bold;
     padding: 10px 20px;
     margin-top: 3vh;
+
+    &:hover, &:focus {
+        background: $gold-color;
+        color: $bg-color;
+        transition: all 0.3s ease-in;
+    }
+
+    &:active {
+        -webkit-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+        -moz-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+        box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+    }
+}
+
+.hack-button-no-margin {
+    cursor: pointer;
+    display: block;
+    border: 3px solid $gold-color;
+    background: transparent;
+    color: $gold-color;
+    font-weight: bold;
+    padding: 10px 20px;
 
     &:hover, &:focus {
         background: $gold-color;

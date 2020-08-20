@@ -448,7 +448,7 @@ ul {
   padding-bottom: calc(var(--nav-height) + 30px); }
 
 .page {
-  width: 850px;
+  max-width: 850px;
   margin: 0 auto;
   padding-top: 75px; }
   .page-title {
@@ -773,6 +773,18 @@ ul {
     border: 3px solid var(--gold-color);
     border-radius: 125px;
     margin-bottom: 5vh; }
+    .component-image-center {
+      width: 250px;
+      height: 250px;
+      background: var(--white-color);
+      margin: 0 auto 10px auto;
+      border: 3px solid var(--gold-color);
+      border-radius: 125px;
+      margin-bottom: 5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
   .component-poster {
     width: 500px;
     margin: 0 auto 10px auto;
@@ -792,6 +804,23 @@ ul {
     color: var(--bg-color);
     transition: all 0.3s ease-in; }
   .hack-button:active {
+    -webkit-box-shadow: inset 0px 0px 2px 2px #555555;
+    -moz-box-shadow: inset 0px 0px 2px 2px #555555;
+    box-shadow: inset 0px 0px 2px 2px #555555; }
+
+.hack-button-no-margin {
+  cursor: pointer;
+  display: block;
+  border: 3px solid var(--gold-color);
+  background: transparent;
+  color: var(--gold-color);
+  font-weight: bold;
+  padding: 10px 20px; }
+  .hack-button-no-margin:hover, .hack-button-no-margin:focus {
+    background: var(--gold-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease-in; }
+  .hack-button-no-margin:active {
     -webkit-box-shadow: inset 0px 0px 2px 2px #555555;
     -moz-box-shadow: inset 0px 0px 2px 2px #555555;
     box-shadow: inset 0px 0px 2px 2px #555555; }
