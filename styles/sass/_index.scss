@@ -113,13 +113,18 @@
     }
 
     &-image{
-        
         width: 250px;
         height: 250px;
         background: $white-color;
         margin: 0 auto 10px auto;
         border: 3px solid $gold-color;
         border-radius: 125px;
+        margin-bottom: 5vh;
+    }
+
+    &-poster{
+        width: 500px;
+        margin: 0 auto 10px auto;
         margin-bottom: 5vh;
     }
 }
