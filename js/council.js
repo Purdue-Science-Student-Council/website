@@ -106,9 +106,6 @@ const cam = {
             p: c
         },
         {
-            n: "Brody Connor"
-        },
-        {
             n: "Manvir Bains"
         },
         {
@@ -126,12 +123,6 @@ const cam = {
         },
         {
             n: "Niharika Pujar"
-        },
-        {
-            n: "Andrew David Santos"
-        },
-        {
-            n: "Gabby Rene Lorenz"
         }
     ]
 }
@@ -149,12 +140,6 @@ const com = {
         {
             n: "Ilakkiya Venkatachalam",
             p: c
-        },
-        {
-            n: "Nicholas Hilgert"
-        },
-        {
-            n: "Sidnie Bienz"
         },
         {
             n: "James Kane"
@@ -194,9 +179,6 @@ const nco = {
         },
         {
             n: "Kaitlyn Stangl"
-        },
-        {
-            n: "Abigail Gichaba"
         },
         {
             n: "Unnati Pulla"
