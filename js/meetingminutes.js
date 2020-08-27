@@ -1,4 +1,12 @@
-const dates = [
+const dates_fa2020 = [
+    "08-26-20",
+];
+
+const links_fa2020 = [
+    "https://docs.google.com/document/d/e/2PACX-1vTUBLiHuNWioxrb_3-sblhh8ltthhpufsVgHfAoN4piDShipioshOlxqFRFTfwR8vdPEJ9ZCoFuF_DW/pub",
+]
+
+const dates_sp2020 = [
     "01-22-20",
     "01-29-20",
     "02-05-20",
@@ -6,7 +14,7 @@ const dates = [
     "02-26-20",
 ];
 
-const links = [
+const links_sp2020 = [
     "https://docs.google.com/document/d/e/2PACX-1vRrlQX8RrJaPZ-3-gGZRj6B9mi75yJ-HNAJLQ5e-2r5fdkJX4vy8jySBI6v-Mq_aeo9izWyO4VAYRXF/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQo1R1zjvDbzguF-1QBEJmgUF0v3zFzyduIqG4WpiYWeIzYzOhmobxYtQJVKmf6reFXbldrft3_2Blt/pub",
     "https://docs.google.com/document/d/e/2PACX-1vSI-JlN9NwSoZY4tpD9091pySN1VRPDTVEHvLQciq5k8FNi-eOqgyrVEJvJvGedoWzOEl3FVSEOrAFZ/pub",
@@ -14,7 +22,7 @@ const links = [
     "https://docs.google.com/document/d/e/2PACX-1vRcoq-R3TvWJXmWhMSq7tFa0okxztQqUZFbaNvQT8M-MJhB4t1yhn_PPOxIfGrxYEy319IujBXkgTsA/pub"
 ]
 
-function addMeetingMinutesLink(semester) {
+function addMeetingMinutesLink(semester, links, dates) {
     var table = document.getElementById("js-meeting-minute-table-"+semester);
 
     const str = links.reduce((acc, link, index) => {
@@ -42,6 +50,7 @@ function addClickListener(id, func) {
 
 window.onload = function() {
     addClickListener("js-m-nav-click", navDrawer);
-    this.addMeetingMinutesLink("sp2020");
+    this.addMeetingMinutesLink("sp2020",links_sp2020, dates_sp2020);
+    this.addMeetingMinutesLink("fa2020",links_fa2020, dates_fa2020);
 };
 
