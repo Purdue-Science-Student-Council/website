@@ -1,11 +1,13 @@
 const dates_fa2020 = [
     "08-26-20",
-    "09-02-20"
+    "09-02-20",
+    "09-09-20"
 ];
 
 const links_fa2020 = [
     "https://docs.google.com/document/d/e/2PACX-1vTUBLiHuNWioxrb_3-sblhh8ltthhpufsVgHfAoN4piDShipioshOlxqFRFTfwR8vdPEJ9ZCoFuF_DW/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQNryxIV25WUypepbVDtPMJTUECadGgJWTPmG8AzunBV74PYMrtarG0U4kJTfjsPzYqRMXoUddz1eFh/pub",
+    "https://docs.google.com/document/d/e/2PACX-1vRHLo6wQMUCdT6gu3DqwJJB7y5XuJE5Iuh2z5QvYxu9szHu-LApxfuz3V1bPz_Gj4YWG4DsvMW2uf_b/pub"
 ]
 
 const dates_sp2020 = [
