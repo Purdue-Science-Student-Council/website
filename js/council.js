@@ -112,9 +112,6 @@ const cam = {
             n: "Mae Shu"
         },
         {
-            n: "Elena Stanczykiewicz"
-        },
-        {
             n: "Victor Pacheco",
             pic: x
         },
@@ -123,7 +120,15 @@ const cam = {
         },
         {
             n: "Niharika Pujar"
-        }
+        },
+        {
+            n: "Nathan Paul",
+            pic: x
+        },
+        {
+            n: "Sydney Brown",
+            pic: x
+        },
     ]
 }
 
@@ -151,8 +156,21 @@ const com = {
             n: "Andrew Espeland"
         },
         {
-            n: "Morgan Sewell"
-        }
+            n: "Casey Enest",
+            pic: x
+        },
+        {
+            n: "Kinzie Gamaledin",
+            pic: x
+        },
+        {
+            n: "Lauren Gartenhaus",
+            pic: x
+        },
+        {
+            n: "Mahesh Gupta",
+            pic: x
+        },
     ]
 }
 
@@ -188,6 +206,22 @@ const nco = {
         },
         {
             n: "Leen Abdelkhaleg"
+        },
+        {
+            n: "Creighton Burns",
+            pic: x
+        },
+        {
+            n: "Diana Hrushka",
+            pic: x
+        },
+        {
+            n: "Elizabeth Martello",
+            pic: x
+        },
+        {
+            n: "Manuela Haddad Correa",
+            pic: x
         },
     ]
 }
