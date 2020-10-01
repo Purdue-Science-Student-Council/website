@@ -126,8 +126,7 @@ const cam = {
             pic: x
         },
         {
-            n: "Sydney Brown",
-            pic: x
+            n: "Sydney Brown"
         },
     ]
 }
@@ -211,8 +210,7 @@ const nco = {
             pic: x
         },
         {
-            n: "Diana Hrushka",
-            pic: x
+            n: "Diana Hrushka"
         },
         {
             n: "Elizabeth Martello",
