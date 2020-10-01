@@ -168,8 +168,7 @@ const com = {
             pic: x
         },
         {
-            n: "Mahesh Gupta",
-            pic: x
+            n: "Mahesh Gupta"
         },
     ]
 }
