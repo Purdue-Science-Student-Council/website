@@ -7,7 +7,8 @@ function addComm() {
                 '<div class="page-council-members-member">' +
                     '<img src="' + getImagePath(com.x, member.n, member.pic) + '" class="page-council-members-member-img">' +
                     '<h4 class="page-council-members-member-name">' + member.n + '</h4>' +
-                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '<h5>' +
+                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '</h5><h5/>' +
+                    /*'<h5 class="page-council-members-member-position">' + member.y + ' / ' + member.m + '</h5><h5/>' +*/
                 '</div>';
             acc += list;
             return acc;
@@ -58,31 +59,45 @@ const xcomm = {
     members: [
         {
             n: "Mitchell Demerly",
-            p: "President"
+            p: "President",
+            y: "Senior",
+            m: "CS & Economics"
         },
         {
             n: "Mallory Roach",
-            p: "Vice President"
+            p: "Vice President",
+            y: "Junior",
+            m: "Genetics & Cell Biology"
         },
         {
             n: "Avarokin Saini",
-            p: "Treasurer"
+            p: "Treasurer",
+            y: "Senior",
+            m: "CS"
         },
         {
             n: "Bridget Kiley",
-            p: "Secretary"
+            p: "Secretary",
+            y: "Sophomore",
+            m: "CS"
         },
         {
             n: "Kaylee Stowe",
-            p: "Internal Activities Director"
+            p: "Internal Activities Director",
+            y: "Junior",
+            m: "-"
         },
         {
             n: "Natasha Das",
-            p: "Public Relations Director"
+            p: "Public Relations Director",
+            y: "Sophomore",
+            m: "Biochemistry"
         },
         {
             n: "Jeonghu Park",
-            p: "Webmaster"
+            p: "Webmaster",
+            y: "Senior",
+            m: "CS"
         }
         
     ]
@@ -99,34 +114,52 @@ const cam = {
     members: [
         {
             n: "Kevin Lamaster",
-            p: c
+            p: c,
+            y: "Senior",
+            m: "-"
         },
         {
             n: "Dithi Saxena",
-            p: c
+            p: c,
+            y: "Sophomore",
+            m: "CS"
         },
         {
-            n: "Manvir Bains"
+            n: "Manvir Bains",
+            y: "Senior",
+            m: "-"
         },
         {
-            n: "Mae Shu"
+            n: "Mae Shu",
+            y: "Sophomore",
+            m: "Biology"
         },
         {
             n: "Victor Pacheco",
-            pic: x
+            pic: x,
+            y: "Sophomore",
+            m: "-"
         },
         {
-            n: "Sahana Rayan"
+            n: "Sahana Rayan",
+            y: "Junior",
+            m: "-"
         },
         {
-            n: "Niharika Pujar"
+            n: "Niharika Pujar",
+            y: "Senior",
+            m: "CS"
         },
         {
             n: "Nathan Paul",
-            pic: x
+            pic: x,
+            y: "Freshman",
+            m: "Neurobiology & Physiology"
         },
         {
-            n: "Sydney Brown"
+            n: "Sydney Brown",
+            y: "Freshman",
+            m: "Atmospheric Science"
         },
     ]
 }
@@ -139,35 +172,52 @@ const com = {
     members: [
         {
             n: "Holly Weilbaker",
-            p: c
+            p: c,
+            y: "Senior",
+            m: "Biochemistry"
         },
         {
             n: "Ilakkiya Venkatachalam",
-            p: c
+            p: c,
+            y: "Junior",
+            m: "Genetics"
         },
         {
-            n: "James Kane"
+            n: "James Kane",
+            y: "Sophomore",
+            m: "Math & MathEd"
         },
         {
-            n: "Francis O'Leary"
+            n: "Francis O'Leary",
+            y: "Sophomore",
+            m: "Math & CS"
         },
         {
-            n: "Andrew Espeland"
+            n: "Andrew Espeland",
+            y: "Junior",
+            m: "-"
         },
         {
             n: "Casey Enest",
-            pic: x
+            pic: x,
+            y: "Sophomore",
+            m: "Microbiology"
         },
         {
             n: "Kinzie Gamaledin",
-            pic: x
+            y: "Freshman",
+            m: "Chemistry"
         },
         {
             n: "Lauren Gartenhaus",
-            pic: x
+            pic: x,
+            y: "Freshman",
+            m: "Biology"
         },
         {
-            n: "Mahesh Gupta"
+            n: "Mahesh Gupta",
+            y: "Freshman",
+            m: "Biochemistry"
         },
     ]
 }
@@ -180,45 +230,68 @@ const nco = {
     members: [
         {
             n: "Tom Appenzeller",
-            p: c
+            p: c,
+            y: "Sophomore",
+            m: "CS"
         },
         {
             n: "Connor Kuntz",
-            p: c
+            p: c,
+            y: "Sophomore",
+            m: "-"
         },
         {
             n: "Madison Rosen",
-            p: c
+            p: c,
+            y: "Senior",
+            m: "CS"
         },
         {
-            n: "Angela Zhao"
+            n: "Angela Zhao",
+            y: "Senior",
+            m: "-"
         },
         {
-            n: "Kaitlyn Stangl"
+            n: "Kaitlyn Stangl",
+            y: "Junior",
+            m: "-"
         },
         {
-            n: "Unnati Pulla"
+            n: "Unnati Pulla",
+            y: "Senior",
+            m: "-"
         },
         {
-            n: "Rachel Tat"
+            n: "Rachel Tat",
+            y: "Junior",
+            m: "Biochemistry"
         },
         {
-            n: "Leen Abdelkhaleg"
+            n: "Leen Abdelkhaleg",
+            y: "Sophomore",
+            m: "-"
         },
         {
             n: "Creighton Burns",
-            pic: x
+            y: "Sophomore",
+            m: "Health and Disease"
         },
         {
-            n: "Diana Hrushka"
+            n: "Diana Hrushka",
+            y: "Freshman",
+            m: "Biology"
         },
         {
             n: "Elizabeth Martello",
-            pic: x
+            pic: x,
+            y: "Freshman",
+            m: "Biochemistry"
         },
         {
             n: "Manuela Haddad Correa",
-            pic: x
+            pic: x,
+            y: "Sophomore",
+            m: "Genetics & CMD Biology"
         },
     ]
 }
