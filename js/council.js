@@ -7,8 +7,8 @@ function addComm() {
                 '<div class="page-council-members-member">' +
                     '<img src="' + getImagePath(com.x, member.n, member.pic) + '" class="page-council-members-member-img">' +
                     '<h4 class="page-council-members-member-name">' + member.n + '</h4>' +
-                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '</h5><h5/>' +
-                    /*'<h5 class="page-council-members-member-position">' + member.y + ' / ' + member.m + '</h5><h5/>' +*/
+                    '<h5 class="page-council-members-member-position">' + (member.p ? member.p : "") + '</h5>' +
+                    '<h5 class="page-council-members-member-position">' + member.y + ' / ' + member.m + '</h5><h5/>' +
                 '</div>';
             acc += list;
             return acc;
@@ -61,7 +61,7 @@ const xcomm = {
             n: "Mitchell Demerly",
             p: "President",
             y: "Senior",
-            m: "CS & Economics"
+            m: "Computer Science & Economics"
         },
         {
             n: "Mallory Roach",
@@ -72,20 +72,20 @@ const xcomm = {
         {
             n: "Avarokin Saini",
             p: "Treasurer",
-            y: "Senior",
-            m: "CS"
+            y: "Junior",
+            m: "Computer Science"
         },
         {
             n: "Bridget Kiley",
             p: "Secretary",
             y: "Sophomore",
-            m: "CS"
+            m: "Computer Science"
         },
         {
             n: "Kaylee Stowe",
             p: "Internal Activities Director",
             y: "Junior",
-            m: "-"
+            m: "Biology"
         },
         {
             n: "Natasha Das",
@@ -97,7 +97,7 @@ const xcomm = {
             n: "Jeonghu Park",
             p: "Webmaster",
             y: "Senior",
-            m: "CS"
+            m: "Computer Science"
         }
         
     ]
@@ -116,18 +116,18 @@ const cam = {
             n: "Kevin Lamaster",
             p: c,
             y: "Senior",
-            m: "-"
+            m: "Math"
         },
         {
             n: "Dithi Saxena",
             p: c,
             y: "Sophomore",
-            m: "CS"
+            m: "Computer Science"
         },
         {
             n: "Manvir Bains",
             y: "Senior",
-            m: "-"
+            m: "Biology"
         },
         {
             n: "Mae Shu",
@@ -138,17 +138,17 @@ const cam = {
             n: "Victor Pacheco",
             pic: x,
             y: "Sophomore",
-            m: "-"
+            m: "Biology"
         },
         {
             n: "Sahana Rayan",
             y: "Junior",
-            m: "-"
+            m: "Applied Statistics"
         },
         {
             n: "Niharika Pujar",
             y: "Senior",
-            m: "CS"
+            m: "Computer Science"
         },
         {
             n: "Nathan Paul",
@@ -185,17 +185,17 @@ const com = {
         {
             n: "James Kane",
             y: "Sophomore",
-            m: "Math & MathEd"
+            m: "Math & Math Ed"
         },
         {
             n: "Francis O'Leary",
             y: "Sophomore",
-            m: "Math & CS"
+            m: "Math & Computer Science"
         },
         {
             n: "Andrew Espeland",
             y: "Junior",
-            m: "-"
+            m: "Biology"
         },
         {
             n: "Casey Enest",
@@ -232,34 +232,34 @@ const nco = {
             n: "Tom Appenzeller",
             p: c,
             y: "Sophomore",
-            m: "CS"
+            m: "Computer Science"
         },
         {
             n: "Connor Kuntz",
             p: c,
             y: "Sophomore",
-            m: "-"
+            m: "CMD Biology"
         },
         {
             n: "Madison Rosen",
             p: c,
             y: "Senior",
-            m: "CS"
+            m: "Computer Science"
         },
         {
             n: "Angela Zhao",
             y: "Senior",
-            m: "-"
+            m: "Biochemistry"
         },
         {
             n: "Kaitlyn Stangl",
             y: "Junior",
-            m: "-"
+            m: "Actuarial Science"
         },
         {
             n: "Unnati Pulla",
             y: "Senior",
-            m: "-"
+            m: "Computer Science"
         },
         {
             n: "Rachel Tat",
@@ -269,7 +269,7 @@ const nco = {
         {
             n: "Leen Abdelkhaleg",
             y: "Sophomore",
-            m: "-"
+            m: "Actuarial Science"
         },
         {
             n: "Creighton Burns",
