@@ -283,7 +283,6 @@ const nco = {
         },
         {
             n: "Elizabeth Martello",
-            pic: x,
             y: "Freshman",
             m: "Biochemistry"
         },
