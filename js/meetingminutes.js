@@ -5,7 +5,9 @@ const dates_fa2020 = [
     "09-23-20",
     "09-30-20",
     "10-07-20",
-    "10-14-20"
+    "10-14-20",
+    "10-21-20",
+    "10-28-20",
 ];
 
 const links_fa2020 = [
@@ -16,6 +18,8 @@ const links_fa2020 = [
     "https://docs.google.com/document/d/e/2PACX-1vRg2C16l4xPTUl6lTFrErzCCR-NRxmPvkJkNjo8oUIoKxEV-kygBbreB23lMWUj8b6DtFB65cM4Up10/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQN-yxxZ9OOOxXeA2sPdAjxgnIWZCn1Wp-28tIom1CtI0Zi8UfUDJQwQvGHH98N-oLTAICtvKYJqJ5e/pub",
     "https://docs.google.com/document/d/e/2PACX-1vQq9ttwgRcFpwCkcpMZixTcMBxpkCQ3DQJPF49arJTZS5cu0nkr5pXMGsTAit0f_ZBXCcq1HMsNjA8V/pub",
+    "https://docs.google.com/document/d/e/2PACX-1vQVQEN58nilEfW0M7o5PWVr-ay8XfNaEMQX2SsppY71_V8gAMYjM-q30cPOjM4gh-UOCTVrK6p9aNsY/pub",
+    "https://docs.google.com/document/d/e/2PACX-1vScZTPf2S-itjN4_mU8pqkABOHTyEUb_i6Vec6SjEFx8Ruebtj9vLiaKoVwxDXhpDpURQbpEt-vaomy/pub",
 ]
 
 const dates_sp2020 = [
