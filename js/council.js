@@ -136,16 +136,21 @@ const cam = {
 
   members: [
     {
-      n: "Kevin Lamaster",
-      p: c,
-      y: "Senior",
-      m: "Math",
-    },
-    {
       n: "Dithi Saxena",
       p: c,
       y: "Sophomore",
       m: "Computer Science",
+    },
+    {
+      n: "Sydney Brown",
+      p: c,
+      y: "Freshman",
+      m: "Atmospheric Science",
+    },
+    {
+      n: "Kevin Lamaster",
+      y: "Senior",
+      m: "Math",
     },
     {
       n: "Manvir Bains",
@@ -168,11 +173,6 @@ const cam = {
       y: "Freshman",
       m: "Neurobiology & Physiology",
     },
-    {
-      n: "Sydney Brown",
-      y: "Freshman",
-      m: "Atmospheric Science",
-    },
   ],
 };
 
@@ -184,16 +184,21 @@ const com = {
 
   members: [
     {
-      n: "Holly Weilbaker",
-      p: c,
-      y: "Senior",
-      m: "Biochemistry",
-    },
-    {
       n: "Ilakkiya Venkatachalam",
       p: c,
       y: "Junior",
       m: "Genetics",
+    },
+    {
+      n: "Andrew Espeland",
+      p: c,
+      y: "Junior",
+      m: "Biology",
+    },
+    {
+      n: "Holly Weilbaker",
+      y: "Senior",
+      m: "Biochemistry",
     },
     {
       n: "James Kane",
@@ -204,11 +209,6 @@ const com = {
       n: "Francis O'Leary",
       y: "Sophomore",
       m: "Math & Computer Science",
-    },
-    {
-      n: "Andrew Espeland",
-      y: "Junior",
-      m: "Biology",
     },
     {
       n: "Casey Ernest",
@@ -248,8 +248,13 @@ const nco = {
       m: "CMD Biology",
     },
     {
-      n: "Madison Rosen",
+      n: "Creighton Burns",
       p: c,
+      y: "Sophomore",
+      m: "Health and Disease",
+    },
+    {
+      n: "Madison Rosen",
       y: "Senior",
       m: "Computer Science",
     },
@@ -277,11 +282,6 @@ const nco = {
       n: "Leen Abdelkhaleg",
       y: "Sophomore",
       m: "Actuarial Science",
-    },
-    {
-      n: "Creighton Burns",
-      y: "Sophomore",
-      m: "Health and Disease",
     },
     {
       n: "Diana Hrushka",
