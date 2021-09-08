@@ -43,6 +43,7 @@ const winners = [
     "George Bunch Adams III",
     "Carina Rebello",
     "Mark Lipton",
+    "Corey Thompson"
 ];
 const beginning_year = 1977;
 
