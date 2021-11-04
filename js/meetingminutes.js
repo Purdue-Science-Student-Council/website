@@ -86,4 +86,6 @@ window.onload = function () {
   addClickListener("js-m-nav-click", navDrawer);
   this.addMeetingMinutesLink("fa2021", links_fa2021, dates_fa2021);
   this.addMeetingMinutesLink("fa2020", links_fa2020, dates_fa2020);
+
+  
 };
