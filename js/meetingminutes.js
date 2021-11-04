@@ -53,6 +53,7 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1Ion85pd5sVHFlzoVQ1I8NSz_jDCIxZGGxcIPTTpZ4PQ/edit",
   "https://docs.google.com/document/d/1y9MWlEAXDZCOSIym4_ja3U6CVSKqRI4lAO0CzB-o3JE/edit",
   "https://docs.google.com/document/d/1y9MWlEAXDZCOSIym4_ja3U6CVSKqRI4lAO0CzB-o3JE/edit",
+  "https://docs.google.com/document/d/1TRLT2Yk0BBv55J4wwtRP27raBDQhz-hBxA8uPXvUY08/edit",
 ];
 
 function addMeetingMinutesLink(semester, links, dates) {
