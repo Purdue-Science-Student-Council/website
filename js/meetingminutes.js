@@ -41,7 +41,6 @@ const links_sp2020 = [
 const dates_fa2021 = [
   "09-01-21",
   "09-08-21",
-  "02-05-20",
   "09-29-21",
   "10-13-21",
   "11-03-21",
@@ -51,7 +50,6 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1ogN4poUsTHuG8VGPXCbpzOb2jMZlQS-dPsWeZOfhK2s/edit",
   "https://docs.google.com/document/d/1T3wWDMI2tKx-SkegMoMumVaISLo7Ao5FaD9in376zCs/edit",
   "https://docs.google.com/document/d/1Ion85pd5sVHFlzoVQ1I8NSz_jDCIxZGGxcIPTTpZ4PQ/edit",
-  "https://docs.google.com/document/d/1y9MWlEAXDZCOSIym4_ja3U6CVSKqRI4lAO0CzB-o3JE/edit",
   "https://docs.google.com/document/d/1y9MWlEAXDZCOSIym4_ja3U6CVSKqRI4lAO0CzB-o3JE/edit",
   "https://docs.google.com/document/d/1TRLT2Yk0BBv55J4wwtRP27raBDQhz-hBxA8uPXvUY08/edit",
 ];
