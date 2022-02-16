@@ -60,6 +60,7 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1nI1n6Vb5UZqzml0OScwoUyXq9VYY1OZvZxnuClzBo00/edit",
 ];
 
+
 function addMeetingMinutesLink(semester, links, dates) {
   var table = document.getElementById("js-meeting-minute-table-" + semester);
 
