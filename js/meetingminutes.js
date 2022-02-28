@@ -47,6 +47,7 @@ const dates_fa2021 = [
   "11-10-21",
   "01-12-22",
   "01-26-22",
+  "02-23-22",
 ];
 
 const links_fa2021 = [
@@ -57,9 +58,9 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1TRLT2Yk0BBv55J4wwtRP27raBDQhz-hBxA8uPXvUY08/edit",
   "https://docs.google.com/document/d/1i_aTNbeOdYijMBnkyAjCrRkojkxASPsH2ry6f0Tbyao/edit",
   "https://docs.google.com/document/d/1L3uXSPpqf7LB081Xi17f-eQjk_X2QJBLOPuki8rlHDA/edit",
-  "https://docs.google.com/document/d/1nI1n6Vb5UZqzml0OScwoUyXq9VYY1OZvZxnuClzBo00/edit",
+  "https://docs.google.com/document/d/1vbHmDpNyV8EFrDyUK6YWZQnmzJc15q76eYvLJjPBx7s/edit",
+  "https://docs.google.com/document/d/18P6A44QG7ZMjq-35cHR2I8qOj6uV6izPev8WeKeYxgM/edit",
 ];
-
 
 function addMeetingMinutesLink(semester, links, dates) {
   var table = document.getElementById("js-meeting-minute-table-" + semester);
