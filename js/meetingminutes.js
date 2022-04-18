@@ -49,6 +49,7 @@ const dates_fa2021 = [
   "01-26-22",
   "02-23-22",
   "03-23-22",
+  "04-13-22",
 ];
 
 const links_fa2021 = [
@@ -62,7 +63,7 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1vbHmDpNyV8EFrDyUK6YWZQnmzJc15q76eYvLJjPBx7s/edit",
   "https://docs.google.com/document/d/18P6A44QG7ZMjq-35cHR2I8qOj6uV6izPev8WeKeYxgM/edit",
   "https://docs.google.com/document/d/1eZJDLU6RSwPnFhbRc6WUu6tFSAmpC8R489iVL_c2xm4/edit",
-  
+  "https://docs.google.com/document/d/1Wf1kOEADxJqbTrzFRVIDRxbakkRqq3WqOaFstsxL160/edit",
 ];
 
 function addMeetingMinutesLink(semester, links, dates) {

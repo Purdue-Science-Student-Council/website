@@ -84,7 +84,7 @@ const xcomm = {
 
   members: [
     {
-      n: "Mallory Roach",
+      n: "Mae Shu",
       p: "President",
       y: "Junior",
       m: "Genetics & Cell Biology",
