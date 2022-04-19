@@ -104,5 +104,4 @@ function addClickListener(id, func) {
 window.onload = function () {
   addClickListener("js-m-nav-click", navDrawer);
   this.addMeetingMinutesLink("sp2022", links_sp2022, dates_sp2022);
-  this.addMeetingMinutesLink("fa2021", links_fa2021, dates_fa2021);
 };
