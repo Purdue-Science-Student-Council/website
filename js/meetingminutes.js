@@ -45,11 +45,6 @@ const dates_fa2021 = [
   "10-13-21",
   "11-03-21",
   "11-10-21",
-  "01-12-22",
-  "01-26-22",
-  "02-23-22",
-  "03-23-22",
-  "04-13-22",
 ];
 
 const links_fa2021 = [
@@ -59,6 +54,17 @@ const links_fa2021 = [
   "https://docs.google.com/document/d/1y9MWlEAXDZCOSIym4_ja3U6CVSKqRI4lAO0CzB-o3JE/edit",
   "https://docs.google.com/document/d/1TRLT2Yk0BBv55J4wwtRP27raBDQhz-hBxA8uPXvUY08/edit",
   "https://docs.google.com/document/d/1i_aTNbeOdYijMBnkyAjCrRkojkxASPsH2ry6f0Tbyao/edit",
+];
+
+const dates_sp2022 = [
+  "01-12-22",
+  "01-26-22",
+  "02-23-22",
+  "03-23-22",
+  "04-13-22",
+];
+
+const links_sp2022 = [
   "https://docs.google.com/document/d/1L3uXSPpqf7LB081Xi17f-eQjk_X2QJBLOPuki8rlHDA/edit",
   "https://docs.google.com/document/d/1vbHmDpNyV8EFrDyUK6YWZQnmzJc15q76eYvLJjPBx7s/edit",
   "https://docs.google.com/document/d/18P6A44QG7ZMjq-35cHR2I8qOj6uV6izPev8WeKeYxgM/edit",
@@ -97,6 +103,5 @@ function addClickListener(id, func) {
 
 window.onload = function () {
   addClickListener("js-m-nav-click", navDrawer);
-  this.addMeetingMinutesLink("fa2021", links_fa2021, dates_fa2021);
-  this.addMeetingMinutesLink("fa2020", links_fa2020, dates_fa2020);
+  this.addMeetingMinutesLink("sp2022", links_sp2022, dates_sp2022);
 };
