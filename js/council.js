@@ -123,7 +123,7 @@ const xcomm = {
       n: "Kaitlynn Tran",
       p: "Webmaster",
       y: "Junior",
-      m: "Computer Science, Mathematics, Applied Statistics",
+      m: "Applied Statistics",
     },
   ],
 };
