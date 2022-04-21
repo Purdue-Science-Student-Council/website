@@ -82,18 +82,18 @@ const xcomm = {
   t:
     "The Executive Committee is responsible for the direction of the council, the organization of events, and the cooperation between committees, council, and faculty.",
 
-  members: [
+    members: [
     {
       n: "Mae Shu",
       p: "President",
       y: "Junior",
-      m: "Biology",
+      m: "Genetics & Cell Biology",
     },
     {
       n: "Sydney Brown",
       p: "Vice President",
       y: "Sophomore",
-      m: "Atmospheric Science",
+      m: "Biology",
     },
     {
       n: "Priyanka Ranga",
@@ -104,7 +104,7 @@ const xcomm = {
     {
       n: "Bridget Kiley",
       p: "Secretary",
-      y: "Junior",
+      y: "Sophomore",
       m: "Computer Science",
     },
     {
@@ -122,8 +122,8 @@ const xcomm = {
     {
       n: "Kaitlynn Tran",
       p: "Webmaster",
-      y: "Freshman",
-      m: "Applied Statistics, Political Science",
+      y: "Junior",
+      m: "Computer Science, Mathematics, Applied Statistics",
     },
   ],
 };
