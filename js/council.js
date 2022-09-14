@@ -80,7 +80,7 @@ const xcomm = {
   x: "xcom",
   n: "The Executive Committee",
   t:
-    "The Executive Committee is responsible for the direction of the council, the organization of events, and the cooperation between committees, council, and faculty.",
+    "The Executive Committee oversees the other three committees, connects with other Purdue organizations, communicates with faculty, and plans New Student Orientation.",
 
     members: [
     {
@@ -113,7 +113,7 @@ const xcomm = {
       pic: x,
       p: "Internal Activities Director",
       y: "Junior",
-      m: "Biology",
+      m: "Chemistry",
     },
     {
       n: "Sydney Moeller",
@@ -135,7 +135,7 @@ const cam = {
   x: "cam",
   n: "Campus Outreach",
   t:
-    "The Campus Outreach Committee is here for the students of the College of Science to communicate their voices to the campus at large, and provide the resources for a meaningful experience in the Purdue Science community. We enjoy putting on collaboration events with other student organizations. Feel free to contact us if you have an idea about how to better serve the community.",
+    "The Campus Outreach committee provides events to support the College of Science students and faculty. We provide opportunities for students to engage with each other and connect with faculty. Some events we have put on in the past are Game Nights, Tabling free snacks, and Snack&Chats with professors.",
 
   members: [
     {
@@ -184,7 +184,7 @@ const com = {
   x: "com",
   n: "Community Outreach",
   t:
-    "On the community outreach committee, we strive to engage and instill a love of science in the greater Lafayette community. See us in action every year at SpringFest and our experiment days at the local library. ",
+    "The Community Outreach committee connects the College of Science and PSSC to the greater West Lafayette and Lafayette communities. We strive to support our community through various volunteer initiatives at Food Finders, mentorship with high school students, and “Science Day” at the local library where we perform science experiments with kids.",
 
   members: [
     {
@@ -233,7 +233,7 @@ const nco = {
   x: "nco",
   n: "Networking and Career Outreach",
   t:
-    "Our goal is to connect students in the College of Science with both faculty and alumni in order for them to gain knowledge about research and to help them make connections. We strive to facilitate discussions relating to potential fields of interests for students in order to help students achieve their career goals. We provide interactive events so that we can create a camaraderie among students in the College of Science in an academic manner.",
+    "The Networking and Career Outreach committee provides professional growth opportunities. Through partnering with the Campus Outreach committee, we host multiple Snack&Chats to provide a space for students to interact with their STEM professors. Additionally, we provide pre-professional panels for students to learn more about opportunities after college.",
 
   members: [
     {
