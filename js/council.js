@@ -96,17 +96,22 @@ const xcomm = {
       m: "Atmospheric Science",
     },
     {
+      n: "Bridget Kiley",
+      p: "Secretary",
+      y: "Senior",
+      m: "Computer Science",
+    },
+    {
       n: "Priyanka Ranga",
-      pic: x,
       p: "Treasurer",
       y: "Junior",
       m: "Computer Science",
     },
     {
-      n: "Bridget Kiley",
-      p: "Secretary",
-      y: "Senior",
-      m: "Computer Science",
+      n: "Sydney Moeller",
+      p: "Public Relations Director",
+      y: "Junior",
+      m: "Economics, Neurobiology",
     },
     {
       n: "Ellis Lin",
@@ -114,13 +119,6 @@ const xcomm = {
       p: "Internal Activities Director",
       y: "Junior",
       m: "Chemistry",
-    },
-    {
-      n: "Sydney Moeller",
-      pic: x,
-      p: "Public Relations Director",
-      y: "Sophomore",
-      m: "Economics, Neurobiology",
     },
     {
       n: "Kaitlynn Tran",
@@ -155,16 +153,17 @@ const cam = {
       y: "Sophomore",
       m: "Biochemistry",
     },
+    
+    {
+      n: "Shreya Vasant",
+      y: "Sophomore",
+      m: "Data Science",
+    },
     {
       n: "Pramey Kabra",
       pic: x,
       y: "Junior",
       m: "Computer Science and Data Science",
-    },
-    {
-      n: "Shreya Vasant",
-      y: "Sophomore",
-      m: "Data Science",
     },
     {
       n: "Jang Lee",
@@ -173,8 +172,7 @@ const cam = {
     },
     {
       n: "Samantha Maari",
-      pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Biology",
     },
   ],
@@ -191,24 +189,23 @@ const com = {
       n: "Mahesh Gupta",
       p: c,
       y: "Junior",
-      m: "Cell, Molecular, and Developmental Biology and Genetics",
+      m: "Genetics and Cell, Molecular, & Devt Biology",
     },
     {
       n: "Lauren Gartenhaus",
       p: c,
       y: "Junior",
-      m: "Genetics and Cell, Molecular, and Developmental Biology",
-    },
-    {
-      n: "Kinzie Gamaleldin",
-      pic: x,
-      y: "Junior",
-      m: "Biochemistry",
+      m: "Genetics and Cell, Molecular, & Devt Biology",
     },
     {
       n: "Jack Mrachek",
       y: "Junior",
       m: "Physics and Planetary Science",
+    },
+    {
+      n: "Kinzie Gamaleldin",
+      y: "Junior",
+      m: "Biochemistry",
     },
     {
       n: "Nadia Seye",
@@ -248,6 +245,7 @@ const nco = {
       y: "Junior",
       m: "Biochemistry",
     },
+    
     {
       n: "Diana Hrushka",
       y: "Junior",
@@ -260,11 +258,6 @@ const nco = {
       m: "Biochemistry",
     },
     {
-      n: "Jason Bodzy",
-      y: "Sophomore",
-      m: "Computer Science",
-    },
-    {
       n: "Claire Bohman",
       pic: x,
       y: "Junior",
@@ -275,6 +268,11 @@ const nco = {
       pic: x,
       y: "Junior",
       m: "Biochemistry",
+    },
+    {
+      n: "Jason Bodzy",
+      y: "Sophomore",
+      m: "Computer Science",
     },
     {
       n: "Will Zou",
