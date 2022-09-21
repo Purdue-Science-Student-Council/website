@@ -111,7 +111,7 @@ const xcomm = {
       n: "Sydney Moeller",
       p: "Public Relations Director",
       y: "Junior",
-      m: "Economics, Neurobiology",
+      m: "Neurobiology and Health & Disease",
     },
     {
       n: "Ellis Lin",
