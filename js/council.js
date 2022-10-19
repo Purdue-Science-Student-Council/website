@@ -370,8 +370,7 @@ const nco = {
       m: "Chemistry",
     },
     {
-      n: "Shreyya Karan",
-      pic: x,
+      n: "Shreyaa Karan",
       y: "Freshman",
       m: "Computer Science",
     },
