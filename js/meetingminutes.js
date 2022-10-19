@@ -1,10 +1,12 @@
 
   const dates_fa2021 = [
     "08-31-22",
+    "09-28-22",
   ];
   
   const links_fa2021 = [
     "https://docs.google.com/document/d/1s5k2_NDgOGLc2GBxXT9wAbxtvaL1gfJArdo1lOr_ajQ/edit",
+    "https://docs.google.com/document/d/1qWhdON4iZxW7Im0l5N6A4VoURlWc3dWxBmtgR1oGeMw/edit",
   ];
 
   function addMeetingMinutesLink(semester, links, dates) {
