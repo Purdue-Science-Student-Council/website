@@ -359,7 +359,6 @@ const nco = {
     },
     {
       n: "Patrick Van Gheem",
-      pic: x,
       y: "Freshman",
       m: "Biochemistry",
     },
