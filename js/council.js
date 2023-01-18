@@ -84,10 +84,10 @@ const xcomm = {
 
     members: [
     {
-      n: "Mae Shu",
+      n: "Mahesh Gupta",
       p: "President",
-      y: "Senior",
-      m: "Biology",
+      y: "Junior",
+      m: "Genetics, Cell, Molecular, & Devt Biology",
     },
     {
       n: "Sydney Brown",
@@ -219,12 +219,6 @@ const com = {
     "The Community Outreach committee connects the College of Science and PSSC to the greater West Lafayette and Lafayette communities. We strive to support our community through various volunteer initiatives at Food Finders, mentorship with high school students, and “Science Day” at the local library where we perform science experiments with kids.",
 
   members: [
-    {
-      n: "Mahesh Gupta",
-      p: c,
-      y: "Junior",
-      m: "Genetics, Cell, Molecular, & Devt Biology",
-    },
     {
       n: "Lauren Gartenhaus",
       p: c,
@@ -380,6 +374,22 @@ const nco = {
     },
   ],
 };
+
+/*
+const alum = {
+  x: "alum",
+  n: "PSSC Alumni",
+  t: " Alumni ",
+  members : [     
+    {
+      n: "Mae Shu",
+      p: "President",
+      y: "Senior",
+      m: "Biology",
+    },
+  ],
+};
+*/
 
 const coms = [xcomm, cam, com, nco];
 
