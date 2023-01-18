@@ -87,7 +87,7 @@ const xcomm = {
       n: "Mahesh Gupta",
       p: "President",
       y: "Junior",
-      m: "Genetics, Cell, Molecular, & Devt Biology",
+      m: "Cell, Molecular, & Devt Biology",
     },
     {
       n: "Ellis Lin",
@@ -156,7 +156,7 @@ const cam = {
     {
       n: "Shreya Vasant",
       y: "Sophomore",
-      m: "Data Science",
+      m: "Data Science, Brain and Behavioral Science",
     },
     {
       n: "Kaitlynn Tran",
