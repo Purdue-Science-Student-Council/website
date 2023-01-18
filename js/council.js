@@ -381,6 +381,15 @@ const nco = {
   ],
 };
 
+/*
+const alum = {
+  x: "alum",
+  n: "PSSC Alumni",
+  t: " Alumni ",
+  members : [{},{},],
+};
+*/
+
 const coms = [xcomm, cam, com, nco];
 
 function test(id) {
