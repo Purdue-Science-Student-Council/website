@@ -90,22 +90,22 @@ const xcomm = {
       m: "Genetics, Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Sydney Brown",
+      n: "Ellis Lin",
       p: "Vice President",
       y: "Junior",
-      m: "Atmospheric Science",
+      m: "Chemistry",
     },
     {
-      n: "Bridget Kiley",
+      n: "Samantha Maari",
       p: "Secretary",
-      y: "Senior",
-      m: "Computer Science",
+      y: "Sophomore",
+      m: "Biology",
     },
     {
-      n: "Priyanka Ranga",
+      n: "Jack Mrachek",
       p: "Treasurer",
-      y: "Senior",
-      m: "Health and Disease",
+      y: "Junior",
+      m: "Planetary Science",
     },
     {
       n: "Sydney Moeller",
@@ -114,16 +114,16 @@ const xcomm = {
       m: "Neurobiology, Health & Disease",
     },
     {
-      n: "Ellis Lin",
+      n: "Lauren Gartenhaus",
       p: "Internal Activities Director",
       y: "Junior",
-      m: "Chemistry",
+      m: "Genetics, Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Kaitlynn Tran",
+      n: "Pramey Kabra",
       p: "Webmaster",
-      y: "Sophomore",
-      m: "Applied Statistics, Political Science",
+      y: "Junior",
+      m: "Computer Science, Data Science",
     },
   ],
 };
@@ -136,21 +136,22 @@ const cam = {
 
   members: [
     {
-      n: "Dithi Saxena",
+      n: "Sophia Benjemia",
       p: c,
-      y: "Senior",
-      m: "Computer Science",
+      y: "Sophomore",
+      m: "Biochemistry",
+    },
+    {
+      n: "Christina Warner",
+      p: c,
+      pic: x,
+      y: "Junior",
+      m: "Chemistry, Psychology",
     },
     {
       n: "Mahsa Farahani",
-      p: c,
       y: "Sophomore",
       m: "Neurobiology & Physiology",
-    },
-    {
-      n: "Sophia Benjemia",
-      y: "Sophomore",
-      m: "Biochemistry",
     },
     {
       n: "Shreya Vasant",
@@ -158,14 +159,9 @@ const cam = {
       m: "Data Science",
     },
     {
-      n: "Pramey Kabra",
-      y: "Junior",
-      m: "Computer Science, Data Science",
-    },
-    {
-      n: "Samantha Maari",
+      n: "Kaitlynn Tran",
       y: "Sophomore",
-      m: "Biology",
+      m: "Applied Statistics, Political Science",
     },
     {
       n: "Emily Juhl",
@@ -203,12 +199,6 @@ const cam = {
       y: "Sophomore",
       m: "Computer Science, Data Science",
     },
-    {
-      n: "Christina Warner",
-      pic: x,
-      y: "Junior",
-      m: "Chemistry, Psychology",
-    },
   ],
 };
 
@@ -220,30 +210,21 @@ const com = {
 
   members: [
     {
-      n: "Lauren Gartenhaus",
+      n: "Kinzie Gamaleldin",
       p: c,
       y: "Junior",
-      m: "Genetics, Cell, Molecular, & Devt Biology",
-    },
-    {
-      n: "Jack Mrachek",
-      y: "Junior",
-      m: "Planetary Science",
-    },
-    {
-      n: "Kinzie Gamaleldin",
-      y: "Junior",
       m: "Biochemistry",
+    },
+    {
+      n: "Christine Farrell",
+      p: c,
+      y: "Freshman",
+      m: "Cell, Molecular, & Devt Biology",
     },
     {
       n: "Nadia Seye",
       y: "Junior",
       m: "Biology",
-    },
-    {
-      n: "Christine Farrell",
-      y: "Freshman",
-      m: "Cell, Molecular, & Devt Biology",
     },
     {
       n: "Caroline Zu",
@@ -302,16 +283,21 @@ const nco = {
 
   members: [
     {
-      n: "Connor Kuntz",
-      p: c,
-      y: "Senior",
-      m: "Biology",
-    },
-    {
       n: "Elizabeth Martello",
       p: c,
       y: "Junior",
       m: "Biochemistry",
+    },
+    {
+      n: "Sophia Parker",
+      p: c,
+      y: "Sophomore",
+      m: "Health and Disease",
+    },
+    {
+      n: "Connor Kuntz",
+      y: "Senior",
+      m: "Biology",
     },
     {
       n: "Diana Hrushka",
@@ -367,19 +353,16 @@ const nco = {
       y: "Freshman",
       m: "Computer Science",
     },
-    {
-      n: "Sophia Parker",
-      y: "Sophomore",
-      m: "Health and Disease",
-    },
   ],
 };
 
 /*
 const alum = {
+
   x: "alum",
   n: "PSSC Alumni",
   t: " Alumni ",
+  
   members : [     
     {
       n: "Mae Shu",
@@ -387,11 +370,36 @@ const alum = {
       y: "Senior",
       m: "Biology",
     },
+    {
+      n: "Sydney Brown",
+      p: "Vice President",
+      y: "Junior",
+      m: "Atmospheric Science",
+    },
+    {
+      n: "Bridget Kiley",
+      p: "Secretary",
+      y: "Senior",
+      m: "Computer Science",
+    },
+    {
+      n: "Priyanka Ranga",
+      p: "Treasurer",
+      y: "Senior",
+      m: "Health and Disease",
+    },
+    {
+      n: "Dithi Saxena",
+      p: c,
+      y: "Senior",
+      m: "Computer Science",
+    },
   ],
 };
 */
 
 const coms = [xcomm, cam, com, nco];
+/* @todo - Add alum to coms and other necesarry changes */
 
 function test(id) {
   var mem = idToMembers(id);
