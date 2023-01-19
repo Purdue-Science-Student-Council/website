@@ -144,7 +144,6 @@ const cam = {
     {
       n: "Christina Warner",
       p: c,
-      pic: x,
       y: "Junior",
       m: "Chemistry, Psychology",
     },
