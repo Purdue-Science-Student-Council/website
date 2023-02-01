@@ -355,49 +355,43 @@ const nco = {
   ],
 };
 
-/*
 const alum = {
 
   x: "alum",
   n: "PSSC Alumni",
-  t: " Alumni ",
+  t: "PSSC Alumni are a vital part of the organization and remain as advisors and friends. They often help in planning and volurnteering in events!",
   
   members : [     
     {
       n: "Mae Shu",
-      p: "President",
-      y: "Senior",
+      y: "2022",
       m: "Biology",
     },
     {
       n: "Sydney Brown",
-      p: "Vice President",
-      y: "Junior",
+      y: "2022",
       m: "Atmospheric Science",
     },
     {
       n: "Bridget Kiley",
-      p: "Secretary",
-      y: "Senior",
+      y: "2022",
       m: "Computer Science",
     },
     {
       n: "Priyanka Ranga",
-      p: "Treasurer",
-      y: "Senior",
+      y: "2022",
       m: "Health and Disease",
     },
     {
       n: "Dithi Saxena",
-      p: c,
-      y: "Senior",
+      y: "2022",
       m: "Computer Science",
     },
   ],
 };
-*/
 
-const coms = [xcomm, cam, com, nco];
+
+const coms = [xcomm, cam, com, nco, alum];
 /* @todo - Add alum to coms and other necesarry changes */
 
 function test(id) {
