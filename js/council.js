@@ -246,12 +246,6 @@ const com = {
       m: "Biology, Secondary Education",
     },
     {
-      n: "Casey Ernest",
-      pic: x,
-      y: "Senior",
-      m: "Biology",
-    },
-    {
       n: "Mia Martinez",
       y: "Freshman",
       m: "Chemistry",
@@ -292,11 +286,6 @@ const nco = {
       p: c,
       y: "Sophomore",
       m: "Health and Disease",
-    },
-    {
-      n: "Connor Kuntz",
-      y: "Senior",
-      m: "Biology",
     },
     {
       n: "Diana Hrushka",
@@ -359,33 +348,39 @@ const alum = {
 
   x: "alum",
   n: "PSSC Alumni",
-  t: "PSSC Alumni are a vital part of the organization and remain as advisors and friends. They often help in planning and volurnteering in events!",
+  t: "PSSC Alumni are a vital part of PSSC and remain as advisors and friends. They often help in planning and volunteer in events!",
   
   members : [     
     {
       n: "Mae Shu",
-      y: "2022",
+      y: "2023",
       m: "Biology",
     },
     {
-      n: "Sydney Brown",
-      y: "2022",
-      m: "Atmospheric Science",
-    },
-    {
       n: "Bridget Kiley",
-      y: "2022",
+      y: "2023",
       m: "Computer Science",
     },
     {
       n: "Priyanka Ranga",
-      y: "2022",
+      y: "2023",
       m: "Health and Disease",
     },
     {
       n: "Dithi Saxena",
       y: "2022",
       m: "Computer Science",
+    },
+    {
+      n: "Connor Kuntz",
+      y: "2023",
+      m: "Biology",
+    },
+    {
+      n: "Casey Ernest",
+      pic: x,
+      y: "2023",
+      m: "Biology",
     },
   ],
 };
