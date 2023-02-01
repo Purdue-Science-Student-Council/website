@@ -355,7 +355,6 @@ const nco = {
   ],
 };
 
-/*
 const alum = {
 
   x: "alum",
@@ -365,39 +364,38 @@ const alum = {
   members : [     
     {
       n: "Mae Shu",
-      p: "President",
-      y: "Senior",
+      y: "2024",
       m: "Biology",
     },
-    {
-      n: "Sydney Brown",
-      p: "Vice President",
-      y: "Junior",
-      m: "Atmospheric Science",
-    },
-    {
-      n: "Bridget Kiley",
-      p: "Secretary",
-      y: "Senior",
-      m: "Computer Science",
-    },
-    {
-      n: "Priyanka Ranga",
-      p: "Treasurer",
-      y: "Senior",
-      m: "Health and Disease",
-    },
-    {
-      n: "Dithi Saxena",
-      p: c,
-      y: "Senior",
-      m: "Computer Science",
-    },
+//     {
+//       n: "Sydney Brown",
+//       p: "Vice President",
+//       y: "Junior",
+//       m: "Atmospheric Science",
+//     },
+//     {
+//       n: "Bridget Kiley",
+//       p: "Secretary",
+//       y: "Senior",
+//       m: "Computer Science",
+//     },
+//     {
+//       n: "Priyanka Ranga",
+//       p: "Treasurer",
+//       y: "Senior",
+//       m: "Health and Disease",
+//     },
+//     {
+//       n: "Dithi Saxena",
+//       p: c,
+//       y: "Senior",
+//       m: "Computer Science",
+//     },
   ],
 };
-*/
 
-const coms = [xcomm, cam, com, nco];
+
+const coms = [xcomm, cam, com, nco, alum];
 /* @todo - Add alum to coms and other necesarry changes */
 
 function test(id) {
