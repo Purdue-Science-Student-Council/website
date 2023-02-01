@@ -348,7 +348,7 @@ const alum = {
 
   x: "alum",
   n: "PSSC Alumni",
-  t: "PSSC Alumni are a vital part of the organization and remain as advisors and friends. They often help in planning and volurnteering in events!",
+  t: "PSSC Alumni are a vital part of PSSC and remain as advisors and friends. They often help in planning and volunteer in events!",
   
   members : [     
     {
