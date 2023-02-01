@@ -359,38 +359,34 @@ const alum = {
 
   x: "alum",
   n: "PSSC Alumni",
-  t: " Alumni ",
+  t: "PSSC Alumni are a vital part of the organization and remain as advisors and friends. They often help in planning and volurnteering in events!",
   
   members : [     
     {
       n: "Mae Shu",
-      y: "2024",
+      y: "2022",
       m: "Biology",
     },
-//     {
-//       n: "Sydney Brown",
-//       p: "Vice President",
-//       y: "Junior",
-//       m: "Atmospheric Science",
-//     },
-//     {
-//       n: "Bridget Kiley",
-//       p: "Secretary",
-//       y: "Senior",
-//       m: "Computer Science",
-//     },
-//     {
-//       n: "Priyanka Ranga",
-//       p: "Treasurer",
-//       y: "Senior",
-//       m: "Health and Disease",
-//     },
-//     {
-//       n: "Dithi Saxena",
-//       p: c,
-//       y: "Senior",
-//       m: "Computer Science",
-//     },
+    {
+      n: "Sydney Brown",
+      y: "2022",
+      m: "Atmospheric Science",
+    },
+    {
+      n: "Bridget Kiley",
+      y: "2022",
+      m: "Computer Science",
+    },
+    {
+      n: "Priyanka Ranga",
+      y: "2022",
+      m: "Health and Disease",
+    },
+    {
+      n: "Dithi Saxena",
+      y: "2022",
+      m: "Computer Science",
+    },
   ],
 };
 
