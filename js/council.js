@@ -288,11 +288,6 @@ const nco = {
       m: "Health and Disease",
     },
     {
-      n: "Diana Hrushka",
-      y: "Junior",
-      m: "Biology",
-    },
-    {
       n: "Pooja Mathi",
       pic: x,
       y: "Senior",
