@@ -790,13 +790,13 @@ ul {
     margin: 0 auto 10px auto;
     margin-bottom: 5vh; }
     .component-poster-center {
-         width: 500px;
-         margin: 0 auto 10px auto;
-         margin-bottom: 5vh;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center; }
+       width: 500px;
+       margin: 0 auto 10px auto;
+       margin-bottom: 5vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center; }
 
 .hack-button {
   cursor: pointer;
