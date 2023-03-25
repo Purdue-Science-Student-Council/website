@@ -44,7 +44,7 @@ const winners = [
     "Carina Rebello",
     "Mark Lipton",
     "Corey Thompson",
-    "Shalini Low-Nam"
+    "Shalini Low-Nam",
     "Andrew Freed"
 ];
 const beginning_year = 1977;
