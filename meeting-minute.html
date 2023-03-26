@@ -12,50 +12,29 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="nav">
-        <!-- the spans are for vertical alignment -->
-        <div class="nav-logo"><span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a></div>
-        <!--nav-bar-item-active-->
-        <ul class="nav-bar">
-            <li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./index.html">Home</a>
-            </li>
-
-            <li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./about.html">About</a>
-            </li>
-
-            <!--li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./apply.html">Apply</a>
-            </li-->
-            
-            <!--li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./events.html">Events</a>
-            </li-->
-
-            <li class="nav-bar-item nav-bar-item-active">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./meeting-minute.html">Meeting Minutes</a>
-            </li>
-
-            <li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./new-student-orientation.html">New Student Orientation</a>
-            </li>
-            
-            <li class="nav-bar-item">
-                <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="./outstanding-teacher-award.html">Outstanding Teacher Award</a>
-            </li>
-
-            <!--li class="nav-bar-item">
-                    <span class="nav-valign"></span>
-                    <a class="nav-bar-item-a" href="./scavenger-hunt.html">Scavenger Hunt</a>
-                </li-->
-        </ul>
+      <div class="nav-logo"><span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a></div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <ul class="nav-bar">
+        <li class="nav-bar-item nav-bar-item-active">
+          <span class="nav-valign"></span>
+          <a class="nav-bar-item-a" href="./index.html">Home</a>
+        </li>
+        <li class="nav-bar-item">
+          <span class="nav-valign"></span>
+          <a class="nav-bar-item-a" href="./about.html">About</a>
+        </li>
+        <li class="nav-bar-item dropdown">
+          <span class="nav-valign"></span>
+          <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+          <div class="dropdown-menu">
+            <a href="./meeting-minute.html">Meeting Minutes</a>
+            <a href="./new-student-orientation.html">New Student Orientation</a>
+            <a href="./outstanding-teacher-award.html">Outstanding Teacher Award</a>
+          </div>
+        </li>
+      </ul>
     </nav>
     <nav id="js-m-nav" class="m-nav">
         <div class="m-nav-top">
