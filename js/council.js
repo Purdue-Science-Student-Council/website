@@ -189,11 +189,6 @@ const cam = {
       m: "Neurobiology & Physiology",
     },
     {
-      n: "Kisal Wijesooriya",
-      y: "Junior",
-      m: "Math, Statistics",
-    },
-    {
       n: "Jang Lee",
       y: "Sophomore",
       m: "Computer Science, Data Science",
@@ -234,11 +229,6 @@ const com = {
       n: "Rashmika Manipati",
       y: "Sophomore",
       m: "Environmental Geosciences",
-    },
-    {
-      n: "Evian Davenport",
-      y: "Freshman",
-      m: "Biology",
     },
     {
       n: "Allison Peterson",
@@ -288,18 +278,6 @@ const nco = {
       m: "Health and Disease",
     },
     {
-      n: "Pooja Mathi",
-      pic: x,
-      y: "Senior",
-      m: "Computer Science",
-    },
-    {
-      n: "Claire Bohman",
-      pic: x,
-      y: "Junior",
-      m: "Atmoshperic Science",
-    },
-    {
       n: "Jason Bodzy",
       y: "Sophomore",
       m: "Computer Science",
@@ -320,11 +298,11 @@ const nco = {
       y: "Junior",
       m: "Biochemistry",
     },
-    {
-      n: "Patrick Van Gheem",
-      y: "Freshman",
-      m: "Biochemistry",
-    },
+    // {
+    //   n: "Patrick Van Gheem",
+    //   y: "Freshman",
+    //   m: "Biochemistry",
+    // },
     {
       n: "Rebekah Stryjewski",
       pic: x,
