@@ -1118,4 +1118,52 @@ ul {
     -moz-box-shadow: inset 0px 0px 2px 2px #555555;
     box-shadow: inset 0px 0px 2px 2px #555555; }
 
+/* Add your desired styles here */
+.faq-container {
+  font-family: Arial, sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  font-size: 1rem;
+  line-height: 1.95rem;
+  text-align: justify;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.95rem;
+  text-align: justify;
+  display: none;
+  margin-bottom: 15px;
+  margin-left: 30px; /* Adjust the left margin as needed */
+}
+
+.plus-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #B1810A;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  line-height: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Styles to show the answer when the question is clicked */
+.faq-question.active {
+  color: #000000; /* Change the color as desired */
+  background: #FFF9DB;
+}
+
+.faq-question.active + .faq-answer {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -12,3 +12,9 @@ window.onload = function() {
     addClickListener("js-m-nav-click", navDrawer);
 };
 
+function toggleAnswer(element) {
+    const answer = element.nextElementSibling;
+    element.classList.toggle('active');
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  }
+  
