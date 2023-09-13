@@ -1166,4 +1166,27 @@ ul {
   display: block;
 }
 
+/* Increase Spacing in List Items */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Component Horizontal Split Container */
+
+.components-container {
+    display: flex; /* Display the components side-by-side */
+}
+
+.component {
+    flex: 1; /* Distribute available space equally between components */
+    margin-right: 10px; /* Add some spacing between components */
+    text-align: center; /* Center-align the content within each component */
+}
+  
+
 /*# sourceMappingURL=main.css.map */
