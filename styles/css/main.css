@@ -1169,11 +1169,12 @@ ul {
 /* Increase Spacing in List Items */
 
 ul {
-    list-style: none;
+    margin-left: 10px;
 }
 
 ul li {
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 /* Component Horizontal Split Container */
@@ -1188,5 +1189,19 @@ ul li {
     text-align: center; /* Center-align the content within each component */
 }
   
+/* Map iframe Centering */
+
+.map-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 60vh; /* Set the container height to the viewport height for vertical centering */
+}
+
+/* Optionally, you can add some additional styling to the map container */
+.map-container {
+  background-color: #ffffff; /* Set a background color */
+  padding: 10px; /* Add some padding around the iframe */
+}
 
 /*# sourceMappingURL=main.css.map */
