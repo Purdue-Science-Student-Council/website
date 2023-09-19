@@ -309,11 +309,11 @@ const nco = {
       y: "Junior",
       m: "Chemistry",
     },
-    {
-      n: "Shreyaa Karan",
-      y: "Sophomore",
-      m: "Computer Science",
-    },
+    // {
+    //   n: "Shreyaa Karan",
+    //   y: "Sophomore",
+    //   m: "Computer Science",
+    // },
   ],
 };
 
