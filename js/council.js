@@ -191,6 +191,48 @@ const cam = {
       y: "Junior",
       m: "Computer Science, Data Science",
     },
+    {
+      n: "Taaran Sajalvinodh",
+      pic: x,
+      y: "Senior",
+      m: "Chemistry ACS",
+    },
+    {
+      n: "Leo Guido",
+      pic: x,
+      y: "Freshman",
+      m: "Applied Math",
+    },
+    {
+      n: "Addisyn Hamm",
+      pic: x,
+      y: "Freshman",
+      m: "Genetics",
+    },
+    {
+      n: "Rishabh Kottakota",
+      pic: x,
+      y: "Freshman",
+      m: "Cell, Molecular, and Developmental Biology",
+    },
+    {
+      n: "Cara Suh",
+      pic: x,
+      y: "Freshman",
+      m: "",
+    },
+    {
+      n: "Sairam Ande",
+      pic: x,
+      y: "Freshman",
+      m: "Computer Science",
+    },
+    {
+      n: "Rianna Deckowitz",
+      pic: x,
+      y: "Junior",
+      m: "Planetary Science",
+    },
   ],
 };
 
@@ -252,6 +294,42 @@ const com = {
       y: "Senior",
       m: "Physics, Planetary Sciences",
     },
+    {
+      n: "Brooklin Shoulders",
+      pic: x,
+      y: "Freshman",
+      m: "Biochemistry",
+    },
+    {
+      n: "Grace Lubbers",
+      pic: x,
+      y: "Freshman",
+      m: "Actuarial Science",
+    },
+    {
+      n: "Elliot Shi",
+      pic: x,
+      y: "Freshman",
+      m: "Statistics",
+    },
+    {
+      n: "Talia Kidder",
+      pic: x,
+      y: "Freshman",
+      m: "Biology",
+    },
+    {
+      n: "Katherine Zwiener",
+      pic: x,
+      y: "Freshman",
+      m: "Biochemistry",
+    },
+    {
+      n: "Sarah Cronin",
+      pic: x,
+      y: "Freshman",
+      m: "Chemistry",
+    },
   ],
 };
 
@@ -310,6 +388,54 @@ const nco = {
     //   y: "Sophomore",
     //   m: "Computer Science",
     // },
+    {
+      n: "Yohaan Chokhany",
+      pic: x,
+      y: "Freshman",
+      m: "Computer Science",
+    },
+    {
+      n: "Sadie Poirier",
+      pic: x,
+      y: "Freshman",
+      m: "Biochemistry",
+    },
+    {
+      n: "Shiv Kothari",
+      pic: x,
+      y: "Freshman",
+      m: "Artificial Intelligence",
+    },
+    {
+      n: "Morgan DesEnfants",
+      pic: x,
+      y: "Freshman",
+      m: "Neurobiology & Physiology and Spanish",
+    },
+    {
+      n: "Evangelina Kalathoti",
+      pic: x,
+      y: "Freshman",
+      m: "Neurobiology & Physiology",
+    },
+    {
+      n: "Keya Dutta",
+      pic: x,
+      y: "Freshman",
+      m: "Chemistry",
+    },
+    {
+      n: "Mehak Virdy",
+      pic: x,
+      y: "Freshman",
+      m: "Computer Science",
+    },
+    {
+      n: "Caleb Buening",
+      pic: x,
+      y: "Freshman",
+      m: "Computer Science and Artificial Intelligence",
+    },
   ],
 };
 
