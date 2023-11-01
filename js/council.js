@@ -79,10 +79,9 @@ const x = "No Picture";
 const xcomm = {
   x: "xcom",
   n: "The Executive Committee",
-  t:
-    "The Executive Committee oversees the other three committees, connects with other Purdue organizations, communicates with faculty, and plans New Student Orientation.",
+  t: "The Executive Committee oversees the other three committees, connects with other Purdue organizations, communicates with faculty, and plans New Student Orientation.",
 
-    members: [
+  members: [
     {
       n: "Mahesh Gupta",
       p: "President",
@@ -131,8 +130,7 @@ const xcomm = {
 const cam = {
   x: "cam",
   n: "Campus Outreach",
-  t:
-    "The Campus Outreach committee provides events to support the College of Science students and faculty. We provide opportunities for students to engage with each other and connect with faculty. Some events we have put on in the past are Game Nights, Tabling free snacks, and Snack&Chats with professors.",
+  t: "The Campus Outreach committee provides events to support the College of Science students and faculty. We provide opportunities for students to engage with each other and connect with faculty. Some events we have put on in the past are Game Nights, Tabling free snacks, and Snack&Chats with professors.",
 
   members: [
     {
@@ -199,8 +197,7 @@ const cam = {
 const com = {
   x: "com",
   n: "Community Outreach",
-  t:
-    "The Community Outreach committee connects the College of Science and PSSC to the greater West Lafayette and Lafayette communities. We strive to support our community through various volunteer initiatives at Food Finders, mentorship with high school students, and “Science Day” at the local library where we perform science experiments with kids.",
+  t: "The Community Outreach committee connects the College of Science and PSSC to the greater West Lafayette and Lafayette communities. We strive to support our community through various volunteer initiatives at Food Finders, mentorship with high school students, and “Science Day” at the local library where we perform science experiments with kids.",
 
   members: [
     {
@@ -261,8 +258,7 @@ const com = {
 const nco = {
   x: "nco",
   n: "Networking and Career Outreach",
-  t:
-    "The Networking and Career Outreach committee provides professional growth opportunities. Through partnering with the Campus Outreach committee, we host multiple Snack&Chats to provide a space for students to interact with their STEM professors. Additionally, we provide pre-professional panels for students to learn more about opportunities after college.",
+  t: "The Networking and Career Outreach committee provides professional growth opportunities. Through partnering with the Campus Outreach committee, we host multiple Snack&Chats to provide a space for students to interact with their STEM professors. Additionally, we provide pre-professional panels for students to learn more about opportunities after college.",
 
   members: [
     {
@@ -318,12 +314,11 @@ const nco = {
 };
 
 const alum = {
-
   x: "alum",
   n: "PSSC Alumni",
   t: "PSSC Alumni are a vital part of PSSC and remain as advisors and friends. They often help in planning and volunteer in events!",
-  
-  members : [     
+
+  members: [
     {
       n: "Mae Shu",
       y: "2023",
@@ -357,7 +352,6 @@ const alum = {
     },
   ],
 };
-
 
 const coms = [xcomm, cam, com, nco, alum];
 /* @todo - Add alum to coms and other necesarry changes */
