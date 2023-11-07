@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Purdue-Science-Student-Council/website#readme",
   "dependencies": {
-    "firebase": "^6.3.5",
+    "firebase": "^9.16.0",
     "node-sass": "^4.14.1",
     "normalize-scss": "^7.0.1",
     "run": "^1.4.0",
