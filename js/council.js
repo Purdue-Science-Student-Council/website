@@ -212,7 +212,7 @@ const cam = {
     {
       n: "Rishabh Kottakota",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Cell, Molecular, and Developmental Biology",
     },
     {
@@ -315,7 +315,7 @@ const com = {
     {
       n: "Talia Kidder",
       pic: x,
-      y: "Freshman",
+      y: "Junior",
       m: "Biology",
     },
     {
@@ -327,7 +327,7 @@ const com = {
     {
       n: "Sarah Cronin",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Chemistry",
     },
   ],
@@ -397,7 +397,7 @@ const nco = {
     {
       n: "Sadie Poirier",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Biochemistry",
     },
     {
@@ -409,7 +409,7 @@ const nco = {
     {
       n: "Morgan DesEnfants",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Neurobiology & Physiology and Spanish",
     },
     {
