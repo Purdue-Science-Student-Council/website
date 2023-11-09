@@ -296,37 +296,31 @@ const com = {
     },
     {
       n: "Brooklin Shoulders",
-      pic: x,
       y: "Freshman",
       m: "Biochemistry",
     },
     {
       n: "Grace Lubbers",
-      pic: x,
       y: "Freshman",
       m: "Actuarial Science",
     },
     {
       n: "Elliot Shi",
-      pic: x,
       y: "Freshman",
       m: "Statistics",
     },
     {
       n: "Talia Kidder",
-      pic: x,
       y: "Junior",
       m: "Biology",
     },
     {
       n: "Katherine Zwiener",
-      pic: x,
       y: "Freshman",
       m: "Biochemistry",
     },
     {
       n: "Sarah Cronin",
-      pic: x,
       y: "Sophomore",
       m: "Chemistry",
     },
