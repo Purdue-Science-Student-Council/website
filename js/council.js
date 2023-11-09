@@ -352,7 +352,6 @@ const nco = {
     },
     {
       n: "Minsoo Oh",
-      pic: x,
       y: "Sophomore",
       m: "Applied Mathematics",
     },
