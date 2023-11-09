@@ -199,7 +199,6 @@ const cam = {
     },
     {
       n: "Leo Guido",
-      pic: x,
       y: "Freshman",
       m: "Applied Math",
     },
@@ -211,7 +210,6 @@ const cam = {
     },
     {
       n: "Rishabh Kottakota",
-      pic: x,
       y: "Sophomore",
       m: "Cell, Molecular, and Developmental Biology",
     },
@@ -223,13 +221,11 @@ const cam = {
     },
     {
       n: "Sairam Ande",
-      pic: x,
       y: "Freshman",
       m: "Computer Science",
     },
     {
       n: "Rianna Deckowitz",
-      pic: x,
       y: "Junior",
       m: "Planetary Science",
     },
@@ -372,7 +368,6 @@ const nco = {
     // },
     {
       n: "Rebekah Stryjewski",
-      pic: x,
       y: "Junior",
       m: "Chemistry",
     },
@@ -389,19 +384,16 @@ const nco = {
     },
     {
       n: "Sadie Poirier",
-      pic: x,
       y: "Sophomore",
       m: "Biochemistry",
     },
     {
       n: "Shiv Kothari",
-      pic: x,
       y: "Freshman",
       m: "Artificial Intelligence",
     },
     {
       n: "Morgan DesEnfants",
-      pic: x,
       y: "Sophomore",
       m: "Neurobiology & Physiology and Spanish",
     },
@@ -413,19 +405,16 @@ const nco = {
     },
     {
       n: "Keya Dutta",
-      pic: x,
       y: "Freshman",
       m: "Chemistry",
     },
     {
       n: "Mehak Virdy",
-      pic: x,
       y: "Freshman",
       m: "Computer Science",
     },
     {
       n: "Caleb Buening",
-      pic: x,
       y: "Freshman",
       m: "Computer Science and Artificial Intelligence",
     },
