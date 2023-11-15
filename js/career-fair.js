@@ -17,3 +17,28 @@ function toggleAnswer(element) {
     element.classList.toggle('active');
     answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 }
+
+let currentSlide = 1;
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName("carousel-slide");
+    
+    if (n > slides.length) {
+        currentSlide = 1;
+    } else if (n < 1) {
+        currentSlide = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[currentSlide - 1].style.display = "block";
+}
+
+function changeSlide(n) {
+    showSlide(currentSlide += n);
+}
+
+// Show the first slide when the page loads
+showSlide(currentSlide);
