@@ -429,11 +429,13 @@ const alum = {
   members: [
     {
       n: "Mae Shu",
+      p: "President",
       y: "2023",
       m: "Biology",
     },
     {
       n: "Bridget Kiley",
+      p: "Secretary",
       y: "2023",
       m: "Computer Science",
     },
@@ -444,7 +446,8 @@ const alum = {
     },
     {
       n: "Dithi Saxena",
-      y: "2022",
+      p: "Committee Head - Campus",
+      y: "2023",
       m: "Computer Science",
     },
     {
