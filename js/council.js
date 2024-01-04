@@ -413,7 +413,7 @@ const alum = {
     {
       n: "Bryce Raber",
       pic: x,
-      y: "Senior",
+      y: "2024",
       m: "Genetics",
     },
     {
