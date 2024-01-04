@@ -83,13 +83,13 @@ const xcomm = {
 
   members: [
     {
-      n: "Mahesh Gupta",
+      n: "Mahesh Gupta", //Alum
       p: "President",
       y: "Senior",
       m: "Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Ellis Lin",
+      n: "Ellis Lin",  //Alum
       p: "Vice President",
       y: "Senior",
       m: "Chemistry",
@@ -101,25 +101,25 @@ const xcomm = {
       m: "Biology",
     },
     {
-      n: "Jack Mrachek",
+      n: "Jack Mrachek", //Alum
       p: "Treasurer",
       y: "Senior",
       m: "Planetary Science",
     },
     {
-      n: "Sydney Moeller",
+      n: "Sydney Moeller", //Alum
       p: "Public Relations Director",
       y: "Senior",
       m: "Neurobiology, Health & Disease",
     },
     {
-      n: "Lauren Gartenhaus",
+      n: "Lauren Gartenhaus", //Alum
       p: "Internal Activities Director",
       y: "Senior",
       m: "Genetics, Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Pramey Kabra",
+      n: "Pramey Kabra", //Alum
       p: "Webmaster",
       y: "Senior",
       m: "Computer Science, Data Science",
@@ -140,7 +140,7 @@ const cam = {
       m: "Biochemistry",
     },
     {
-      n: "Christina Warner",
+      n: "Christina Warner", //Alum
       p: c,
       y: "Senior",
       m: "Chemistry, Psychology",
@@ -156,7 +156,7 @@ const cam = {
       m: "Data Science, Brain and Behavioral Science",
     },
     {
-      n: "Kaitlynn Tran",
+      n: "Kaitlynn Tran", //Exec
       y: "Junior",
       m: "Applied Statistics, Political Science",
     },
@@ -177,12 +177,12 @@ const cam = {
       m: "Genetics",
     },
     {
-      n: "Anushka Shome",
+      n: "Anushka Shome", //Exec
       y: "Sophomore",
       m: "Computer Science",
     },
     {
-      n: "Valentina Micolisin",
+      n: "Valentina Micolisin", //Campus Head
       y: "Junior",
       m: "Neurobiology & Physiology",
     },
@@ -217,7 +217,7 @@ const cam = {
       n: "Cara Suh",
       pic: x,
       y: "Freshman",
-      m: "",
+      m: "Physics",
     },
     {
       n: "Sairam Ande",
@@ -239,24 +239,24 @@ const com = {
 
   members: [
     {
-      n: "Kinzie Gamaleldin",
+      n: "Kinzie Gamaleldin", //Alum
       p: c,
       y: "Senior",
       m: "Biochemistry",
     },
     {
-      n: "Christine Farrell",
+      n: "Christine Farrell", //Exec
       p: c,
       y: "Sophomore",
       m: "Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Nadia Seye",
+      n: "Nadia Seye", //Alum
       y: "Senior",
       m: "Biology",
     },
     {
-      n: "Caroline Zu",
+      n: "Caroline Zu", //Exec
       y: "Junior",
       m: "Biochemistry",
     },
@@ -266,27 +266,27 @@ const com = {
       m: "Environmental Geosciences",
     },
     {
-      n: "Allison Peterson",
+      n: "Allison Peterson", //Community Head
       y: "Junior",
       m: "Biology, Secondary Education",
     },
     {
-      n: "Mia Martinez",
+      n: "Mia Martinez", //Exec
       y: "Sophomore",
       m: "Chemistry",
     },
     {
-      n: "Olivia Tan",
+      n: "Olivia Tan", //Alum
       y: "Senior",
       m: "Actuarial Science, Statistics, Economics",
     },
     {
-      n: "Keela Zambre",
+      n: "Keela Zambre", 
       y: "Junior",
       m: "Chemistry",
     },
     {
-      n: "Brianne Checketts",
+      n: "Brianne Checketts", //Alum
       y: "Senior",
       m: "Physics, Planetary Sciences",
     },
@@ -296,7 +296,7 @@ const com = {
       m: "Biochemistry",
     },
     {
-      n: "Grace Lubbers",
+      n: "Grace Lubbers", //Community Head
       y: "Freshman",
       m: "Actuarial Science",
     },
@@ -316,7 +316,7 @@ const com = {
       m: "Biochemistry",
     },
     {
-      n: "Sarah Cronin",
+      n: "Sarah Cronin", //Exec
       y: "Sophomore",
       m: "Chemistry",
     },
@@ -330,7 +330,7 @@ const nco = {
 
   members: [
     {
-      n: "Elizabeth Martello",
+      n: "Elizabeth Martello", //Alum
       p: c,
       y: "Senior",
       m: "Biochemistry",
@@ -347,7 +347,7 @@ const nco = {
       m: "Computer Science",
     },
     {
-      n: "Minsoo Oh",
+      n: "Minsoo Oh", //NCO Head
       y: "Sophomore",
       m: "Applied Mathematics",
     },
@@ -357,7 +357,7 @@ const nco = {
       m: "Computer Science",
     },
     {
-      n: "Paige Kertes",
+      n: "Paige Kertes", //Alum
       y: "Senior",
       m: "Biochemistry",
     },
