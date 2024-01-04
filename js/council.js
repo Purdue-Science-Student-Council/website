@@ -166,12 +166,6 @@ const cam = {
       m: "Biochemistry, Data Science",
     },
     {
-      n: "Bryce Raber",
-      pic: x,
-      y: "Senior",
-      m: "Genetics",
-    },
-    {
       n: "Jang Lee",
       y: "Junior",
       m: "Computer Science, Data Science",
@@ -415,6 +409,12 @@ const alum = {
       p: "Committee Head - NCO",
       y: "2024",
       m: "Biochemistry",
+    },
+    {
+      n: "Bryce Raber",
+      pic: x,
+      y: "Senior",
+      m: "Genetics",
     },
     {
       n: "Nadia Seye", //Alum
