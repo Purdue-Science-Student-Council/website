@@ -83,15 +83,15 @@ const xcomm = {
 
   members: [
     {
-      n: "Mahesh Gupta", //Alum
+      n: "Christine Farrell", //Exec
       p: "President",
-      y: "Senior",
+      y: "Sophomore",
       m: "Cell, Molecular, & Devt Biology",
     },
     {
-      n: "Ellis Lin",  //Alum
+      n: "Mia Martinez", //Exec
       p: "Vice President",
-      y: "Senior",
+      y: "Sophomore",
       m: "Chemistry",
     },
     {
@@ -101,28 +101,28 @@ const xcomm = {
       m: "Biology",
     },
     {
-      n: "Jack Mrachek", //Alum
+      n: "Caroline Zu", //Exec
+      y: "Junior",
       p: "Treasurer",
-      y: "Senior",
-      m: "Planetary Science",
+      m: "Biochemistry",
     },
     {
-      n: "Sydney Moeller", //Alum
+      n: "Kaitlynn Tran", //Exec
       p: "Public Relations Director",
-      y: "Senior",
-      m: "Neurobiology, Health & Disease",
+      y: "Junior",
+      m: "Applied Statistics, Political Science",
     },
     {
-      n: "Lauren Gartenhaus", //Alum
+      n: "Sarah Cronin", //Exec
       p: "Internal Activities Director",
-      y: "Senior",
-      m: "Genetics, Cell, Molecular, & Devt Biology",
+      y: "Sophomore",
+      m: "Chemistry",
     },
     {
-      n: "Pramey Kabra", //Alum
+      n: "Anushka Shome", //Exec
       p: "Webmaster",
-      y: "Senior",
-      m: "Computer Science, Data Science",
+      y: "Sophomore",
+      m: "Computer Science",
     },
   ],
 };
@@ -140,10 +140,10 @@ const cam = {
       m: "Biochemistry",
     },
     {
-      n: "Christina Warner", //Alum
+      n: "Valentina Micolisin", //Campus Head
       p: c,
-      y: "Senior",
-      m: "Chemistry, Psychology",
+      y: "Junior",
+      m: "Neurobiology & Physiology",
     },
     {
       n: "Mahsa Farahani",
@@ -154,11 +154,6 @@ const cam = {
       n: "Shreya Vasant",
       y: "Junior",
       m: "Data Science, Brain and Behavioral Science",
-    },
-    {
-      n: "Kaitlynn Tran", //Exec
-      y: "Junior",
-      m: "Applied Statistics, Political Science",
     },
     {
       n: "Emily Juhl",
@@ -175,16 +170,6 @@ const cam = {
       pic: x,
       y: "Senior",
       m: "Genetics",
-    },
-    {
-      n: "Anushka Shome", //Exec
-      y: "Sophomore",
-      m: "Computer Science",
-    },
-    {
-      n: "Valentina Micolisin", //Campus Head
-      y: "Junior",
-      m: "Neurobiology & Physiology",
     },
     {
       n: "Jang Lee",
@@ -211,7 +196,7 @@ const cam = {
     {
       n: "Rishabh Kottakota",
       y: "Sophomore",
-      m: "Cell, Molecular, and Developmental Biology",
+      m: "Cell, Molecular, & Developmental Biology",
     },
     {
       n: "Cara Suh",
@@ -239,26 +224,16 @@ const com = {
 
   members: [
     {
-      n: "Kinzie Gamaleldin", //Alum
+      n: "Allison Peterson", //Community Head
       p: c,
-      y: "Senior",
-      m: "Biochemistry",
-    },
-    {
-      n: "Christine Farrell", //Exec
-      p: c,
-      y: "Sophomore",
-      m: "Cell, Molecular, & Devt Biology",
-    },
-    {
-      n: "Nadia Seye", //Alum
-      y: "Senior",
-      m: "Biology",
-    },
-    {
-      n: "Caroline Zu", //Exec
       y: "Junior",
-      m: "Biochemistry",
+      m: "Biology, Secondary Education",
+    },
+    {
+      n: "Grace Lubbers", //Community Head
+      p: c,
+      y: "Freshman",
+      m: "Actuarial Science",
     },
     {
       n: "Rashmika Manipati",
@@ -266,39 +241,14 @@ const com = {
       m: "Environmental Geosciences",
     },
     {
-      n: "Allison Peterson", //Community Head
-      y: "Junior",
-      m: "Biology, Secondary Education",
-    },
-    {
-      n: "Mia Martinez", //Exec
-      y: "Sophomore",
-      m: "Chemistry",
-    },
-    {
-      n: "Olivia Tan", //Alum
-      y: "Senior",
-      m: "Actuarial Science, Statistics, Economics",
-    },
-    {
       n: "Keela Zambre", 
       y: "Junior",
       m: "Chemistry",
     },
     {
-      n: "Brianne Checketts", //Alum
-      y: "Senior",
-      m: "Physics, Planetary Sciences",
-    },
-    {
       n: "Brooklin Shoulders",
       y: "Freshman",
       m: "Biochemistry",
-    },
-    {
-      n: "Grace Lubbers", //Community Head
-      y: "Freshman",
-      m: "Actuarial Science",
     },
     {
       n: "Elliot Shi",
@@ -315,11 +265,6 @@ const com = {
       y: "Freshman",
       m: "Biochemistry",
     },
-    {
-      n: "Sarah Cronin", //Exec
-      y: "Sophomore",
-      m: "Chemistry",
-    },
   ],
 };
 
@@ -330,16 +275,16 @@ const nco = {
 
   members: [
     {
-      n: "Elizabeth Martello", //Alum
-      p: c,
-      y: "Senior",
-      m: "Biochemistry",
-    },
-    {
       n: "Sophia Parker",
       p: c,
       y: "Junior",
       m: "Health and Disease",
+    },
+    {
+      n: "Minsoo Oh", //NCO Head
+      p: c,
+      y: "Sophomore",
+      m: "Applied Mathematics",
     },
     {
       n: "Jason Bodzy",
@@ -347,19 +292,9 @@ const nco = {
       m: "Computer Science",
     },
     {
-      n: "Minsoo Oh", //NCO Head
-      y: "Sophomore",
-      m: "Applied Mathematics",
-    },
-    {
       n: "Nathan Schneider",
       y: "Sophomore",
       m: "Computer Science",
-    },
-    {
-      n: "Paige Kertes", //Alum
-      y: "Senior",
-      m: "Biochemistry",
     },
     // {
     //   n: "Patrick Van Gheem",
@@ -395,7 +330,7 @@ const nco = {
     {
       n: "Morgan DesEnfants",
       y: "Sophomore",
-      m: "Neurobiology & Physiology and Spanish",
+      m: "Neurobiology & Physiology, Spanish",
     },
     {
       n: "Evangelina Kalathoti",
@@ -416,7 +351,7 @@ const nco = {
     {
       n: "Caleb Buening",
       y: "Freshman",
-      m: "Computer Science and Artificial Intelligence",
+      m: "Computer Science, Artificial Intelligence",
     },
   ],
 };
@@ -428,6 +363,80 @@ const alum = {
 
   members: [
     {
+      n: "Mahesh Gupta",
+      p: "President",
+      y: "2024",
+      m: "Cell, Molecular, & Devt Biology",
+    },
+    {
+      n: "Ellis Lin", 
+      p: "Vice President",
+      y: "2024",
+      m: "Chemistry",
+    },
+    {
+      n: "Jack Mrachek",
+      p: "Treasurer",
+      y: "2024",
+      m: "Planetary Science",
+    },
+    {
+      n: "Sydney Moeller",
+      p: "Public Relations Director",
+      y: "2024",
+      m: "Neurobiology, Health & Disease",
+    },
+    {
+      n: "Lauren Gartenhaus",
+      p: "Internal Activities Director",
+      y: "2024",
+      m: "Genetics, Cell, Molecular, & Devt Biology",
+    },
+    {
+      n: "Pramey Kabra",
+      p: "Webmaster",
+      y: "2024",
+      m: "Computer Science, Data Science",
+    },
+    {
+      n: "Christina Warner", //Alum
+      p: "Committee Head - Campus",
+      y: "2024",
+      m: "Chemistry, Psychology",
+    },
+    {
+      n: "Kinzie Gamaleldin", //Alum
+      p: "Committee Head - Community",
+      y: "2024",
+      m: "Biochemistry",
+    },
+    {
+      n: "Elizabeth Martello", //Alum
+      p: "Committee Head - NCO",
+      y: "2024",
+      m: "Biochemistry",
+    },
+    {
+      n: "Nadia Seye", //Alum
+      y: "2024",
+      m: "Biology",
+    },
+    {
+      n: "Olivia Tan", //Alum
+      y: "2024",
+      m: "Actuarial Science, Statistics, Economics",
+    },
+    {
+      n: "Brianne Checketts", //Alum
+      y: "2024",
+      m: "Physics, Planetary Sciences",
+    },
+    {
+      n: "Paige Kertes", //Alum
+      y: "2024",
+      m: "Biochemistry",
+    },
+    /*{
       n: "Mae Shu",
       p: "President",
       y: "2023",
@@ -460,7 +469,7 @@ const alum = {
       pic: x,
       y: "2023",
       m: "Biology",
-    },
+    },*/
   ],
 };
 
