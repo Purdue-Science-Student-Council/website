@@ -90,6 +90,7 @@ const xcomm = {
     },
     {
       n: "Mia Martinez", //Exec
+      pic: x,
       p: "Vice President",
       y: "Sophomore",
       m: "Chemistry",
