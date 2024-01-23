@@ -84,6 +84,7 @@ const xcomm = {
   members: [
     {
       n: "Christine Farrell", //Exec
+      pic: x,
       p: "President",
       y: "Sophomore",
       m: "Cell, Molecular, & Devt Biology",
