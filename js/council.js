@@ -114,7 +114,6 @@ const xcomm = {
     },
     {
       n: "Sarah Cronin", //Exec
-      pic: x,
       p: "Internal Activities Director",
       y: "Sophomore",
       m: "Chemistry",
