@@ -173,7 +173,7 @@ const cam = {
     {
       n: "Taaran Sajalvinodh",
       pic: x,
-      y: "Senior",
+      y: "Freshman",
       m: "Chemistry ACS",
     },
     {
