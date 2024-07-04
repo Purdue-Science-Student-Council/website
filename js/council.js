@@ -277,7 +277,6 @@ const nco = {
     {
       n: "Minsoo Oh", //NCO Head
       p: c,
-      pic: x,
       y: "Sophomore",
       m: "Applied Mathematics & Computer Science",
     },
