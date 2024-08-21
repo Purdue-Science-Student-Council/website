@@ -166,42 +166,15 @@ const cam = {
       m: "Biochemistry, Data Science",
     },
     {
-      n: "Jang Lee",
-      y: "Senior",
-      m: "Computer Science, Data Science",
-    },
-    {
-      n: "Taaran Sajalvinodh",
-      pic: x,
-      y: "Sophomore",
-      m: "Chemistry ACS",
-    },
-    {
       n: "Leo Guido",
       y: "Sophomore",
       m: "Applied Math",
-    },
-    {
-      n: "Addisyn Hamm",
-      pic: x,
-      y: "Sophomore",
-      m: "Genetics",
-    },
-    {
-      n: "Rishabh Kottakota",
-      y: "Junior",
-      m: "Cell, Molecular, & Developmental Biology",
     },
     {
       n: "Cara Suh",
       pic: x,
       y: "Sophomore",
       m: "Physics",
-    },
-    {
-      n: "Sairam Ande",
-      y: "Sophomore",
-      m: "Computer Science",
     },
     {
       n: "Rianna Deckowitz",
@@ -233,11 +206,6 @@ const com = {
       n: "Rashmika Manipati",
       y: "Senior",
       m: "Environmental Geosciences",
-    },
-    {
-      n: "Keela Zambre", 
-      y: "Senior",
-      m: "Chemistry",
     },
     {
       n: "Brooklin Shoulders",
@@ -320,11 +288,6 @@ const nco = {
       n: "Shiv Kothari",
       y: "Sophomore",
       m: "Artificial Intelligence",
-    },
-    {
-      n: "Morgan DesEnfants",
-      y: "Junior",
-      m: "Neurobiology & Physiology, Spanish",
     },
     {
       n: "Evangelina Kalathoti",
