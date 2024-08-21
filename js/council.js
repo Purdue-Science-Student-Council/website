@@ -85,43 +85,43 @@ const xcomm = {
     {
       n: "Christine Farrell", //Exec
       p: "President",
-      y: "Sophomore",
+      y: "Junior",
       m: "Cell, Molecular, & Devt Biology",
     },
     {
       n: "Mia Martinez", //Exec
       p: "Vice President",
-      y: "Sophomore",
+      y: "Junior",
       m: "Chemistry",
     },
     {
       n: "Samantha Maari",
       p: "Secretary",
-      y: "Junior",
+      y: "Senior",
       m: "Biology",
     },
     {
       n: "Caroline Zu", //Exec
-      y: "Junior",
+      y: "Senior",
       p: "Treasurer",
       m: "Biochemistry",
     },
     {
       n: "Kaitlynn Tran", //Exec
       p: "Public Relations Director",
-      y: "Junior",
+      y: "Senior",
       m: "Applied Statistics, Political Science",
     },
     {
       n: "Sarah Cronin", //Exec
       p: "Internal Activities Director",
-      y: "Sophomore",
+      y: "Junior",
       m: "Chemistry",
     },
     {
       n: "Anushka Shome", //Exec
       p: "Webmaster",
-      y: "Sophomore",
+      y: "Junior",
       m: "Computer Science",
     },
   ],
@@ -136,76 +136,76 @@ const cam = {
     {
       n: "Sophia Benjemia",
       p: c,
-      y: "Junior",
+      y: "Senior",
       m: "Biochemistry",
     },
     {
       n: "Valentina Micolisin", //Campus Head
       p: c,
-      y: "Junior",
+      y: "Senior",
       m: "Neurobiology & Physiology",
     },
     {
       n: "Mahsa Farahani",
-      y: "Junior",
+      y: "Senior",
       m: "Neurobiology & Physiology",
     },
     {
       n: "Shreya Vasant",
-      y: "Junior",
+      y: "Senior",
       m: "Data Science, Brain and Behavioral Science",
     },
     {
       n: "Emily Juhl",
-      y: "Sophomore",
+      y: "Junior",
       m: "Biology",
     },
     {
       n: "Dhruv Shah",
-      y: "Junior",
+      y: "Senior",
       m: "Biochemistry, Data Science",
     },
     {
       n: "Jang Lee",
-      y: "Junior",
+      y: "Senior",
       m: "Computer Science, Data Science",
     },
     {
       n: "Taaran Sajalvinodh",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Chemistry ACS",
     },
     {
       n: "Leo Guido",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Applied Math",
     },
     {
       n: "Addisyn Hamm",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Genetics",
     },
     {
       n: "Rishabh Kottakota",
-      y: "Sophomore",
+      y: "Junior",
       m: "Cell, Molecular, & Developmental Biology",
     },
     {
       n: "Cara Suh",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Physics",
     },
     {
       n: "Sairam Ande",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Computer Science",
     },
     {
       n: "Rianna Deckowitz",
-      y: "Junior",
+      y: "Senior",
       m: "Planetary Science",
     },
   ],
@@ -220,43 +220,43 @@ const com = {
     {
       n: "Allison Peterson", //Community Head
       p: c,
-      y: "Junior",
+      y: "Senior",
       m: "Biology, Secondary Education",
     },
     {
       n: "Grace Lubbers", //Community Head
       p: c,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Actuarial Science",
     },
     {
       n: "Rashmika Manipati",
-      y: "Junior",
+      y: "Senior",
       m: "Environmental Geosciences",
     },
     {
       n: "Keela Zambre", 
-      y: "Junior",
+      y: "Senior",
       m: "Chemistry",
     },
     {
       n: "Brooklin Shoulders",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Biochemistry",
     },
     {
       n: "Elliot Shi",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Statistics",
     },
     {
       n: "Talia Kidder",
-      y: "Junior",
+      y: "Senior",
       m: "Biology",
     },
     {
       n: "Katherine Zwiener",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Biochemistry",
     },
   ],
@@ -271,23 +271,23 @@ const nco = {
     {
       n: "Sophia Parker",
       p: c,
-      y: "Junior",
+      y: "Senior",
       m: "Health and Disease",
     },
     {
       n: "Minsoo Oh", //NCO Head
       p: c,
-      y: "Sophomore",
+      y: "Junior",
       m: "Applied Mathematics & Computer Science",
     },
     {
       n: "Jason Bodzy",
-      y: "Junior",
+      y: "Sophomore",
       m: "Computer Science",
     },
     {
       n: "Nathan Schneider",
-      y: "Sophomore",
+      y: "Junior",
       m: "Computer Science",
     },
     // {
@@ -297,7 +297,7 @@ const nco = {
     // },
     {
       n: "Rebekah Stryjewski",
-      y: "Junior",
+      y: "Senior",
       m: "Chemistry",
     },
     // {
@@ -308,43 +308,43 @@ const nco = {
     {
       n: "Yohaan Chokhany",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Computer Science",
     },
     {
       n: "Sadie Poirier",
-      y: "Sophomore",
+      y: "Junior",
       m: "Biochemistry",
     },
     {
       n: "Shiv Kothari",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Artificial Intelligence",
     },
     {
       n: "Morgan DesEnfants",
-      y: "Sophomore",
+      y: "Junior",
       m: "Neurobiology & Physiology, Spanish",
     },
     {
       n: "Evangelina Kalathoti",
       pic: x,
-      y: "Freshman",
+      y: "Sophomore",
       m: "Neurobiology & Physiology",
     },
     {
       n: "Keya Dutta",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Chemistry",
     },
     {
       n: "Mehak Virdy",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Computer Science",
     },
     {
       n: "Caleb Buening",
-      y: "Freshman",
+      y: "Sophomore",
       m: "Computer Science, Artificial Intelligence",
     },
   ],
