@@ -835,11 +835,9 @@ ul {
     padding-bottom: 3vh;
     padding-left: 3vw;
     padding-right: 3vw; }
-  /*.component-yellow {
-    background-color: var( --slightly-darker-bg-color);
-    text-align: center;
-    display:flex;
-  }*/
+    .component-light-yellow {
+      background-color: var( --slightly-darker-bg-color);
+    }
   .component-image {
     width: 250px;
     height: 250px;
