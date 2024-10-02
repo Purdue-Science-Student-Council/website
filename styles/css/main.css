@@ -1018,7 +1018,7 @@ ul {
 
 @media screen and (max-width: 950px) {
   .masthead {
-    height: 40vh; } /*used to be 70*/
+    height: 50vh; } /*used to be 70*/
     .masthead-title {
       font-size: 3.5rem; }
     .masthead-logo {
