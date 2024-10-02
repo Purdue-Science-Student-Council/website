@@ -837,6 +837,15 @@ ul {
     padding-right: 3vw; }
     .component-light-yellow {
       background-color: var( --slightly-darker-bg-color);
+      text-align: center;
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3vh;
+      padding-left: 3vw;
+      padding-right: 3vw;
     }
   .component-image {
     width: 250px;
