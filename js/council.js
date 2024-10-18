@@ -291,7 +291,6 @@ const nco = {
     },
     {
       n: "Evangelina Kalathoti",
-      pic: x,
       y: "Sophomore",
       m: "Neurobiology & Physiology",
     },
