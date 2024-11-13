@@ -151,11 +151,6 @@ const cam = {
       m: "Neurobiology & Physiology",
     },
     {
-      n: "Shreya Vasant",
-      y: "Senior",
-      m: "Data Science, Brain and Behavioral Science",
-    },
-    {
       n: "Emily Juhl",
       y: "Junior",
       m: "Biology",
@@ -237,12 +232,6 @@ const nco = {
 
   members: [
     {
-      n: "Sophia Parker",
-      p: c,
-      y: "Senior",
-      m: "Health and Disease",
-    },
-    {
       n: "Minsoo Oh", //NCO Head
       p: c,
       y: "Junior",
@@ -273,12 +262,6 @@ const nco = {
     //   y: "Sophomore",
     //   m: "Computer Science",
     // },
-    {
-      n: "Yohaan Chokhany",
-      pic: x,
-      y: "Sophomore",
-      m: "Computer Science",
-    },
     {
       n: "Sadie Poirier",
       y: "Junior",
