@@ -235,7 +235,7 @@ const nco = {
       n: "Minsoo Oh",
       p: c,
       y: "Junior",
-      m: "Applied Mathematics & Computer Science",
+      m: "Applied Mathematics, Computer Science",
     },
     {
       n: "Stephanie Sun",
