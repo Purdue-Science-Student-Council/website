@@ -269,11 +269,6 @@ const nco = {
       m: "Computer Science",
     },
     {
-      n: "Caleb Buening",
-      y: "Sophomore",
-      m: "Computer Science, Artificial Intelligence",
-    },
-    {
       n: "Chen Yang",
       y: "Freshman",
       m: "Applied Statistics",
