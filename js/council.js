@@ -146,11 +146,6 @@ const cam = {
       m: "Environmental Geosciences",
     },
     {
-      n: "Emily Juhl",
-      y: "Junior",
-      m: "Biology",
-    },
-    {
       n: "Leo Guido",
       y: "Sophomore",
       m: "Applied Math",
@@ -187,11 +182,13 @@ const com = {
       y: "Sophomore",
       m: "Physics",
     },
+    /*
     {
       n: "Brooklin Shoulders",
       y: "Sophomore",
       m: "Biochemistry",
     },
+    */
     {
       n: "Elliot Shi",
       y: "Sophomore",
@@ -242,21 +239,6 @@ const nco = {
       p: c,
       y: "Sophomore",
       m: "Computer Science, Business Management"
-    },
-    {
-      n: "Jason Bodzy",
-      y: "Sophomore",
-      m: "Computer Science",
-    },
-    {
-      n: "Nathan Schneider",
-      y: "Junior",
-      m: "Computer Science",
-    },
-    {
-      n: "Sadie Poirier",
-      y: "Junior",
-      m: "Biochemistry",
     },
     {
       n: "Shiv Kothari",
