@@ -257,7 +257,6 @@ const nco = {
     },
     {
       n: "Ray Lai",
-      pic: x,
       y: "Sophomore",
       m: "Biochemistry (ACS)",
     },
