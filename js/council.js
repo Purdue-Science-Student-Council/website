@@ -276,6 +276,11 @@ const nco = {
       y: "Sophomore",
       m: "Applied Statistics",
     },
+    {
+      n: "Jang Hoon Lee",
+      y: "Sophomore",
+      m: "Computer Science"
+    }
   ],
 };
 
