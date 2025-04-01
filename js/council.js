@@ -161,6 +161,11 @@ const cam = {
       y: "Freshman",
       m: "Chemistry",
     },
+    {
+      n: "Karthik Varigonda",
+      y: "Freshman",
+      m: "Cell, Molecular, & Devt Biology",
+    },
   ],
 };
 
