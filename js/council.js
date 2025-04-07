@@ -223,6 +223,11 @@ const com = {
       n: "Gwen Carey",
       y: "Freshman",
       m: "Biochemistry",
+    },
+    {
+      n: "Grace Amburgey",
+      y: "Freshman",
+      m: "Chemistry (ACS)",
     }
   ],
 };
