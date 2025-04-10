@@ -228,6 +228,11 @@ const com = {
       n: "Grace Amburgey",
       y: "Freshman",
       m: "Chemistry (ACS)",
+    },
+    {
+      n: "Valentina Perera",
+      y: "Freshman",
+      m: "Neurobiology & Physiology"
     }
   ],
 };
