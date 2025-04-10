@@ -46,7 +46,8 @@ const winners = [
     "Corey Thompson",
     "Shalini Low-Nam",
     "Andrew Freed",
-    "Andrew Freed"
+    "Andrew Freed",
+    "Hannah Starr"
 ];
 const beginning_year = 1977;
 
