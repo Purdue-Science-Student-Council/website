@@ -166,6 +166,11 @@ const cam = {
       y: "Freshman",
       m: "Cell, Molecular, & Devt Biology",
     },
+    {
+      n: "Shagun Trivedi",
+      y: "Freshman",
+      m: "Physics"
+    }
   ],
 };
 
