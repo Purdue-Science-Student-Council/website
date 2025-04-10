@@ -5,6 +5,7 @@ const contributors = [
     "Tom Appenzeller",
     "Kaitlynn Tran",
     "Pramey Kabra",
+    "Anushka Shome"
 ];
 const beginning_year = 2018;
 
