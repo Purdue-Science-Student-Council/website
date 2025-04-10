@@ -290,6 +290,11 @@ const nco = {
       n: "Jang Hoon Lee",
       y: "Sophomore",
       m: "Computer Science"
+    },
+    {
+      n: "Gwendolyn Carreon",
+      y: "Junior",
+      m: "Biochemistry"
     }
   ],
 };
