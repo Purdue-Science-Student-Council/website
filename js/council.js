@@ -245,6 +245,11 @@ const com = {
       m: "Neurobiology & Physiology"
     },
     {
+      n: "Vianca Jelu",
+      y: "Sophomore",
+      m: "Microbiology"
+    },
+    {
       n: "Kimaya Deshpande",
       y: "Freshman",
       m: "Computer Science"
