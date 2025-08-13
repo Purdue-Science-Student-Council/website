@@ -238,6 +238,11 @@ const com = {
       n: "Valentina Perera",
       y: "Freshman",
       m: "Neurobiology & Physiology"
+    },
+    {
+      n: "Kimaya Deshpande",
+      y: "Freshman",
+      m: "Computer Science"
     }
   ],
 };
