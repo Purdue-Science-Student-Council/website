@@ -310,7 +310,12 @@ const nco = {
       n: "Nikita Sirandasu",
       y: "Freshman",
       m: "Computer Science"
-    }
+    },
+    {
+      n: "Avi Aggarwal",
+      y: "Freshman",
+      m: "Computer Science"
+    },
   ],
 };
 
