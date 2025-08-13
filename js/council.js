@@ -175,6 +175,11 @@ const cam = {
       n: "Maria Chaklasi",
       y: "Freshman",
       m: "Cell, Molecular, & Devt Biology"
+    },
+    {
+      n: "Rowan Murphy",
+      y: "Sophomore",
+      m: "Applied Physics"
     }
   ],
 };
