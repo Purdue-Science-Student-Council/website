@@ -177,6 +177,16 @@ const cam = {
       n: "Rowan Murphy",
       y: "Junior",
       m: "Applied Physics"
+    },
+    {
+      n: "Srilakshmi Srivathsan",
+      y: "Freshman",
+      m: "Neurobiology & Physiology"
+    },
+    {
+      n: "Andre Lee",
+      y: "Freshman",
+      m: "Computer Science"
     }
   ],
 };
