@@ -179,6 +179,11 @@ const cam = {
       m: "Applied Physics"
     },
     {
+      n: "Veda Thangudu",
+      y: "Sophomore",
+      m: "Biology"
+    },
+    {
       n: "Srilakshmi Srivathsan",
       y: "Freshman",
       m: "Neurobiology & Physiology"
