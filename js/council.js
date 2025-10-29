@@ -137,7 +137,7 @@ const cam = {
       n: "Brian Young",
       p: c,
       y: "Junior",
-      m: "Physics, Mathematics",
+      m: "Mathematics, Statistics",
     },
     {
       n: "Sara DeHaan",
