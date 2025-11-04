@@ -192,6 +192,15 @@ const cam = {
       n: "Andre Lee",
       y: "Freshman",
       m: "Computer Science"
+    },
+    {
+      n: "Vaanathy Periyarselvan",
+      y: "Sophomore",
+      m: "Chemistry (ACS)"
+    },
+    { n: "Aindri Singh",
+      y: "Freshman",
+      m: "Biology"
     }
   ],
 };
