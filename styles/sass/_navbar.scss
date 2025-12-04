@@ -8,12 +8,16 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 
     font-size: 1.2rem;
     // font-weight: 700;
-    background: $slightly-darker-bg-color;
+    background: rgba(255, 252, 238, 0.95);
+    backdrop-filter: blur(10px);
     height: $nav-height;
     padding: 5px 40px 0 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 
     &-logo {
         align-self: stretch;
@@ -248,3 +252,66 @@
     }
 }
 
+// Enhanced Dropdown Menu Styling
+.dropdown {
+    position: relative;
+    
+    &-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        min-width: 200px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 5px;
+        animation: dropdownSlide 0.3s ease-out;
+        padding: 8px 0;
+        z-index: 1000;
+        
+        a {
+            display: block;
+            padding: 12px 20px;
+            color: $dark-color;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+            
+            &:hover {
+                background: linear-gradient(90deg, rgba(206, 184, 136, 0.1) 0%, transparent 100%);
+                border-left-color: $gold-color;
+                padding-left: 24px;
+            }
+        }
+    }
+    
+    // Keep dropdown visible when hovering over parent OR dropdown
+    &:hover .dropdown-menu,
+    &-menu:hover {
+        display: block;
+    }
+    
+    &-arrow {
+        margin-left: 5px;
+        font-size: 0.8em;
+        transition: transform 0.3s ease;
+    }
+    
+    &:hover .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes dropdownSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

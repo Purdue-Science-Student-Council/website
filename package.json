@@ -4,7 +4,7 @@
   "description": "Official Website of PSSC",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass styles/sass/main.scss styles/css/main.css -w --source-map true"
+    "sass": "sass styles/sass/main.scss styles/css/main.css --watch --source-map"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,8 @@
   },
   "homepage": "https://github.com/Purdue-Science-Student-Council/website#readme",
   "dependencies": {
-    "firebase": "^6.3.5",
-    "node-sass": "^4.14.1",
+    "firebase": "^9.22.0",
     "normalize-scss": "^7.0.1",
-    "run": "^1.4.0",
-    "sass": "^1.22.9"
+    "sass": "^1.69.5"
   }
 }

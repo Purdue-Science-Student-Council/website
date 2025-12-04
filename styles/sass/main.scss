@@ -1,14 +1,12 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:400,700');
-
-//Normalize
-@import "node_modules/normalize-scss/sass/normalize";
-@include normalize();
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 //global CSS
 @import "./vars.scss";
 @import "./app.scss";
 @import "./_navbar.scss";
+@import "./_enhancements.scss";
 
 //Page CSS
 @import "./_index.scss";

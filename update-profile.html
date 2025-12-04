@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Your Profile - PSSC</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .profile-container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .logo-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo-section img {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+        
+        .logo-section h1 {
+            color: #333;
+            font-size: 28px;
+            margin: 0 0 5px 0;
+        }
+        
+        .logo-section p {
+            color: #666;
+            margin: 0;
+        }
+        
+        .loading, .invalid-token {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .loading .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #CEB888;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .invalid-token h2 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .info-box p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        
+        .info-box strong {
+            font-weight: 600;
+        }
+        
+        .current-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #CEB888;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-group input:focus, 
+        .form-group textarea:focus, 
+        .form-group select:focus {
+            border-color: #CEB888;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(206, 184, 136, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 13px;
+        }
+        
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .file-input-label {
+            display: block;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #CEB888 0%, #b8a678 100%);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .file-input-label:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(206, 184, 136, 0.3);
+        }
+        
+        .file-input-wrapper input[type=file] {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        .file-name {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .btn-save {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+        
+        .btn-save:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-save:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .success-message, .error-message {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .footer-text {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .footer-text a {
+            color: #CEB888;
+            text-decoration: none;
+        }
+        
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="logo-section">
+            <img src="images/logo.PNG" alt="PSSC Logo">
+            <h1>Update Your Profile</h1>
+            <p>Purdue Science Student Council</p>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading your profile...</p>
+        </div>
+
+        <!-- Invalid Token -->
+        <div id="invalid-token" class="invalid-token" style="display: none;">
+            <h2>⚠️ Invalid Link</h2>
+            <p>This profile update link is invalid or has expired.</p>
+            <p>Please contact the PSSC webmaster if you need a new link.</p>
+            <p style="margin-top: 20px;">
+                <a href="mailto:purduesciencecouncil@gmail.com" style="color: #CEB888;">
+                    Contact Webmaster
+                </a>
+            </p>
+        </div>
+
+        <!-- Profile Form -->
+        <div id="profile-form-container" style="display: none;">
+            <div class="info-box">
+                <p><strong>📧 Logged in as:</strong> <span id="member-email"></span></p>
+                <p><strong>🔒 This link is private</strong> - don't share it with others</p>
+            </div>
+
+            <div class="success-message" id="success-message">
+                ✅ Profile updated successfully! Your changes will appear on the website shortly.
+            </div>
+
+            <div class="error-message" id="error-message"></div>
+
+            <img src="" alt="Your current photo" class="current-photo" id="current-photo">
+
+            <form id="update-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position *</label>
+                    <input type="text" id="position" placeholder="e.g., Executive Board Member" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="major">Major *</label>
+                    <input type="text" id="major" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year *</label>
+                    <select id="year" required>
+                        <option value="">Select year</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                        <option value="Graduate">Graduate Student</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio (Optional)</label>
+                    <textarea id="bio" rows="4" placeholder="Tell us about yourself, your interests, why you joined PSSC..."></textarea>
+                    <small>Character count: <span id="bio-count">0</span>/500</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Profile Photo</label>
+                    <div class="file-input-wrapper">
+                        <label for="photo" class="file-input-label">
+                            📷 Choose New Photo
+                        </label>
+                        <input type="file" id="photo" accept="image/jpeg,image/jpg,image/png">
+                    </div>
+                    <div class="file-name" id="file-name"></div>
+                    <small>
+                        • Max 5MB<br>
+                        • JPG or PNG only<br>
+                        • Square photos (1:1 ratio) work best<br>
+                        • Professional headshot recommended
+                    </small>
+                </div>
+
+                <button type="submit" class="btn-save" id="submit-btn">
+                    💾 Save Changes
+                </button>
+            </form>
+
+            <div class="footer-text">
+                Need help? Contact 
+                <a href="mailto:purduesciencecouncil@gmail.com">purduesciencecouncil@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Configuration and Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/member-tokens.js"></script>
+    <script src="js/update-profile.js"></script>
+</body>
+</html>
