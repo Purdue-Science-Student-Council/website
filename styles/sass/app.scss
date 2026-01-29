@@ -9,6 +9,7 @@ html, body {
     position: absolute;
     top: 0; left: 0; right: 0;
     min-width: $min-width;
+    overflow-x: hidden;
 
     font-family: 'Yantramanav', sans-serif;
     text-rendering: optimizeLegibility;
@@ -33,6 +34,16 @@ ul {
     height: auto;
     margin-top: $nav-height;
     padding-bottom: calc(#{$nav-height} + 30px);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background: $bg-color;
+    overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .page {
@@ -45,6 +56,19 @@ ul {
         font-weight: 500;
         color: $gold-color;
         margin: 0;
+        position: relative;
+        display: inline-block;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, $gold-color, transparent);
+            border-radius: 2px;
+        }
     }
 
     &-divider {

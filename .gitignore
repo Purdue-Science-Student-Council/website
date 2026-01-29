@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Sensitive files with tokens/credentials
+admin-secret.html
+
 # Runtime data
 pids
 *.pid

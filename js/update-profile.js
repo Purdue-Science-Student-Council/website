@@ -1,5 +1,6 @@
 // Profile Update System
-// Handles member profile updates with Firebase Firestore and GitHub photo uploads
+// Handles member profile updates with Firebase Firestore and Firebase Storage photo uploads
+// Requires common.js to be loaded first (for POSITION_OPTIONS and getCommitteeFolder)
 
 let currentMember = null;
 let selectedFile = null;
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Load and display member profile
-function loadProfile() {
+async function loadProfile() {
   const token = getTokenFromURL();
   
   if (!token) {
@@ -25,7 +26,8 @@ function loadProfile() {
     return;
   }
   
-  currentMember = getMemberByToken(token);
+  // Fetch member from Firestore by token
+  currentMember = await getMemberByToken(token);
   
   if (!currentMember) {
     showInvalidToken();
@@ -43,9 +45,14 @@ function loadProfile() {
 // Populate form with member data
 function populateForm() {
   document.getElementById('name').value = currentMember.name;
-  document.getElementById('position').value = currentMember.position;
+  document.getElementById('email').value = currentMember.email;
   document.getElementById('major').value = currentMember.major;
   document.getElementById('year').value = currentMember.year;
+  document.getElementById('committee').value = currentMember.committee;
+  
+  // Update position dropdown based on committee
+  updatePositionOptions(currentMember.committee, currentMember.position);
+  
   document.getElementById('bio').value = currentMember.bio || '';
   document.getElementById('member-email').textContent = currentMember.email;
   
@@ -75,8 +82,47 @@ function setupEventListeners() {
   // File input handler
   document.getElementById('photo').addEventListener('change', handleFileSelect);
   
+  // Committee change handler
+  const committeeSelect = document.getElementById('committee');
+  committeeSelect.addEventListener('change', function() {
+    updatePositionOptions(this.value);
+  });
+  
   // Form submission
   document.getElementById('update-form').addEventListener('submit', handleFormSubmit);
+}
+
+// Update position options based on committee
+function updatePositionOptions(committee, currentPosition = '') {
+  const positionGroup = document.getElementById('position-group');
+  const positionSelect = document.getElementById('position');
+  
+  if (committee === 'alumni') {
+    // Hide position field for alumni
+    positionGroup.style.display = 'none';
+    positionSelect.removeAttribute('required');
+  } else {
+    // Show position field
+    positionGroup.style.display = 'block';
+    positionSelect.setAttribute('required', 'required');
+    
+    // Clear current options
+    positionSelect.innerHTML = '<option value="">Select position</option>';
+    
+    // Add options for selected committee
+    const options = POSITION_OPTIONS[committee] || [];
+    options.forEach(position => {
+      const option = document.createElement('option');
+      option.value = position;
+      option.textContent = position;
+      positionSelect.appendChild(option);
+    });
+    
+    // Set current position if provided
+    if (currentPosition) {
+      positionSelect.value = currentPosition;
+    }
+  }
 }
 
 // Update bio character count
@@ -134,24 +180,29 @@ async function handleFormSubmit(e) {
   
   try {
     // Collect form data
+    const committee = document.getElementById('committee').value;
     const profileData = {
       id: currentMember.id,
       name: document.getElementById('name').value,
-      position: document.getElementById('position').value,
       major: document.getElementById('major').value,
       year: document.getElementById('year').value,
       bio: document.getElementById('bio').value,
-      email: currentMember.email,
-      committee: currentMember.committee,
+      email: document.getElementById('email').value,
+      committee: committee,
       photoPath: currentMember.photoPath,
       lastUpdated: firebase.firestore.Timestamp.now()
     };
     
-    // Upload photo to GitHub if selected
+    // Add position only if not alumni
+    if (committee !== 'alumni') {
+      profileData.position = document.getElementById('position').value;
+    }
+    
+    // Upload photo to Firebase Storage if selected
     if (selectedFile) {
       submitBtn.textContent = '⏳ Uploading photo...';
-      const photoPath = await uploadPhotoToGitHub(selectedFile);
-      profileData.photoPath = photoPath;
+      const photoURL = await uploadPhotoToFirebaseStorage(selectedFile);
+      profileData.photoPath = photoURL;
     }
     
     // Save to Firestore
@@ -175,75 +226,64 @@ async function handleFormSubmit(e) {
   }
 }
 
-// Upload photo to GitHub repository
-async function uploadPhotoToGitHub(file) {
-  const fileName = `${currentMember.id}.jpg`;
-  // Map committee to folder name
-  const committeeFolder = {
-    'executive': 'xcom',
-    'campus-outreach': 'cam',
-    'academic': 'com',
-    'new-student-outreach': 'nco'
-  }[currentMember.committee] || 'other';
+// Upload photo to Firebase Storage
+async function uploadPhotoToFirebaseStorage(file) {
+  const storage = window.storage;
   
-  const filePath = `images/${committeeFolder}/${fileName}`;
-  
-  // Convert file to base64
-  const base64 = await fileToBase64(file);
-  const content = base64.split(',')[1]; // Remove data URL prefix
-  
-  // Get current file SHA if it exists (needed for updating)
-  let sha = null;
-  try {
-    const getResponse = await fetch(
-      `https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${filePath}`,
-      {
-        headers: {
-          'Authorization': `token ${GITHUB_CONFIG.token}`,
-          'Accept': 'application/vnd.github.v3+json'
-        }
-      }
-    );
-    
-    if (getResponse.ok) {
-      const data = await getResponse.json();
-      sha = data.sha;
-    }
-  } catch (error) {
-    // File doesn't exist yet, that's okay
-    console.log('Photo will be created as new file');
+  if (!storage) {
+    throw new Error('Firebase Storage not initialized');
   }
   
-  // Upload or update file
-  const uploadData = {
-    message: `Update profile photo for ${currentMember.name}`,
-    content: content,
-    branch: GITHUB_CONFIG.branch || 'main'
+  // Use shared function from common.js
+  const committeeFolder = getCommitteeFolder(currentMember.committee);
+  
+  const fileName = `${currentMember.id}.jpg`;
+  const storagePath = `photos/${committeeFolder}/${fileName}`;
+  
+  // Create reference to file location
+  const storageRef = storage.ref(storagePath);
+  
+  // Upload file with metadata
+  const metadata = {
+    contentType: file.type,
+    customMetadata: {
+      'memberId': currentMember.id,
+      'memberName': currentMember.name,
+      'committee': currentMember.committee,
+      'uploadedAt': new Date().toISOString()
+    }
   };
   
-  if (sha) {
-    uploadData.sha = sha;
-  }
+  // Upload the file
+  await storageRef.put(file, metadata);
   
-  const response = await fetch(
-    `https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${filePath}`,
-    {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${GITHUB_CONFIG.token}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(uploadData)
+  // Get the download URL
+  const downloadURL = await storageRef.getDownloadURL();
+  
+  return downloadURL;
+}
+
+// Fetch member data by token from Firestore
+async function getMemberByToken(token) {
+  try {
+    const snapshot = await window.db.collection('members')
+      .where('token', '==', token)
+      .limit(1)
+      .get();
+    
+    if (snapshot.empty) {
+      return null;
     }
-  );
-  
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(`GitHub upload failed: ${error.message}`);
+    
+    // Get member data and add the document ID
+    const memberData = snapshot.docs[0].data();
+    memberData.id = snapshot.docs[0].id;  // Add the Firestore document ID
+    
+    return memberData;
+  } catch (error) {
+    console.error('Error fetching member by token:', error);
+    return null;
   }
-  
-  return `images/${committeeFolder}/${fileName}`;
 }
 
 // Save profile data to Firestore
@@ -255,16 +295,6 @@ async function saveToFirestore(profileData) {
   }
   
   await db.collection('members').doc(currentMember.id).set(profileData, { merge: true });
-}
-
-// Convert file to base64
-function fileToBase64(file) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
 }
 
 // Show success message

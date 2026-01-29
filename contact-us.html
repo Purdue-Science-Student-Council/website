@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="Contact Purdue Science Student Council (PSSC) with your questions, concerns, and comments." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles/css/main.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <!-- Title -->
+    <title>Contact Us | PSSC</title>
+
+    <style>
+        body {
+            animation: pageLoad 0.6s ease-out;
+        }
+        
+        @keyframes pageLoad {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 80px auto 350px;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #CEB888;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(206, 184, 136, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #CEB888 0%, #b8a070 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-submit:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(206, 184, 136, 0.4);
+        }
+
+        .btn-submit:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message,
+        .error-message {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #CEB888;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                margin: 40px 20px;
+                padding: 30px 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
+        </div>
+        <ul class="nav-bar">
+            <li class="nav-bar-item">
+                <span class="nav-valign"></span>
+                <a class="nav-bar-item-a" href="./index.html">Home</a>
+            </li>
+            <li class="nav-bar-item">
+                <span class="nav-valign"></span>
+                <a class="nav-bar-item-a" href="./about.html">About</a>
+            </li>
+            <li class="nav-bar-item nav-bar-item-active">
+                <span class="nav-valign"></span>
+                <a class="nav-bar-item-a" href="./contact-us.html">Contact</a>
+            </li>
+            <li class="nav-bar-item dropdown">
+                <span class="nav-valign"></span>
+                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <div class="dropdown-menu">
+                    <a href="./snack-and-chat.html">Snack & Chat</a>
+                    <a href="./new-student-orientation.html">New Student Orientation</a>
+                    <a href="./outstanding-teacher-award.html">Outstanding Teacher Award</a>
+                    <a href="./career-fair.html">Career Fair</a>
+                    <a href="./resources.html">Resources</a>
+                    <a href="./contributors.html">Contributors</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <nav id="js-m-nav" class="m-nav">
+        <div class="m-nav-top">
+            <div class="m-nav-top-item">
+                <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo">PSSC</a>
+            </div>
+            <div class="m-nav-top-item">
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
+                    class="m-nav-top-item-hamburger"></button>
+            </div>
+        </div>
+        <ul class="m-nav-bar">
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./index.html">Home</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./about.html">About</a>
+            </li>
+            <li class="m-nav-bar-item m-nav-bar-item-active">
+                <a class="m-nav-bar-item-a" href="./contact-us.html">Contact</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./snack-and-chat.html">Snack & Chat</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./new-student-orientation.html">New Student Orientation</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./outstanding-teacher-award.html">Outstanding Teacher Award</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./career-fair.html">Career Fair</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./resources.html">Resources</a>
+            </li>
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./contributors.html">Contributors</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Have questions, concerns, or comments? We'd love to hear from you!</p>
+            </div>
+
+            <div class="success-message" id="success-message">
+                Thank you for contacting us! Your message has been sent successfully.
+            </div>
+
+            <div class="error-message" id="error-message"></div>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="johndoe@purdue.edu">
+                    <small>We'll use this to respond to your message</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                    <small>Character count: <span id="char-count">0</span>/1000</small>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submit-btn">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <p>Email: <a href="mailto:purduesciencecouncil@gmail.com">purduesciencecouncil@gmail.com</a></p>
+                <p>Instagram:<a href="https://www.instagram.com/purduesciencecouncil" target="_blank" rel="noopener noreferrer"> @purduesciencecouncil</a> </p>
+                <p>Follow us on social media for updates and events!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Purdue Science Student Council</h3>
+                <p>Serving the College of Science at Purdue University</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact-us.html">Contact</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Purdue Science Student Council. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/landing.js"></script>
+    <script>
+        // Character counter
+        const messageInput = document.getElementById('message');
+        const charCount = document.getElementById('char-count');
+
+        messageInput.addEventListener('input', function() {
+            const length = this.value.length;
+            charCount.textContent = length;
+            
+            if (length > 1000) {
+                this.value = this.value.substring(0, 1000);
+                charCount.textContent = 1000;
+            }
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const successMsg = document.getElementById('success-message');
+            const errorMsg = document.getElementById('error-message');
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            try {
+                // Create Gmail compose URL
+                const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=purduesciencecouncil@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                    `From: ${name}\nEmail: ${email}\n\n${message}`
+                )}`;
+                
+                // Open Gmail in new tab
+                window.open(gmailLink, '_blank');
+                
+                // Show success message
+                successMsg.style.display = 'block';
+                
+                // Reset form after a delay
+                setTimeout(() => {
+                    document.getElementById('contact-form').reset();
+                    charCount.textContent = '0';
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }, 2000);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                errorMsg.textContent = 'Something went wrong. Please try again or email us directly.';
+                errorMsg.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
+        });
+    </script>
+</body>
+
+</html>

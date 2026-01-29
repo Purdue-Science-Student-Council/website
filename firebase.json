@@ -12,11 +12,15 @@
     ]
   },
   "hosting": {
-    "public": "public",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "package.json",
+      "package-lock.json",
+      "SETUP.md",
+      "README.md"
     ]
   },
   "storage": {

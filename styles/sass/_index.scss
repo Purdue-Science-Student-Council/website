@@ -1,7 +1,8 @@
 .masthead {
-    // height: 50vh;
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 6vh;
     text-align: center;
+    padding: 0 3vw;
 
     display: flex;
     flex-direction: column;
@@ -11,27 +12,49 @@
     &-title {
         color: $gold-color;
         font-size: 4rem;
+        font-weight: 600;
         margin: 0 0 15px 0;
+        letter-spacing: -0.5px;
     }
 
     &-subtitle {
         color: $gray-color;
-        font-weight: 500;
-        font-size: 1.3rem;
+        font-weight: 400;
+        font-size: 1.4rem;
         margin: 0;
+        line-height: 1.6;
     }
 
     &-logo {
         margin: 30px 0;
         width: 300px;
+        filter: drop-shadow(0 4px 12px rgba(177, 129, 11, 0.2));
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &-header {
         color: $gold-color;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2.5rem;
-        margin: 0 0 0 0;
-        margin-top: 3vh;
+        margin: 0 0 2vh 0;
+        position: relative;
+        display: inline-block;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, $gold-color, transparent);
+            border-radius: 2px;
+        }
     }
 
 }
@@ -83,86 +106,169 @@
 
 .component{
     text-align: center;
-    margin-top: 3vh;
+    margin: 4vh auto;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding: 6vh 5vw;
+    
+    // Modern card styling - light gray for contrast
+    background: rgb(240, 240, 242);
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07),
+                0 1px 3px rgba(0, 0, 0, 0.06);
+    
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(177, 129, 11, 0.12),
+                    0 8px 16px rgba(0, 0, 0, 0.08);
+    }
 
     &-text {
         color: $gray-color;
-        font-weight: 500;
-        font-size: 1.3rem;
-        margin: 0;
-        max-width: 100vh;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin: 2vh 0;
+        max-width: 900px;
     }
 
     &-light{
-        background-color: $light-color;
+        background: linear-gradient(135deg, rgb(245, 230, 180) 0%, rgb(240, 220, 160) 100%);
         text-align: center;
-        margin-top: 3vh;
+        margin: 4vh auto;
+        max-width: 1400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 3vh;
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding: 6vh 5vw;
+        
+        // Modern card styling
+        border-radius: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07),
+                    0 1px 3px rgba(0, 0, 0, 0.06);
+        
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(177, 129, 11, 0.12),
+                        0 8px 16px rgba(0, 0, 0, 0.08);
+        }
     }
 
     &-image{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         background: $white-color;
-        margin: 0 auto 10px auto;
+        margin: 0 auto 4vh auto;
         border: 3px solid $gold-color;
-        border-radius: 125px;
-        margin-bottom: 5vh;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(177, 129, 11, 0.2);
+        
+        &:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 8px 20px rgba(177, 129, 11, 0.3);
+        }
 
         &-center{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             background: $white-color;
-            margin: 0 auto 10px auto;
+            margin: 0 auto 4vh auto;
             border: 3px solid $gold-color;
-            border-radius: 125px;
-            margin-bottom: 5vh;
+            border-radius: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(177, 129, 11, 0.2);
+            
+            &:hover {
+                transform: scale(1.05) rotate(5deg);
+                box-shadow: 0 8px 20px rgba(177, 129, 11, 0.3);
+            }
         }
     }
 
     &-poster{
         width: 500px;
-        margin: 0 auto 10px auto;
-        margin-bottom: 5vh;
+        margin: 0 auto 4vh auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        
+        &-center {
+            display: block;
+            width: 500px;
+            max-width: 90%;
+            margin: 3vh auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
     }
 }
 
 .hack-button {
     cursor: pointer;
-    display: block;
-    border: 3px solid $gold-color;
-    background: transparent;
-    color: $gold-color;
-    font-weight: bold;
-    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    background: linear-gradient(135deg, $gold-color 0%, rgb(157, 114, 9) 100%);
+    color: $white-color;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 14px 32px;
     margin-top: 3vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(177, 129, 11, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 
-    &:hover, &:focus {
-        background: $gold-color;
-        color: $bg-color;
-        transition: all 0.3s ease-in;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s ease;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(177, 129, 11, 0.4);
+        
+        &::before {
+            left: 100%;
+        }
     }
 
     &:active {
-        -webkit-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
-        -moz-box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
-        box-shadow: inset 0px 0px 2px 2px rgba(85,85,85,1);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(177, 129, 11, 0.3);
     }
 }
 
@@ -199,33 +305,80 @@
 
 .bot-contact{
     text-align: center;
-    margin-top: 10vh;
+    margin: 4vh auto;
+    max-width: 1400px;
+    padding: 8vh 5vw;
+    
+    background: linear-gradient(135deg, rgb(200, 165, 80) 0%, rgb(210, 175, 90) 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(177, 129, 11, 0.3),
+                0 4px 12px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    &:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 16px 40px rgba(177, 129, 11, 0.4),
+                    0 8px 20px rgba(0, 0, 0, 0.15);
+    }
 
     &-icons{
         align-self: center;
         flex-direction: row;
         align-items: center;
+        display: flex;
+        gap: 3vw;
+        margin-top: 3vh;
     }
 
     &-icons img{
         align-self: center;
-        margin: 2vh 2vw 2vh 2vw;
-        max-width: 100px;
-        max-height: 100px;
-        width: 15vw;
-        height: 15vw;
+        max-width: 80px;
+        max-height: 80px;
+        width: 12vw;
+        height: 12vw;
+        background: $white-color;
+        border-radius: 50%;
+        padding: 15px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        
+        &:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
     }
 
     &-text{
-        color: $gray-color;
+        color: $white-color;
         font-weight: 500;
-        font-size: 1.3rem;
-        margin: 0;
+        font-size: 1.4rem;
+        margin: 1vh 0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        
+        a {
+            color: $white-color;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                text-decoration-color: $white-color;
+                text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+            }
+        }
     }
 }
 
@@ -316,15 +469,141 @@
 
 @media #{$max-tablet} {
     .masthead {
-        height: 70vh;
+        margin-top: 60px;
+        padding: 0 5vw;
+        
         &-title {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
+        
+        &-subtitle {
+            font-size: 1.1rem;
+        }
+        
         &-logo {
-            width: 150px;
+            width: 180px;
+        }
+        
+        &-header {
+            font-size: 2rem;
+        }
+    }
+    
+    .component,
+    .component-light {
+        margin: 3vh 2vw;
+        padding: 4vh 4vw;
+        border-radius: 20px;
+        
+        &-text {
+            font-size: 1.1rem;
+        }
+        
+        &-image,
+        &-image-center {
+            width: 160px;
+            height: 160px;
+        }
+        
+        &-poster {
+            width: 90%;
+            max-width: 400px;
+        }
+    }
+    
+    .bot-contact {
+        margin: 3vh 2vw;
+        padding: 5vh 4vw;
+        border-radius: 20px;
+        
+        &-text {
+            font-size: 1.2rem;
+        }
+        
+        &-icons img {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
+        }
+    }
+    
+    .hack-button {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+}
+
+// FAQ Section Styling
+.faq-container {
+    max-width: 800px;
+    margin: 3vh auto;
+}
+
+.faq-question {
+    background: $white-color;
+    padding: 20px 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $gray-color;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    &:hover {
+        background: $slightly-darker-bg-color;
+        box-shadow: 0 4px 12px rgba(177, 129, 11, 0.15);
+        transform: translateY(-2px);
+    }
+    
+    .plus-icon {
+        color: $gold-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+        min-width: 25px;
+        transition: transform 0.3s ease;
+    }
+    
+    &.active .plus-icon {
+        transform: rotate(45deg);
+    }
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: rgb(250, 250, 250);
+    border-radius: 0 0 12px 12px;
+    margin-top: -15px;
+    padding: 0 25px;
+    
+    &.show {
+        max-height: 1000px;
+        padding: 20px 25px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 10px 0;
+        
+        li {
+            color: $gray-color;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 10px 0;
         }
     }
 }
+
 /*
 .background{
     background-image: url(/images/other/council.jpg);

@@ -67,18 +67,11 @@ function addPreviousWinners() {
     table.insertAdjacentHTML("beforeend", str);
 };
 
-function navDrawer() {
-    var m_nav = document.getElementById("js-m-nav");
-    m_nav.classList.toggle("m-nav-active");
-};
-
-function addClickListener(id, func) {
-    document.getElementById(id).addEventListener("click", func); 
-};
-
+// OTA page JavaScript
+// Uses common.js for shared navigation functions
 
 window.onload = function() {
-    addClickListener("js-m-nav-click", navDrawer);
+    initCommonNav();
     addPreviousWinners();
 };
 

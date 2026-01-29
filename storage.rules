@@ -1,7 +1,32 @@
+rules_version = '2';
+
+// Firebase Storage Security Rules for PSSC Website
+// These rules control who can read/write photos stored in Firebase Storage
+
 service firebase.storage {
   match /b/{bucket}/o {
+    
+    // Photos organized by committee folders: photos/{committee}/{filename}
+    match /photos/{committee}/{filename} {
+      
+      // Allow anyone to read photos (public member directory)
+      allow read: if true;
+      
+      // Allow photo uploads with validation:
+      // - File must be an image (JPEG, JPG, or PNG)
+      // - File size must be under 5MB
+      // - No authentication required (token validation happens in the app)
+      allow write: if request.resource.size < 5 * 1024 * 1024  // 5MB max
+                   && request.resource.contentType.matches('image/(jpeg|jpg|png)')
+                   && committee in ['xcom', 'cam', 'com', 'nco', 'alum'];
+      
+      // Prevent deletion from client (webmaster can delete via Firebase Console)
+      allow delete: if false;
+    }
+    
+    // Deny access to all other paths
     match /{allPaths=**} {
-      allow read, write: if request.auth!=null;
+      allow read, write: if false;
     }
   }
 }

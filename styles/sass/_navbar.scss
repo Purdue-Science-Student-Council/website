@@ -259,7 +259,7 @@
     &-menu {
         display: none;
         position: absolute;
-        top: 100%;
+        top: calc(100% - 2px);
         left: 50%;
         transform: translateX(-50%);
         background: white;
@@ -267,7 +267,7 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         border-radius: 8px;
         overflow: hidden;
-        margin-top: 5px;
+        margin-top: 0;
         animation: dropdownSlide 0.3s ease-out;
         padding: 8px 0;
         z-index: 1000;

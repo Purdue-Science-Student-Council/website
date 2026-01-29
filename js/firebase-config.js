@@ -16,9 +16,11 @@ if (typeof firebase !== 'undefined') {
   
   // Initialize services
   const db = firebase.firestore();
+  const storage = firebase.storage();
   
   // Export for use in other files
   window.db = db;
+  window.storage = storage;
   
   console.log('Firebase initialized successfully');
 } else {

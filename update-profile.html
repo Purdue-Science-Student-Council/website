@@ -75,16 +75,17 @@
         }
         
         .info-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #daa520 0%, #c8971d 100%);
             color: white;
-            padding: 20px;
+            padding: 10px;
             border-radius: 12px;
             margin-bottom: 30px;
+            text-align: center;
         }
         
         .info-box p {
             margin: 8px 0;
-            font-size: 14px;
+            font-size: 18px;
         }
         
         .info-box strong {
@@ -156,7 +157,7 @@
         .file-input-label {
             display: block;
             padding: 14px 20px;
-            background: linear-gradient(135deg, #CEB888 0%, #b8a678 100%);
+            background: linear-gradient(135deg, #eabc49  0%, #edb831 100%);
             color: white;
             border-radius: 8px;
             cursor: pointer;
@@ -167,7 +168,7 @@
         
         .file-input-label:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(206, 184, 136, 0.3);
+            box-shadow: 0 5px 15px rgba(218, 165, 32, 0.3);
         }
         
         .file-input-wrapper input[type=file] {
@@ -273,7 +274,7 @@
 
         <!-- Invalid Token -->
         <div id="invalid-token" class="invalid-token" style="display: none;">
-            <h2>⚠️ Invalid Link</h2>
+            <h2>Invalid Link</h2>
             <p>This profile update link is invalid or has expired.</p>
             <p>Please contact the PSSC webmaster if you need a new link.</p>
             <p style="margin-top: 20px;">
@@ -286,12 +287,12 @@
         <!-- Profile Form -->
         <div id="profile-form-container" style="display: none;">
             <div class="info-box">
-                <p><strong>📧 Logged in as:</strong> <span id="member-email"></span></p>
-                <p><strong>🔒 This link is private</strong> - don't share it with others</p>
+                <p><strong>Logged in as:</strong> <span id="member-email"></span></p>
+                <p><strong>This link is private</strong> - don't share it with others</p>
             </div>
 
             <div class="success-message" id="success-message">
-                ✅ Profile updated successfully! Your changes will appear on the website shortly.
+                Profile updated successfully! Your changes will appear on the website shortly.
             </div>
 
             <div class="error-message" id="error-message"></div>
@@ -305,8 +306,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="position">Position *</label>
-                    <input type="text" id="position" placeholder="e.g., Executive Board Member" required>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                    <small>Update your email address if it has changed</small>
                 </div>
 
                 <div class="form-group">
@@ -327,6 +329,25 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="committee">Committee *</label>
+                    <select id="committee" required>
+                        <option value="">Select committee</option>
+                        <option value="executive">Executive Committee</option>
+                        <option value="campus-outreach">Campus Outreach</option>
+                        <option value="community-outreach">Community Outreach</option>
+                        <option value="networking-career-outreach">Networking and Career Outreach</option>
+                        <option value="alumni">Alumni</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="position-group">
+                    <label for="position">Position *</label>
+                    <select id="position" required>
+                        <option value="">Select position</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label for="bio">Bio (Optional)</label>
                     <textarea id="bio" rows="4" placeholder="Tell us about yourself, your interests, why you joined PSSC..."></textarea>
                     <small>Character count: <span id="bio-count">0</span>/500</small>
@@ -336,7 +357,7 @@
                     <label>Profile Photo</label>
                     <div class="file-input-wrapper">
                         <label for="photo" class="file-input-label">
-                            📷 Choose New Photo
+                            Choose New Photo
                         </label>
                         <input type="file" id="photo" accept="image/jpeg,image/jpg,image/png">
                     </div>
@@ -350,7 +371,7 @@
                 </div>
 
                 <button type="submit" class="btn-save" id="submit-btn">
-                    💾 Save Changes
+                    Save Changes
                 </button>
             </form>
 
@@ -364,10 +385,11 @@
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
     
     <!-- Configuration and Scripts -->
     <script src="js/firebase-config.js"></script>
-    <script src="js/member-tokens.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/update-profile.js"></script>
 </body>
 </html>

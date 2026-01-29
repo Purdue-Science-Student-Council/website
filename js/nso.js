@@ -1,20 +1,14 @@
-function navDrawer() {
-    var m_nav = document.getElementById("js-m-nav");
-    m_nav.classList.toggle("m-nav-active");
-};
-
-function addClickListener(id, func) {
-    document.getElementById(id).addEventListener("click", func); 
-};
-
+// NSO page JavaScript
+// Uses common.js for shared navigation functions
 
 window.onload = function() {
-    addClickListener("js-m-nav-click", navDrawer);
+    initCommonNav();
 };
 
+// Page-specific function for FAQ toggle
 function toggleAnswer(element) {
     const answer = element.nextElementSibling;
     element.classList.toggle('active');
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-  }
+    answer.classList.toggle('show');
+}
   

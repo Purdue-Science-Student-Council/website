@@ -1,11 +1,17 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Members collection - public read, no write from client
-    // (writes happen through the profile update form with GitHub API)
+    // Members collection - public read, token-validated writes
     match /members/{memberId} {
-      allow read: if true; // Anyone can view member profiles
-      allow write: if true; // Allow writes for now (secure with auth later)
+      // Anyone can view member profiles (public directory)
+      allow read: if true;
+      
+      // Allow writes only if:
+      // 1. Creating a new member (document doesn't exist yet) - for admin adding members
+      // 2. Updating existing member AND the token in the request matches the stored token
+      allow create: if true; // Admin creates new members
+      allow update: if request.resource.data.token == resource.data.token;
+      allow delete: if false; // Only delete via Firebase Console
     }
     
     // Deny all other collections by default

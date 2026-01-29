@@ -23,6 +23,215 @@
     <!-- Title -->
 
     <title>PSSC | Purdue Science Student Council</title>
+    
+    <style>
+        /* Smooth page load animation */
+        body {
+            animation: pageLoad 0.6s ease-out;
+        }
+        
+        @keyframes pageLoad {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 0;
+            border: none;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, rgb(177, 129, 11), rgb(157, 114, 9));
+        }
+        
+        .modal-close {
+            color: #aaa;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .modal-close:hover,
+        .modal-close:focus {
+            color: rgb(177, 129, 11);
+            background: rgba(177, 129, 11, 0.1);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .modal-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgb(177, 129, 11);
+            box-shadow: 0 8px 20px rgba(177, 129, 11, 0.2);
+        }
+        
+        .modal-info {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .modal-name {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        
+        .modal-position {
+            font-size: 1.3rem;
+            color: rgb(177, 129, 11);
+            margin: 0 0 20px 0;
+            font-weight: 600;
+        }
+        
+        .modal-details {
+            background: rgba(177, 129, 11, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .modal-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        
+        .modal-details strong {
+            color: rgb(177, 129, 11);
+            font-weight: 600;
+            min-width: 80px;
+            display: inline-block;
+        }
+        
+        .modal-bio {
+            text-align: left;
+            width: 100%;
+        }
+        
+        .modal-bio h4 {
+            color: rgb(177, 129, 11);
+            font-size: 1.4rem;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(177, 129, 11, 0.2);
+            padding-bottom: 10px;
+        }
+        
+        .modal-bio p {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+        
+        /* Add cursor pointer to cards */
+        .page-council-members-member {
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+            
+            .modal-body {
+                padding: 30px 20px;
+            }
+            
+            .modal-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .modal-name {
+                font-size: 1.6rem;
+            }
+            
+            .modal-position {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,13 +241,17 @@
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
         <ul class="nav-bar">
-            <li class="nav-bar-item nav-bar-item-active">
+            <li class="nav-bar-item">
                 <span class="nav-valign"></span>
                 <a class="nav-bar-item-a" href="./index.html">Home</a>
             </li>
-            <li class="nav-bar-item">
+            <li class="nav-bar-item nav-bar-item-active">
                 <span class="nav-valign"></span>
                 <a class="nav-bar-item-a" href="./about.html">About</a>
+            </li>
+            <li class="nav-bar-item">
+                <span class="nav-valign"></span>
+                <a class="nav-bar-item-a" href="./contact-us.html">Contact</a>
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
@@ -71,8 +284,12 @@
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
             </li>
 
-            <li class="m-nav-bar-item">
+            <li class="m-nav-bar-item m-nav-bar-item-active">
                 <a class="m-nav-bar-item-a" href="./about.html">About</a>
+            </li>
+
+            <li class="m-nav-bar-item">
+                <a class="m-nav-bar-item-a" href="./contact-us.html">Contact</a>
             </li>
 
             <!--li class="m-nav-bar-item">
@@ -119,27 +336,57 @@
     <!-- ---------- -->
     <!--MAIN BODY-->
     <main class="main-container">
-        <div class="page">
+        <div class="page" style="padding-top: 40px;">
 
-            <h1 class="page-title">Mission Statement</h1>
-            <hr class="page-divider">
+            <h1 class="page-title" style="font-size: 2.5rem; margin-bottom: 10px;">Mission Statement</h1>
+            <hr class="page-divider" style="width: 80px; height: 3px; background: linear-gradient(90deg, var(--gold-color), transparent); border: none; margin: 20px 0;">
 
-            <p class="page-text">
+            <p class="page-text" style="font-size: 1.15rem; line-height: 1.9; max-width: 900px; margin: 20px auto;">
                 Purdue Science Student Council (PSSC) is made up of four committees: Executive, Campus Outreach,
                 Community Outreach, and Networking and Career Outreach. PSSC members serve as liaisons between College
                 of Science students and faculty. We provide a variety of events to connect College of Science students
                 and faculty and support the local community.
             </p>
-            <p class="page-text">
+            <p class="page-text" style="font-size: 1.15rem; line-height: 1.9; max-width: 900px; margin: 20px auto 40px auto;">
                 Our mission is to foster meaningful connections with College of Science students, faculty, and the local
                 community through interactive events and volunteer initiatives.
             </p>
 
             <div id="js-council" class="page">
-                <h1 class="page-title">Council Members</h1>
-                <hr class="page-divider">
+                <h1 class="page-title" style="font-size: 2.5rem; margin-bottom: 20px;">Council Members</h1>
+                <hr class="page-divider" style="width: 80px; height: 3px; background: linear-gradient(90deg, var(--gold-color), transparent); border: none; margin: 20px 0 40px 0;">
 
             </div>
+            
+            <!-- Member Modal -->
+            <div id="member-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <div class="modal-body">
+                        <img id="modal-img" src="" alt="" class="modal-img">
+                        <div class="modal-info">
+                            <h2 id="modal-name" class="modal-name"></h2>
+                            <h3 id="modal-position" class="modal-position"></h3>
+                            <div class="modal-details">
+                                <p><strong>Year:</strong> <span id="modal-year"></span></p>
+                                <p><strong>Major:</strong> <span id="modal-major"></span></p>
+                                <p><strong>Email:</strong> <span id="modal-email"></span></p>
+                            </div>
+                            <div class="modal-bio">
+                                <h4>About</h4>
+                                <p id="modal-bio-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Firebase SDK -->
+            <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+            <script src="js/firebase-config.js"></script>
+            <script src="js/common.js"></script>
             <script src="js/council.js"></script>
     </main>
     <footer class="footer">
