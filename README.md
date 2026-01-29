@@ -8,6 +8,7 @@ Below are the past webmasters who have contributed to this website!
 
 ## Previous Webmasters
 
+- 2026 : Avi Aggarwal
 - 2025 : Anushka Shome
 - 2024 : Anushka Shome
 - 2023 : Pramey Kabra  
