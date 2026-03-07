@@ -7,6 +7,8 @@
 function navDrawer() {
     var m_nav = document.getElementById("js-m-nav");
     m_nav.classList.toggle("m-nav-active");
+    // Prevent background page from scrolling while mobile menu is open
+    document.body.style.overflow = m_nav.classList.contains("m-nav-active") ? "hidden" : "";
 }
 
 /**
