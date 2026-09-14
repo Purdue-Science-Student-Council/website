@@ -732,13 +732,6 @@ img[data-loaded=true] {
   border-radius: 2px;
 }
 
-.image {
-  object-fit: scale-down;
-}
-.image-1 {
-  background-image: url("./../../images/home/1.jpeg");
-}
-
 .scavengerBox {
   text-align: center;
   display: flex;

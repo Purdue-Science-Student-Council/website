@@ -8,6 +8,12 @@ yarn-error.log*
 # Sensitive files with tokens/credentials
 admin-secret.html
 
+# Firebase deploy cache
+.firebase/
+
+# macOS
+.DS_Store
+
 # Runtime data
 pids
 *.pid
