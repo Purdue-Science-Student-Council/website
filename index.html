@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Purdue Science Student Council (PSSC) provides academically-oriented, networking, and social events for Purdue's College of Science students, and acts as a liaison between students and the administration." />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Stylesheet -->
@@ -26,8 +26,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation Bar -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
         <div class="nav-logo">
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
@@ -46,7 +47,7 @@
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <a class="nav-bar-item-a" href="#" aria-haspopup="true">More<span class="dropdown-arrow" aria-hidden="true">&#9662;</span></a>
                 <div class="dropdown-menu">
                     <!-- <a href="./meeting-minute.html">Meeting Minutes</a> -->
                     <a href="./snack-and-chat.html">Snack & Chat</a>
@@ -59,17 +60,17 @@
             </li>
         </ul>
     </nav>
-    <nav id="js-m-nav" class="m-nav">
+    <nav id="js-m-nav" class="m-nav" aria-label="Mobile">
         <div class="m-nav-top">
             <div class="m-nav-top-item">
                 <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo" href="./index.html">PSSC</a>
             </div>
             <div class="m-nav-top-item">
-                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
-                    class="m-nav-top-item-hamburger"></button>
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click" class="m-nav-top-item-hamburger" type="button"
+                    aria-label="Menu" aria-expanded="false" aria-controls="js-m-nav-bar"></button>
             </div>
         </div>
-        <ul class="m-nav-bar">
+        <ul class="m-nav-bar" id="js-m-nav-bar">
             <li class="m-nav-bar-item m-nav-bar-item-active">
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
             </li>
@@ -125,21 +126,22 @@
     </nav>
     <!-- ---------- -->
     <!--MAIN BODY-->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         <div class="background">
 
             <div class="masthead">
 
-                <img class="masthead-logo" src="./images/pssc_new_logo.png">
+                <img class="masthead-logo" src="./images/pssc_new_logo.png"
+                    alt="Purdue Science Student Council logo">
                 <h1 class="masthead-title">Purdue Science Student Council</h1>
-                <h4 class="masthead-subtitle">Serving the College of Science at Purdue University</h4>
+                <p class="masthead-subtitle">Serving the College of Science at Purdue University</p>
             </div>
         </div>
 
         <div class="component-light">
-            <h4 class="masthead-header">About Us</h4>
+            <h2 class="masthead-header">About Us</h2>
             <hr class="page-divider">
-            <img src="./images/home/noun_care_1200361.png" class="component-image">
+            <img src="./images/home/noun_care_1200361.png" class="component-image" alt="">
             <p class="component-text">PSSC provides academically-oriented events to the students of the College of
                 Science, promotes professional growth amongst College of Science students, acts as a liaison between
                 students and administration from both the College of Science and the University, and fosters close
@@ -149,20 +151,20 @@
         </div>
 
         <div class="component">
-            <h4 class="masthead-header">Snack & Chat</h4>
+            <h2 class="masthead-header">Snack & Chat</h2>
             <hr class="page-divider">
-            <img src="./images/home/noun_School_1386096.png" class="component-image">
+            <img src="./images/home/noun_School_1386096.png" class="component-image" alt="">
             <p class="component-text">Every semester, PSSC hosts a Snack & Chat event for students in the College of
                 Science to meet with their professors in a casual setting where you can both
                 discuss academia and future opportunities while enjoying your favorite snacks!
             </p>
-            <a href="./new-student-orientation.html"><button class="hack-button">Learn More</button></a>
+            <a href="./snack-and-chat.html"><button class="hack-button">Learn More</button></a>
         </div>
 
         <div class="component-light">
-            <h4 class="masthead-header">College of Science Career Fair</h4>
+            <h2 class="masthead-header">College of Science Career Fair</h2>
             <hr class="page-divider">
-            <img src="./images/home/noun_job.png" class="component-image">
+            <img src="./images/home/noun_job.png" class="component-image" alt="">
             <p class="component-text">The College of Science Career Fair hosted by PSSC aims to connect College of
                 Science students with leading employers in various industries.
                 <br><br>
@@ -172,9 +174,9 @@
         </div>
 
         <div class="component">
-            <h4 class="masthead-header">Outstanding Teacher Award</h4>
+            <h2 class="masthead-header">Outstanding Teacher Award</h2>
             <hr class="page-divider">
-            <img src="./images/home/noun_Apple_283660.png" class="component-image">
+            <img src="./images/home/noun_Apple_283660.png" class="component-image" alt="">
             <p class="component-text">The annual College of Science Outstanding Teacher Award is awarded to a professor
                 or lecturer who has shown excellence in teaching through a passion for their field,
                 for the advancement of knowledge, and for the academic growth of their students.
@@ -184,40 +186,41 @@
         </div>
 
        <div class="component-light">
-            <h4 class="masthead-header">New Student Orientation</h4>
+            <h2 class="masthead-header">New Student Orientation</h2>
             <hr class="page-divider">
-            <img src="./images/home/noun_School_1386096.png" class="component-image">
-            <p class="component-text">Every year, PSSC welcomes every students in the College of Science with New
+            <img src="./images/home/noun_School_1386096.png" class="component-image" alt="">
+            <p class="component-text">Every year, PSSC welcomes every student in the College of Science with New
                 Student Orientation. We've put together some helpful resources that we discussed during the orientation!
             </p>
             <a href="./new-student-orientation.html"><button class="hack-button">Learn More</button></a>
         </div>
 
         <div class="component">
-            <h4 class="masthead-header">PSSC Event Calendar</h4>
+            <h2 class="masthead-header">PSSC Event Calendar</h2>
             <hr class="page-divider">
             <iframe
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23dca007&src=0bfd1f17001600478550e96670da6b2ef52794f9b3a5857d403684cc84da511e5%40group.calendar.google.com&color=%23dca007&ctz=America%2FNew_York"
-                style="border-width:5" width="70%" height="400" frameborder="0" scrolling="no"></iframe>
+                style="border-width:5" width="70%" height="400" frameborder="0" scrolling="no"
+                title="PSSC event calendar"></iframe>
         </div>
 
         <div class="bot-contact">
-            <h4 class="bot-contact-text">Got questions?</h4>
-            <h4 class="bot-contact-text">Contact us at
+            <h2 class="bot-contact-text">Got questions?</h2>
+            <p class="bot-contact-text">Contact us at
                 <a href="mailto:purduesciencecouncil@gmail.com">purduesciencecouncil@gmail.com</a>
-            </h4>
+            </p>
             <hr class="page-divider">
-            <h4 class="bot-contact-text">Want updates about the College?</h4>
-            <h4 class="bot-contact-text">Follow us on Social Media!</h4>
+            <h2 class="bot-contact-text">Want updates about the College?</h2>
+            <p class="bot-contact-text">Follow us on Social Media!</p>
             <div class="bot-contact-icons">
                 <a href="https://www.facebook.com/PurdueScienceCouncil/">
-                    <img src="images/other/facebook.png">
+                    <img src="images/other/facebook.png" alt="PSSC on Facebook">
                 </a>
                 <a href="https://www.instagram.com/purduesciencecouncil/">
-                    <img src="images/other/instagram.png">
+                    <img src="images/other/instagram.png" alt="PSSC on Instagram">
                 </a>
                 <a href="https://twitter.com/purdue_science">
-                    <img src="images/other/twitter.png">
+                    <img src="images/other/twitter.png" alt="PSSC on Twitter">
                 </a>
             </div>
         </div>

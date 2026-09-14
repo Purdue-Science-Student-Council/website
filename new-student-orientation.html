@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Purdue Science Student Council (PSSC) provides academically-oriented, networking, and social events for Purdue's College of Science students, and acts as a liaison between students and the administration." />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Stylesheet -->
@@ -26,8 +26,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation Bar -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
         <div class="nav-logo">
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
@@ -42,7 +43,7 @@
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <a class="nav-bar-item-a" href="#" aria-haspopup="true">More<span class="dropdown-arrow" aria-hidden="true">&#9662;</span></a>
                 <div class="dropdown-menu">
                     <!-- <a href="./meeting-minute.html">Meeting Minutes</a> -->
                     <a href="./snack-and-chat.html">Snack & Chat</a>
@@ -55,17 +56,17 @@
             </li>
         </ul>
     </nav>
-    <nav id="js-m-nav" class="m-nav">
+    <nav id="js-m-nav" class="m-nav" aria-label="Mobile">
         <div class="m-nav-top">
             <div class="m-nav-top-item">
                 <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo" href="./index.html">PSSC</a>
             </div>
             <div class="m-nav-top-item">
-                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
-                    class="m-nav-top-item-hamburger"></button>
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click" class="m-nav-top-item-hamburger" type="button"
+                    aria-label="Menu" aria-expanded="false" aria-controls="js-m-nav-bar"></button>
             </div>
         </div>
-        <ul class="m-nav-bar">
+        <ul class="m-nav-bar" id="js-m-nav-bar">
             <li class="m-nav-bar-item">
                 <!--m-nav-bar-item-active-->
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
@@ -118,13 +119,13 @@
     </nav>
     <!-- ---------- -->
     <!--MAIN BODY-->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         <div class="page">
 
             <h1 class="page-title">New Student Orientation</h1>
             <hr class="page-divider">
 
-            <img src="./images/home/noun_School_1386096.png" class="component-image-center">
+            <img src="./images/home/noun_School_1386096.png" class="component-image-center" alt="">
 
             <p class="page-text">
                 Dear Class of 2027,
@@ -166,32 +167,32 @@
             <hr class="page-divider">
 
             <div class="faq-container">
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> What is your favorite study spot on campus?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q1" aria-expanded="false" aria-controls="nso-a1">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What is your favorite study spot on campus?</span>
+                </button>
+                <div class="faq-answer" id="nso-a1" role="region" aria-labelledby="nso-q1">
                     <ul>
                         <li>Krach, 3rd Street Starbucks, PMU Basement</li>
                         <li>WALC, Hicks</li>
                         <li>Outdoors, when the weather is nice.</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> What is your favorite dining court and why?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q2" aria-expanded="false" aria-controls="nso-a2">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What is your favorite dining court and why?</span>
+                </button>
+                <div class="faq-answer" id="nso-a2" role="region" aria-labelledby="nso-q2">
                     <ul>
                         <li>Ford (salad bar, crab rangoon's)</li>
                         <li>Earhart (convenience)</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> What things do you wish you would have done during your freshman
-                    year?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q3" aria-expanded="false" aria-controls="nso-a3">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What things do you wish you would have done during your freshman year?</span>
+                </button>
+                <div class="faq-answer" id="nso-a3" role="region" aria-labelledby="nso-q3">
                     <ul>
                         <li>I wish I would have found a mentor in my major/career path that I could have gone to for
                             advice!</li>
@@ -199,11 +200,11 @@
                         <li>I wish I would have gone to more club callout meetings</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> What's the easiest way to make new friends?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q4" aria-expanded="false" aria-controls="nso-a4">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What's the easiest way to make new friends?</span>
+                </button>
+                <div class="faq-answer" id="nso-a4" role="region" aria-labelledby="nso-q4">
                     <ul>
                         <li>Utilize this time to hang out with people from the FB C/O 2027 group!! This is the most
                             enthused people are gonna be about meeting other people!!!</li>
@@ -212,11 +213,11 @@
                         <li>Talk to people in your classes and get involved on campus</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> Do you have any advice for getting involved in research?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q5" aria-expanded="false" aria-controls="nso-a5">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>Do you have any advice for getting involved in research?</span>
+                </button>
+                <div class="faq-answer" id="nso-a5" role="region" aria-labelledby="nso-q5">
                     <ul>
                         <li>Talk to your advisor so it's on their radar too; READ ABOUT PROFESSORS' RESEARCH and if it
                             sounds cool, reach out! They don't expect you to know everything already and love having
@@ -226,12 +227,11 @@
                             the research and the lab in general when you meet with the PI.</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> How do I manage my time wisely, and what study skills do you
-                    recommend?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q6" aria-expanded="false" aria-controls="nso-a6">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>How do I manage my time wisely, and what study skills do you recommend?</span>
+                </button>
+                <div class="faq-answer" id="nso-a6" role="region" aria-labelledby="nso-q6">
                     <ul>
                         <li>Put everything into a digital calendar, make 2-3 hour time blocks every day for work so you
                             don't compromise other things. Being said, prioritize sleep since it is what helps build
@@ -241,22 +241,22 @@
                             will take.</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> How do I get involved in clubs?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q7" aria-expanded="false" aria-controls="nso-a7">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>How do I get involved in clubs?</span>
+                </button>
+                <div class="faq-answer" id="nso-a7" role="region" aria-labelledby="nso-q7">
                     <ul>
                         <li>BoilerLink, BInvolved Fair, Reach out to upperclassmen about the clubs they know about</li>
                         <li>Attend callout meetings, reach out to people in the clubs</li>
                         <li>Come to the PSSC Callout!</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> Self-care tips?
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q8" aria-expanded="false" aria-controls="nso-a8">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>Self-care tips?</span>
+                </button>
+                <div class="faq-answer" id="nso-a8" role="region" aria-labelledby="nso-q8">
                     <ul>
                         <li>SLEEP ENOUGH! Utilize the CoRec for physical health! Spend time outside when you can! Make
                             time for your hobbies + friends + creative outlets</li>
@@ -265,12 +265,11 @@
                             breaks it is easier to get burned out later in the semester.</li>
                     </ul>
                 </div>
-
-                <div class="faq-question" onclick="toggleAnswer(this)">
-                    <span class="plus-icon">+</span> Please share any tools you use to succeed in college and what you
-                    use them for.
-                </div>
-                <div class="faq-answer">
+                <button type="button" class="faq-question" id="nso-q9" aria-expanded="false" aria-controls="nso-a9">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>Please share any tools you use to succeed in college and what you use them for.</span>
+                </button>
+                <div class="faq-answer" id="nso-a9" role="region" aria-labelledby="nso-q9">
                     <ul>
                         <li>Outlook + Google Calendars</li>
                         <li>West Lafayette Public Library Card (You can borrow free ebooks + audiobooks for recreational

@@ -3,7 +3,7 @@
 .resource-link {
     display: inline-block;
     text-decoration: none;
-    background: linear-gradient(135deg, $gold-color 0%, rgb(157, 114, 9) 100%);
+    background: linear-gradient(135deg, $gold-accessible 0%, #6E5000 100%);
     padding: 18px 30px;
     border-radius: 12px;
     margin: 2vh 0 1vh 0;
@@ -31,7 +31,7 @@
             left: 100%;
         }
         
-        h2 {
+        h2, h3 {
             color: $white-color;
         }
     }
@@ -41,7 +41,7 @@
         box-shadow: 0 4px 12px rgba(177, 129, 11, 0.3);
     }
     
-    h2 {
+    h2, h3 {
         color: $white-color;
         font-size: 1.3rem;
         font-weight: 600;

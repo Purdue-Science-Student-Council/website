@@ -1,3 +1,10 @@
+// Escape values before they go into innerHTML -- members type these themselves
+function escapeHtml(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
 // Load members from Firestore and display them
 async function addComm() {
   var page = document.getElementById("js-council");
@@ -65,6 +72,10 @@ async function addComm() {
     renderCommittee(page, 'alumni', membersByCommittee.alumni,
       'PSSC Alumni',
       'PSSC Alumni are a vital part of PSSC and remain as advisors and friends. They often help in planning and volunteer in events!');
+
+    // Run once, after every committee is in the DOM
+    observeCards();
+    attachMemberCardListeners();
     
   } catch (error) {
     console.error('Error loading members from Firestore:', error);
@@ -127,13 +138,16 @@ function renderCommittee(page, committeeId, members, title, description) {
     // Store member data with their ID
     window.membersData[member.id] = member;
     
+    const name = escapeHtml(member.name);
     return `
-      <div class="page-council-members-member" style="animation-delay: ${index * 0.1}s" data-member-id="${member.id}">
-        <img src="${photoPath}" class="page-council-members-member-img" alt="${member.name}" onerror="this.src='images/other/nopic.png'">
-        <h4 class="page-council-members-member-name">${member.name}</h4>
-        <h5 class="page-council-members-member-position">${member.position || ''}</h5>
-        <h5 class="page-council-members-member-details">${member.year} / ${member.major}</h5>
-      </div>
+      <button type="button" class="page-council-members-member" style="animation-delay: ${index * 0.1}s"
+        data-member-id="${escapeHtml(member.id)}" aria-haspopup="dialog"
+        aria-label="View profile for ${name}">
+        <img src="${escapeHtml(photoPath)}" class="page-council-members-member-img" alt="" onerror="this.src='images/other/nopic.png'">
+        <h4 class="page-council-members-member-name">${name}</h4>
+        <h5 class="page-council-members-member-position">${escapeHtml(member.position || '')}</h5>
+        <h5 class="page-council-members-member-details">${escapeHtml(member.year)} / ${escapeHtml(member.major)}</h5>
+      </button>
     `;
   }).join('');
   
@@ -146,12 +160,6 @@ function renderCommittee(page, committeeId, members, title, description) {
       </div>
     </div>
   `);
-  
-  // Add intersection observer for scroll animations
-  setTimeout(() => {
-    observeCards();
-    attachMemberCardListeners();
-  }, 100);
 }
 
 // Intersection Observer for scroll-triggered animations
@@ -197,6 +205,29 @@ function attachMemberCardListeners() {
   });
 }
 
+// Element that had focus before the modal opened, so it can be restored on close
+let modalOpener = null;
+
+// Keep Tab inside the dialog while it is open
+function trapFocus(event) {
+  const modal = document.getElementById('member-modal');
+  if (event.key !== 'Tab' || modal.hidden) return;
+
+  const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (!focusable.length) return;
+
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
 // Open member modal with data
 function openMemberModal(member) {
   const modal = document.getElementById('member-modal');
@@ -220,16 +251,26 @@ function openMemberModal(member) {
   modalEmail.textContent = member.email || 'N/A';
   modalBioText.textContent = member.bio || 'No bio available.';
   
-  // Show modal
-  modal.style.display = 'block';
+  // Show modal and move focus into it
+  modalOpener = document.activeElement;
+  modal.hidden = false;
   document.body.style.overflow = 'hidden'; // Prevent scrolling
+  document.addEventListener('keydown', trapFocus);
+  modal.querySelector('.modal-close').focus();
 }
 
 // Close member modal
 function closeMemberModal() {
   const modal = document.getElementById('member-modal');
-  modal.style.display = 'none';
-  document.body.style.overflow = 'auto'; // Re-enable scrolling
+  modal.hidden = true;
+  document.body.style.overflow = ''; // Re-enable scrolling
+  document.removeEventListener('keydown', trapFocus);
+
+  // Return focus to the card that opened the dialog
+  if (modalOpener) {
+    modalOpener.focus();
+    modalOpener = null;
+  }
 }
 
 // Setup modal event listeners
@@ -251,7 +292,7 @@ function setupModalListeners() {
   
   // Close on Escape key
   document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && modal.style.display === 'block') {
+    if (event.key === 'Escape' && !modal.hidden) {
       closeMemberModal();
     }
   });

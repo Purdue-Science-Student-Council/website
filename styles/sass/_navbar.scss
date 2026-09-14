@@ -34,7 +34,7 @@
             text-decoration: none;
 
             &:hover, &:focus {
-                color: $gold-color;
+                color: $gold-accessible;
                 transition: all 0.4s ease-in;
             }
 
@@ -83,13 +83,13 @@
                 display: inline-block;
 
                 &:hover, &:focus {
-                    color: $gold-color;
+                    color: $gold-accessible;
                     transition: all 0.3s ease-out;
                 }
 
                 &:active {
-                    color: $gold-color;
-                    border-bottom: 2px solid $gold-color;
+                    color: $gold-accessible;
+                    border-bottom: 2px solid $gold-accessible;
                 }
             }
         }
@@ -139,7 +139,7 @@
                 text-decoration: none;
     
                 &:hover, &:focus {
-                    color: $gold-color;
+                    color: $gold-accessible;
                     transition: all 0.4s ease-in;
                 }
     
@@ -159,11 +159,11 @@
                 cursor: pointer;
 
                 &:hover, &:active {
-                    color: $gold-color;
+                    color: $gold-accessible;
                     transition: all 0.3s ease-out;
                 }
                 &:active {
-                    color: $gold-color;
+                    color: $gold-accessible;
                 }
             }
         }
@@ -190,12 +190,12 @@
 
             &-active {
                 a {
-                    border-bottom: 2px solid $light-color;
+                    border-bottom: 2px solid $white-color;
                 }
             }
 
             &-a {
-                color: $light-color;
+                color: $white-color;
                 text-decoration: none;
 
                 &:hover, &:focus {
@@ -213,14 +213,14 @@
 
     &-active {
         height: 100vh;
-        background: $gold-color;
+        background: $gold-accessible;
 
         .m-nav-top {
-            color: $light-color;
+            color: $white-color;
             
             &-item {
                 &-hamburger, &-logo {
-                    color: $light-color;
+                    color: $white-color;
     
                     &:hover, &:focus {
                         color: $dark-color;
@@ -291,6 +291,7 @@
     
     // Keep dropdown visible when hovering over parent OR dropdown
     &:hover .dropdown-menu,
+    &:focus-within .dropdown-menu,
     &-menu:hover {
         display: block;
     }
@@ -301,7 +302,8 @@
         transition: transform 0.3s ease;
     }
     
-    &:hover .dropdown-arrow {
+    &:hover .dropdown-arrow,
+    &:focus-within .dropdown-arrow {
         transform: rotate(180deg);
     }
 }

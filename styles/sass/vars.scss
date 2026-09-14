@@ -3,6 +3,9 @@
     --dark-color: hsla(0, 0%, 3.3%, 1);
     --light-color: hsla(0, 0%, 90%, 1);
     --gold-color: rgb(177, 129, 11);
+    // AA-contrast gold for small text and button fills: 5.96:1 on the page
+    // background, 4.91:1 on .component-light's tinted panel
+    --gold-accessible: #7F5C00;
     --gray-color: hsla(0, 0%, 10.3%, 1);
 
     --bg-color: hsla(43.2, 67.4%, 99%, 1);
@@ -20,6 +23,7 @@
 $dark-color: var(--dark-color); 
 $light-color: var(--light-color);
 $gold-color: var(--gold-color);
+$gold-accessible: var(--gold-accessible);
 $gray-color: var(--gray-color);
 $bg-color: var(--bg-color);
 $slightly-darker-bg-color: var(--slightly-darker-bg-color);

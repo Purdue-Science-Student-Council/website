@@ -219,6 +219,23 @@ html {
     background-clip: text;
 }
 
+// Skip link -- offscreen until focused
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    padding: 12px 20px;
+    background: var(--gold-accessible);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 0 var(--radius-md) 0;
+
+    &:focus {
+        left: 0;
+    }
+}
+
 // Enhanced focus states for accessibility
 *:focus-visible {
     outline: 2px solid var(--primary-gold);

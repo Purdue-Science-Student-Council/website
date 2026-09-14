@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Purdue Science Student Council (PSSC) provides academically-oriented, networking, and social events for Purdue's College of Science students, and acts as a liaison between students and the administration." />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Stylesheet -->
@@ -26,8 +26,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation Bar -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
         <div class="nav-logo">
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
@@ -42,7 +43,7 @@
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <a class="nav-bar-item-a" href="#" aria-haspopup="true">More<span class="dropdown-arrow" aria-hidden="true">&#9662;</span></a>
                 <div class="dropdown-menu">
                     <!-- <a href="./meeting-minute.html">Meeting Minutes</a> -->
                     <a href="./snack-and-chat.html">Snack & Chat</a>
@@ -55,17 +56,17 @@
             </li>
         </ul>
     </nav>
-    <nav id="js-m-nav" class="m-nav">
+    <nav id="js-m-nav" class="m-nav" aria-label="Mobile">
         <div class="m-nav-top">
             <div class="m-nav-top-item">
                 <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo" href="./index.html">PSSC</a>
             </div>
             <div class="m-nav-top-item">
-                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
-                    class="m-nav-top-item-hamburger"></button>
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click" class="m-nav-top-item-hamburger" type="button"
+                    aria-label="Menu" aria-expanded="false" aria-controls="js-m-nav-bar"></button>
             </div>
         </div>
-        <ul class="m-nav-bar">
+        <ul class="m-nav-bar" id="js-m-nav-bar">
             <li class="m-nav-bar-item">
                 <!--m-nav-bar-item-active-->
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
@@ -118,7 +119,7 @@
     </nav>
     <!-- ---------- -->
     <!--MAIN BODY-->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         <div class="page">
             <h1 class="page-title">The Outstanding Teacher Award</h1>
             <hr class="page-divider">
@@ -144,13 +145,13 @@
                 <p class="page-text">
                 <b>Dennis Minchella</b>, Professor of Biological Sciences, <b>Jeff Beckley</b>, Continuing Lecturer in Mathematics, and <b>Gustavo Rodriguez-Rivera</b>, Professor of Computer Sciences, are not eligible for the award this year as they have won the Outstanding Teacher Award multiple times.
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflsz2laOYkx0_1MWZET9SevaomhlNdu8NKRaOB3_arh4mFfQ/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflsz2laOYkx0_1MWZET9SevaomhlNdu8NKRaOB3_arh4mFfQ/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0" title="Outstanding Teacher Award nomination form">Loading...</iframe>
          
              
                 <div class="col s12">
                 <div class="typeform-widget" data-url="https://pssc.typeform.com/to/PMKzK3" data-text="Outstanding Teacher Award" style="width:100%;height:500px;"></div>
                 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=PMKzK3&amp;utm_source=typeform.com-1806039-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=PMKzK3&amp;utm_source=typeform.com-1806039-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank" rel="noopener noreferrer">Typeform</a></div>
             </div-->
 
 

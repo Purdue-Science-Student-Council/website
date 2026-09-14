@@ -22,7 +22,7 @@ function addPreviousContributors() {
             '<tr class="page-table-tr">' + 
                 '<td class="page-table-td">' + (beginning_year + index) + '</td>' +
                 '<td class="page-table-td">' + contributor + '</td>' +
-            '<tr>';
+            '</tr>';
         acc = temp + acc;
         return acc;
     }, "");

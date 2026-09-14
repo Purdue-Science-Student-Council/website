@@ -6,9 +6,22 @@
  */
 function navDrawer() {
     var m_nav = document.getElementById("js-m-nav");
-    m_nav.classList.toggle("m-nav-active");
+    var open = m_nav.classList.toggle("m-nav-active");
     // Prevent background page from scrolling while mobile menu is open
-    document.body.style.overflow = m_nav.classList.contains("m-nav-active") ? "hidden" : "";
+    document.body.style.overflow = open ? "hidden" : "";
+    document.getElementById("js-m-nav-click").setAttribute("aria-expanded", String(open));
+}
+
+/**
+ * Toggle an FAQ accordion panel
+ * @param {HTMLElement} element - The .faq-question button
+ */
+function toggleAnswer(element) {
+    const answer = element.nextElementSibling;
+    const open = element.getAttribute("aria-expanded") !== "true";
+    element.setAttribute("aria-expanded", String(open));
+    element.classList.toggle("active", open);
+    answer.classList.toggle("show", open);
 }
 
 /**
@@ -29,6 +42,9 @@ function addClickListener(id, func) {
  */
 function initCommonNav() {
     addClickListener("js-m-nav-click", navDrawer);
+    document.querySelectorAll(".faq-question").forEach(function (q) {
+        q.addEventListener("click", function () { toggleAnswer(q); });
+    });
 }
 
 // Position options by committee - shared between update-profile and admin

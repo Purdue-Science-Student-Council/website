@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Purdue Science Student Council (PSSC) provides academically-oriented, networking, and social events for Purdue's College of Science students, and acts as a liaison between students and the administration." />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Stylesheet -->
@@ -26,8 +26,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation Bar -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
         <div class="nav-logo">
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
@@ -42,7 +43,7 @@
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <a class="nav-bar-item-a" href="#" aria-haspopup="true">More<span class="dropdown-arrow" aria-hidden="true">&#9662;</span></a>
                 <div class="dropdown-menu">
                     <!-- <a href="./meeting-minute.html">Meeting Minutes</a> -->
                     <a href="./snack-and-chat.html">Snack & Chat</a>
@@ -55,17 +56,17 @@
             </li>
         </ul>
     </nav>
-    <nav id="js-m-nav" class="m-nav">
+    <nav id="js-m-nav" class="m-nav" aria-label="Mobile">
         <div class="m-nav-top">
             <div class="m-nav-top-item">
                 <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo" href="./index.html">PSSC</a>
             </div>
             <div class="m-nav-top-item">
-                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
-                    class="m-nav-top-item-hamburger"></button>
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click" class="m-nav-top-item-hamburger" type="button"
+                    aria-label="Menu" aria-expanded="false" aria-controls="js-m-nav-bar"></button>
             </div>
         </div>
-        <ul class="m-nav-bar">
+        <ul class="m-nav-bar" id="js-m-nav-bar">
             <li class="m-nav-bar-item">
                 <!--m-nav-bar-item-active-->
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
@@ -118,7 +119,7 @@
     </nav>
     <!-- ---------- -->
     <!--MAIN BODY-->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         <div class="page">
 
             <h1 class="page-title">College of Science Career Fair - Students</h1>
@@ -142,43 +143,41 @@
             </p>
 
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2830699030783!2d-86.91455362458574!3d40.4247304551532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2ae1dd4629f%3A0x65cc9e5562725d15!2s128%20Memorial%20Mall%20Dr%2C%20West%20Lafayette%2C%20IN%2047907!5e0!3m2!1sen!2sus!4v1720219036064!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2830699030783!2d-86.91455362458574!3d40.4247304551532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2ae1dd4629f%3A0x65cc9e5562725d15!2s128%20Memorial%20Mall%20Dr%2C%20West%20Lafayette%2C%20IN%2047907!5e0!3m2!1sen!2sus!4v1720219036064!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Map of 128 Memorial Mall Drive, West Lafayette, Indiana"></iframe>
             </div>
 
             <p class="page-text">
                 <b> Targeted majors: </b> Computer Science, Data Science, Artificial Intelligence, Mathematics, Applied 
                 Sciences, Statistics, Biology, Chemistry, Health and Disease, Actuarial Science, Atmospheric Science, 
                 Environmental Geoscience/Biology, Geology/Geophysics, and Planetary Sciences.
-            
+            </p>
+
             <p class="page-text">
                 <u><b> Attending Employers</b></u>
-            <p>
-    
-            <p class="page-text">
-                <ul>
-                    <li>ACES Power Marketing</li>
-                    <li>BSI America Professional Services</li>
-                    <li>City Year</li>
-                    <li>Purdue Department of Public Health</li>
-                    <li>Eli Lilly and Company</li>
-                    <li>Indiana Biosciences Research Institute</li>
-                    <li>Kerry Group</li>
-                    <li>Midwestern Regional Climate Center</li>
-                    <li>U.S. Navy NTAG Heartland</li>
-                </ul>
             </p>
-        
+
+            <ul class="page-text">
+                <li>ACES Power Marketing</li>
+                <li>BSI America Professional Services</li>
+                <li>City Year</li>
+                <li>Purdue Department of Public Health</li>
+                <li>Eli Lilly and Company</li>
+                <li>Indiana Biosciences Research Institute</li>
+                <li>Kerry Group</li>
+                <li>Midwestern Regional Climate Center</li>
+                <li>U.S. Navy NTAG Heartland</li>
+            </ul>
+
             <p class="page-text">
                 <u><b> Graduate Schools/Programs</b></u>
             </p>
-        
-            <p class="page-text">
-                <ul>
-                    <li>Marian University Accelerated Nursing Programs</li>
-                    <li>Purdue University Graduate School</li>
-                    <li>The University of Chicago Graduate School</li>
-                </ul>
-            </p>
+
+            <ul class="page-text">
+                <li>Marian University Accelerated Nursing Programs</li>
+                <li>Purdue University Graduate School</li>
+                <li>The University of Chicago Graduate School</li>
+            </ul>
 
 
             <p class="page-text">
@@ -186,36 +185,36 @@
                 with questions, inquiries, and concerns.
             </p>
 
-            <div class="page">
-                <h1 class="page-title">FAQs</h1>
-                <hr class="page-divider">
+        </div>
 
-                <div class="faq-container">
-                    <div class="faq-question" onclick="toggleAnswer(this)">
-                        <span class="plus-icon">+</span> When is the College of Science Career Fair?
-                    </div>
-                    <div class="faq-answer">
+        <div class="page">
+            <h1 class="page-title">FAQs</h1>
+            <hr class="page-divider">
+
+            <div class="faq-container">
+                <button type="button" class="faq-question" id="cfs-q1" aria-expanded="false" aria-controls="cfs-a1">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>When is the College of Science Career Fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a1" role="region" aria-labelledby="cfs-q1">
                         The fair is September 16th from 12-4 PM EST. Employers can begin setting up at 11:00 AM EST.
-                    </div>
-
-                    <div class="faq-container">
-                        <div class="faq-question" onclick="toggleAnswer(this)">
-                            <span class="plus-icon">+</span> Where will the fair be held?
-                        </div>
-                        <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q2" aria-expanded="false" aria-controls="cfs-a2">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>Where will the fair be held?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a2" role="region" aria-labelledby="cfs-q2">
                             The College of Science Career Fair will be held in STEW 214. This is located on the second floor of Stewart Center.
                             Below is a map of the second floor of Stewart Center.
 
-                            <img src="./images/nco/career-fair/StewartCenter.jpeg" alt="Purdue Chaney Hall of Sciences"
+                            <img src="./images/nco/career-fair/StewartCenter.jpeg" alt="Floor plan of the second floor of Stewart Center showing the route to room 214"
                                 class="component-poster-center" />
-
-                        </div>
-
-                        <div class="faq-container">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <span class="plus-icon">+</span> What should I expect when I get to the fair?
-                            </div>
-                            <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q3" aria-expanded="false" aria-controls="cfs-a3">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What should I expect when I get to the fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a3" role="region" aria-labelledby="cfs-q3">
                                 Each company will be stationed at a booth with representatives. Students will approach
                                 the representatives, introduce themselves, present their resumes, and discuss
                                 opportunities at the company. Students can make connections, learn more about employment
@@ -223,13 +222,12 @@
                                 materials about the company for students to review at a later time. Career fairs are a
                                 great opportunity for students at any point in their academic career and we encourage
                                 everyone to come.
-                            </div>
-
-                            <div class="faq-container">
-                                <div class="faq-question" onclick="toggleAnswer(this)">
-                                    <span class="plus-icon">+</span> How should I prepare for the fair?
-                                </div>
-                                <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q4" aria-expanded="false" aria-controls="cfs-a4">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>How should I prepare for the fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a4" role="region" aria-labelledby="cfs-q4">
                                     Create and update your resume. An effective resume should be clear and concise by
                                     highlighting relevant skills and achievements. You should emphasize relevant
                                     coursework, experience, projects and activities, and awards. The CCO has <a
@@ -270,14 +268,12 @@
                                     For a comprehensive review of career fair preparation, visit the <a
                                         href="https://user-52947541.cld.bz/2023-2024-Purdue-University-Career-Success-Handbook">CCO
                                         Career Success Handbook</a>.
-                                </div>
-
-                                <div class="faq-container">
-                                    <div class="faq-question" onclick="toggleAnswer(this)">
-                                        <span class="plus-icon">+</span> I'm an international student, how should I
-                                        prepare?
-                                    </div>
-                                    <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q5" aria-expanded="false" aria-controls="cfs-a5">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>I'm an international student, how should I prepare?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a5" role="region" aria-labelledby="cfs-q5">
                                         We are bringing in a wide range of companies who greatly appreciate the diverse
                                         perspective you may bring. To maximize experience at the fair, your resume
                                         should meet U.S. resume standards and state your work authorization. Before the
@@ -287,13 +283,12 @@
                                         allows you to filter companies by work authorization and <a
                                             href="https://www.myvisajobs.com/">MyVisaJobs</a> allows you to find
                                         companies that sponsor visas.
-                                    </div>
-
-                                    <div class="faq-container">
-                                        <div class="faq-question" onclick="toggleAnswer(this)">
-                                            <span class="plus-icon">+</span> What should I do during the fair?
-                                        </div>
-                                        <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q6" aria-expanded="false" aria-controls="cfs-a6">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What should I do during the fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a6" role="region" aria-labelledby="cfs-q6">
                                             Bring approximately 20 copies of your resume to give recruiters.
                                             Get to know where organizations are located and which ones you want to talk
                                             with first.
@@ -304,13 +299,12 @@
                                             not on your list. Broaden your horizons and keep an open mind.
                                             Build your professional network by talking with companies that interest you
                                             and any company that shows interest in you. Ask for a business card!
-                                        </div>
-
-                                        <div class="faq-container">
-                                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                                <span class="plus-icon">+</span> How should I dress for the fair?
-                                            </div>
-                                            <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q7" aria-expanded="false" aria-controls="cfs-a7">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>How should I dress for the fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a7" role="region" aria-labelledby="cfs-q7">
                                                 Students should aim to impress the recruiters, and that starts with
                                                 attire. The College of Science Career Fair is a professional event, so
                                                 students should wear business attire if they can. This dress code can
@@ -323,13 +317,12 @@
                                                 differentiates types of business attire for ease of mind when choosing
                                                 an outfit. Feel free to express your identity, just make sure it looks
                                                 professional!
-                                            </div>
-
-                                            <div class="faq-container">
-                                                <div class="faq-question" onclick="toggleAnswer(this)">
-                                                    <span class="plus-icon">+</span> What should I do after the fair?
-                                                </div>
-                                                <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q8" aria-expanded="false" aria-controls="cfs-a8">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What should I do after the fair?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a8" role="region" aria-labelledby="cfs-q8">
                                                     After the fair, follow up with companies and/or contacts within 24
                                                     hours of interaction to reinforce the connection and your interest.
                                                     This will help you stand out and help recruiters remember you. <a
@@ -340,33 +333,17 @@
                                                     sure to follow any steps that recruiters recommend, such as applying
                                                     for a position or contacting someone in the company. Connect with
                                                     newly created or formerly established contacts on LinkedIn.
-                                                </div>
-
-                                                <div class="faq-container">
-                                                    <div class="faq-question" onclick="toggleAnswer(this)">
-                                                        <span class="plus-icon">+</span> What is the best way to contact
-                                                        PSSC in case of questions?
-                                                    </div>
-                                                    <div class="faq-answer">
+                </div>
+                <button type="button" class="faq-question" id="cfs-q9" aria-expanded="false" aria-controls="cfs-a9">
+                    <span class="plus-icon" aria-hidden="true">+</span>
+                    <span>What is the best way to contact PSSC in case of questions?</span>
+                </button>
+                <div class="faq-answer" id="cfs-a9" role="region" aria-labelledby="cfs-q9">
                                                         If you have any questions, feel free to email us at <a
                                                             href="mailto:pssccareerfair@gmail.com">pssccareerfair@gmail.com</a>.
-                                                    </div>
-                                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="js/common.js"></script>
     <script src="js/career-fair.js"></script>

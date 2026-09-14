@@ -105,6 +105,10 @@
 
         &-member {
             background: $white-color;
+            width: 100%;
+            border: none;
+            font-family: inherit;
+            cursor: pointer;
             border-radius: 15px;
             padding: 25px;
             text-align: center;
@@ -151,7 +155,7 @@
                 }
                 
                 .page-council-members-member-name {
-                    color: $gold-color;
+                    color: $gold-accessible;
                 }
             }
 
@@ -177,7 +181,7 @@
             }
 
             &-position {
-                color: $gold-color;
+                color: $gold-accessible;
                 margin: 0 0 5px 0;
                 padding: 0;
                 font-size: 1rem;

@@ -25,14 +25,14 @@
 .hack-button {
     cursor: pointer;
     display: block;
-    border: 2px solid $gold-color;
+    border: 2px solid $gold-accessible;
     background: transparent;
-    color: $gold-color;
+    color: $gold-accessible;
     font-weight: bold;
     padding: 10px 20px;
 
     &:hover, &:focus {
-        background: $gold-color;
+        background: $gold-accessible;
         color: $bg-color;
         transition: all 0.3s ease-in;
     }

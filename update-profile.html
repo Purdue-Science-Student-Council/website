@@ -75,7 +75,7 @@
         }
         
         .info-box {
-            background: linear-gradient(135deg, #daa520 0%, #c8971d 100%);
+            background: linear-gradient(135deg, #7F5C00 0%, #6E5000 100%);
             color: white;
             padding: 10px;
             border-radius: 12px;
@@ -154,10 +154,10 @@
             width: 100%;
         }
         
-        .file-input-label {
+        .file-input-wrapper .file-input-label {
             display: block;
             padding: 14px 20px;
-            background: linear-gradient(135deg, #eabc49  0%, #edb831 100%);
+            background: linear-gradient(135deg, #7F5C00 0%, #6E5000 100%);
             color: white;
             border-radius: 8px;
             cursor: pointer;
@@ -166,7 +166,12 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
         
-        .file-input-label:hover {
+        .file-input-wrapper:focus-within .file-input-label {
+            outline: 2px solid #7F5C00;
+            outline-offset: 2px;
+        }
+        
+        .file-input-wrapper .file-input-label:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(218, 165, 32, 0.3);
         }
@@ -186,7 +191,7 @@
         .btn-save {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            background: linear-gradient(135deg, #2E7D32 0%, #276B2B 100%);
             color: white;
             border: none;
             border-radius: 8px;
@@ -249,7 +254,7 @@
         }
         
         .footer-text a {
-            color: #CEB888;
+            color: #2B6597;
             text-decoration: none;
         }
         
@@ -259,7 +264,8 @@
     </style>
 </head>
 <body>
-    <div class="profile-container">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="profile-container" id="main-content">
         <div class="logo-section">
             <img src="images/logo.PNG" alt="PSSC Logo">
             <h1>Update Your Profile</h1>
@@ -278,7 +284,7 @@
             <p>This profile update link is invalid or has expired.</p>
             <p>Please contact the PSSC webmaster if you need a new link.</p>
             <p style="margin-top: 20px;">
-                <a href="mailto:purduesciencecouncil@gmail.com" style="color: #CEB888;">
+                <a href="mailto:purduesciencecouncil@gmail.com" style="color: #2B6597;">
                     Contact Webmaster
                 </a>
             </p>
@@ -291,11 +297,11 @@
                 <p><strong>This link is private</strong> - don't share it with others</p>
             </div>
 
-            <div class="success-message" id="success-message">
+            <div class="success-message" id="success-message" role="status">
                 Profile updated successfully! Your changes will appear on the website shortly.
             </div>
 
-            <div class="error-message" id="error-message"></div>
+            <div class="error-message" id="error-message" role="alert"></div>
 
             <img src="" alt="Your current photo" class="current-photo" id="current-photo">
 

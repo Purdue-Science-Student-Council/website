@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Contact Purdue Science Student Council (PSSC) with your questions, concerns, and comments." />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- CSS Stylesheet -->
@@ -106,7 +106,7 @@
         .btn-submit {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, #CEB888 0%, #b8a070 100%);
+            background: linear-gradient(135deg, #7F5C00 0%, #6E5000 100%);
             color: white;
             border: none;
             border-radius: 8px;
@@ -118,7 +118,7 @@
 
         .btn-submit:hover:not(:disabled) {
             transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(206, 184, 136, 0.4);
+            box-shadow: 0 5px 20px rgba(138, 100, 0, 0.4);
         }
 
         .btn-submit:disabled {
@@ -177,7 +177,7 @@
         }
 
         .contact-info a {
-            color: #CEB888;
+            color: #2B6597;
             text-decoration: none;
         }
 
@@ -199,8 +199,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation Bar -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
         <div class="nav-logo">
             <span class="nav-valign"></span><a href="./index.html" class="nav-logo-text">PSSC</a>
         </div>
@@ -219,7 +220,7 @@
             </li>
             <li class="nav-bar-item dropdown">
                 <span class="nav-valign"></span>
-                <a class="nav-bar-item-a" href="#">More<span class="dropdown-arrow">&#9662;</span></a>
+                <a class="nav-bar-item-a" href="#" aria-haspopup="true">More<span class="dropdown-arrow" aria-hidden="true">&#9662;</span></a>
                 <div class="dropdown-menu">
                     <a href="./snack-and-chat.html">Snack & Chat</a>
                     <a href="./new-student-orientation.html">New Student Orientation</a>
@@ -231,17 +232,17 @@
             </li>
         </ul>
     </nav>
-    <nav id="js-m-nav" class="m-nav">
+    <nav id="js-m-nav" class="m-nav" aria-label="Mobile">
         <div class="m-nav-top">
             <div class="m-nav-top-item">
                 <span class="m-nav-top-item-valign"></span><a class="m-nav-top-item-logo" href="./index.html">PSSC</a>
             </div>
             <div class="m-nav-top-item">
-                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click"
-                    class="m-nav-top-item-hamburger"></button>
+                <span class="m-nav-top-item-valign"></span><button id="js-m-nav-click" class="m-nav-top-item-hamburger" type="button"
+                    aria-label="Menu" aria-expanded="false" aria-controls="js-m-nav-bar"></button>
             </div>
         </div>
-        <ul class="m-nav-bar">
+        <ul class="m-nav-bar" id="js-m-nav-bar">
             <li class="m-nav-bar-item">
                 <a class="m-nav-bar-item-a" href="./index.html">Home</a>
             </li>
@@ -273,18 +274,18 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         <div class="contact-container">
             <div class="contact-header">
                 <h1>Contact Us</h1>
                 <p>Have questions, concerns, or comments? We'd love to hear from you!</p>
             </div>
 
-            <div class="success-message" id="success-message">
+            <div class="success-message" id="success-message" role="status">
                 Thank you for contacting us! Your message has been sent successfully.
             </div>
 
-            <div class="error-message" id="error-message"></div>
+            <div class="error-message" id="error-message" role="alert"></div>
 
             <form id="contact-form">
                 <div class="form-group">
@@ -305,7 +306,8 @@
 
                 <div class="form-group">
                     <label for="message">Message *</label>
-                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                    <textarea id="message" name="message" required maxlength="1000"
+                        placeholder="Type your message here..."></textarea>
                     <small>Character count: <span id="char-count">0</span>/1000</small>
                 </div>
 
@@ -368,8 +370,14 @@
                 )}`;
                 
                 // Open Gmail in new tab
-                window.open(gmailLink, '_blank');
-                
+                const gmailTab = window.open(gmailLink, '_blank');
+
+                // A blocked popup means nothing was sent -- do not claim success
+                if (!gmailTab) {
+                    throw new Error('Your browser blocked the Gmail window. Allow popups for this site, ' +
+                        'or email us directly at purduesciencecouncil@gmail.com.');
+                }
+
                 // Show success message
                 successMsg.style.display = 'block';
                 
@@ -383,7 +391,8 @@
                 
             } catch (error) {
                 console.error('Error:', error);
-                errorMsg.textContent = 'Something went wrong. Please try again or email us directly.';
+                errorMsg.textContent = error.message ||
+                    'Something went wrong. Please try again or email us directly.';
                 errorMsg.style.display = 'block';
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'Send Message';
